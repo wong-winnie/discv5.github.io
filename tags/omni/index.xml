@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>OmnicoreAPI中文</title>
-      <link>/post/omnicoreapi%E4%B8%AD%E6%96%87/</link>
+      <title>Omnicore API</title>
+      <link>/post/omnicoreapi/</link>
       <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
       
-      <guid>/post/omnicoreapi%E4%B8%AD%E6%96%87/</guid>
+      <guid>/post/omnicoreapi/</guid>
       <description>&lt;p&gt;Omni Core是Bitcoin Core的一个分支，其Omni协议功能支持作为顶层的新功能层添加。因此，与API的交互以与Bitcoin Core相同的方式（JSON-RPC）完成，只需使用额外的RPC即可使用Omni协议功能。&lt;/p&gt;</description>
     </item>
     

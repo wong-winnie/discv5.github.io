@@ -12,12 +12,21 @@
     
     
     <item>
-      <title>OmnicoreAPI中文</title>
-      <link>/post/omnicoreapi%E4%B8%AD%E6%96%87/</link>
+      <title>Omnicore API</title>
+      <link>/post/omnicoreapi/</link>
       <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
       
-      <guid>/post/omnicoreapi%E4%B8%AD%E6%96%87/</guid>
+      <guid>/post/omnicoreapi/</guid>
       <description>&lt;p&gt;Omni Core是Bitcoin Core的一个分支，其Omni协议功能支持作为顶层的新功能层添加。因此，与API的交互以与Bitcoin Core相同的方式（JSON-RPC）完成，只需使用额外的RPC即可使用Omni协议功能。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>USDT钱包归集</title>
+      <link>/post/usdt%E9%92%B1%E5%8C%85%E5%BD%92%E9%9B%86/</link>
+      <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/usdt%E9%92%B1%E5%8C%85%E5%BD%92%E9%9B%86/</guid>
+      <description>&lt;p&gt;最近几天在对接USDT钱包，遇到一个问题就是根本没办法通过omni 钱包提供的API来实现钱包归集，因为API提供的接口都需要发送USDT的地址有一定的BTC数量才可以发送交易，所以没办只能找其他方案替代，请教了其他人后才知道只能通过创建BTC的原生交易才能达到这个效果，折腾了好几天，终于把这个流程给整理通顺了，估计还有很多人会遇到这个问题，所以记录下来为后面的人节省一些时间。&lt;/p&gt;</description>
     </item>
     
   </channel>

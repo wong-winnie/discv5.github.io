@@ -6,17 +6,17 @@
     <description>Recent content in eth on Hehaitao.vip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 18 May 2019 09:03:39 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/eth/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>EthereumAPI中文</title>
-      <link>/post/ethereumapi%E4%B8%AD%E6%96%87/</link>
-      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
+      <title>Ethereum API</title>
+      <link>/post/ethereumapi/</link>
+      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/ethereumapi%E4%B8%AD%E6%96%87/</guid>
+      <guid>/post/ethereumapi/</guid>
       <description></description>
     </item>
     
@@ -26,6 +26,15 @@
       <pubDate>Sat, 11 May 2019 18:05:49 +0000</pubDate>
       
       <guid>/post/eth%E4%BA%A4%E6%98%93%E6%89%80%E5%85%85%E5%B8%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ETH搭建全节点</title>
+      <link>/post/eth%E6%90%AD%E5%BB%BA%E5%85%A8%E8%8A%82%E7%82%B9/</link>
+      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/eth%E6%90%AD%E5%BB%BA%E5%85%A8%E8%8A%82%E7%82%B9/</guid>
       <description></description>
     </item>
     
