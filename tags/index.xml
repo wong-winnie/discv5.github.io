@@ -1,20 +1,74 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Hehaitao</title>
+    <title>Tags on Hehaitao.vip</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on Hehaitao</description>
+    <description>Recent content in Tags on Hehaitao.vip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 May 2019 09:03:39 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>btc</title>
+      <link>/tags/btc/</link>
+      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
+      
+      <guid>/tags/btc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eth</title>
+      <link>/tags/eth/</link>
+      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
+      
+      <guid>/tags/eth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>omni</title>
+      <link>/tags/omni/</link>
+      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
+      
+      <guid>/tags/omni/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rpc</title>
+      <link>/tags/rpc/</link>
+      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
+      
+      <guid>/tags/rpc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>usdt</title>
+      <link>/tags/usdt/</link>
+      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
+      
+      <guid>/tags/usdt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>thinking</title>
+      <link>/tags/thinking/</link>
+      <pubDate>Sat, 11 May 2019 15:23:18 +0000</pubDate>
+      
+      <guid>/tags/thinking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Basic Elements</title>
       <link>/tags/basic-elements/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/basic-elements/</guid>
       <description></description>
@@ -23,7 +77,7 @@
     <item>
       <title>CSS</title>
       <link>/tags/css/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/css/</guid>
       <description></description>
@@ -32,9 +86,54 @@
     <item>
       <title>HTML</title>
       <link>/tags/html/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/html/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>parity</title>
+      <link>/tags/parity/</link>
+      <pubDate>Mon, 06 May 2019 10:49:32 +0000</pubDate>
+      
+      <guid>/tags/parity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bitcoin</title>
+      <link>/tags/bitcoin/</link>
+      <pubDate>Wed, 17 Apr 2019 20:03:39 +0000</pubDate>
+      
+      <guid>/tags/bitcoin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>interview</title>
+      <link>/tags/interview/</link>
+      <pubDate>Thu, 11 Apr 2019 20:03:39 +0000</pubDate>
+      
+      <guid>/tags/interview/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nginx</title>
+      <link>/tags/nginx/</link>
+      <pubDate>Fri, 03 Aug 2018 20:03:39 +0000</pubDate>
+      
+      <guid>/tags/nginx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ecdh</title>
+      <link>/tags/ecdh/</link>
+      <pubDate>Wed, 18 Apr 2018 10:44:15 +0000</pubDate>
+      
+      <guid>/tags/ecdh/</guid>
       <description></description>
     </item>
     
@@ -89,6 +188,15 @@
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/tags/themes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>software</title>
+      <link>/tags/software/</link>
+      <pubDate>Fri, 11 Jan 2013 20:03:39 +0000</pubDate>
+      
+      <guid>/tags/software/</guid>
       <description></description>
     </item>
     

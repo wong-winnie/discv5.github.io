@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>btc on Hehaitao.vip</title>
+    <link>/tags/btc/</link>
+    <description>Recent content in btc on Hehaitao.vip</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 18 May 2019 09:03:39 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/btc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>BitcoinAPI中文</title>
+      <link>/post/bitcoinapi%E4%B8%AD%E6%96%87/</link>
+      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
+      
+      <guid>/post/bitcoinapi%E4%B8%AD%E6%96%87/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>eth on Hehaitao.vip</title>
+    <link>/tags/eth/</link>
+    <description>Recent content in eth on Hehaitao.vip</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 18 May 2019 09:03:39 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/eth/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>EthereumAPI中文</title>
+      <link>/post/ethereumapi%E4%B8%AD%E6%96%87/</link>
+      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
+      
+      <guid>/post/ethereumapi%E4%B8%AD%E6%96%87/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ETH交易所充币</title>
+      <link>/post/eth%E4%BA%A4%E6%98%93%E6%89%80%E5%85%85%E5%B8%81/</link>
+      <pubDate>Sat, 11 May 2019 18:05:49 +0000</pubDate>
+      
+      <guid>/post/eth%E4%BA%A4%E6%98%93%E6%89%80%E5%85%85%E5%B8%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ETH搭建私有链</title>
+      <link>/post/eth%E6%90%AD%E5%BB%BA%E7%A7%81%E6%9C%89%E9%93%BE/</link>
+      <pubDate>Mon, 06 May 2019 10:49:32 +0000</pubDate>
+      
+      <guid>/post/eth%E6%90%AD%E5%BB%BA%E7%A7%81%E6%9C%89%E9%93%BE/</guid>
+      <description>&lt;p&gt;以太坊私有链搭建，可以给想接触和玩的新手提供一个入门体验，你们真正感受下区块链的魅力。还有就是在测试环境中也可以的，以太坊主网数据同步始终都是一个硬伤，硬盘消耗太大而且国内同步一般很难完全实现的了，下面的文章就是为了更大家提供一定的方便，详细的讲解里面的步骤。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

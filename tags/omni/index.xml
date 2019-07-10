@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>omni on Hehaitao.vip</title>
+    <link>/tags/omni/</link>
+    <description>Recent content in omni on Hehaitao.vip</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 18 May 2019 09:03:39 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/omni/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>OmnicoreAPI中文</title>
+      <link>/post/omnicoreapi%E4%B8%AD%E6%96%87/</link>
+      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
+      
+      <guid>/post/omnicoreapi%E4%B8%AD%E6%96%87/</guid>
+      <description>&lt;p&gt;Omni Core是Bitcoin Core的一个分支，其Omni协议功能支持作为顶层的新功能层添加。因此，与API的交互以与Bitcoin Core相同的方式（JSON-RPC）完成，只需使用额外的RPC即可使用Omni协议功能。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>阅读与思考 on Hehaitao.vip</title>
+    <link>/categories/%E9%98%85%E8%AF%BB%E4%B8%8E%E6%80%9D%E8%80%83/</link>
+    <description>Recent content in 阅读与思考 on Hehaitao.vip</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 11 May 2019 15:23:18 +0000</lastBuildDate>
+    
+	<atom:link href="/categories/%E9%98%85%E8%AF%BB%E4%B8%8E%E6%80%9D%E8%80%83/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>为什么你应该写博客</title>
+      <link>/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E5%BA%94%E8%AF%A5%E5%86%99%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sat, 11 May 2019 15:23:18 +0000</pubDate>
+      
+      <guid>/post/%E4%B8%BA%E4%BB%80%E4%B9%88%E4%BD%A0%E5%BA%94%E8%AF%A5%E5%86%99%E5%8D%9A%E5%AE%A2/</guid>
+      <description>&lt;p&gt;用一句话来说就是，写一个博客有很多好处，却没有任何明显的坏处。（阿灵顿的情况属于例外，而非常态，就像不能拿抽烟活到一百岁的英国老太太的个例来反驳抽烟对健康的极大损伤一样）reussir-son-blog&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

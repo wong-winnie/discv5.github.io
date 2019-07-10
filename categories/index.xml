@@ -1,22 +1,67 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Hehaitao</title>
+    <title>Categories on Hehaitao.vip</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on Hehaitao</description>
+    <description>Recent content in Categories on Hehaitao.vip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 18 May 2019 09:03:39 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>区块链</title>
+      <link>/categories/%E5%8C%BA%E5%9D%97%E9%93%BE/</link>
+      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
+      
+      <guid>/categories/%E5%8C%BA%E5%9D%97%E9%93%BE/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>阅读与思考</title>
+      <link>/categories/%E9%98%85%E8%AF%BB%E4%B8%8E%E6%80%9D%E8%80%83/</link>
+      <pubDate>Sat, 11 May 2019 15:23:18 +0000</pubDate>
+      
+      <guid>/categories/%E9%98%85%E8%AF%BB%E4%B8%8E%E6%80%9D%E8%80%83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Development</title>
       <link>/categories/development/</link>
-      <pubDate>Mon, 16 Apr 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>面试</title>
+      <link>/categories/%E9%9D%A2%E8%AF%95/</link>
+      <pubDate>Thu, 11 Apr 2019 20:03:39 +0000</pubDate>
+      
+      <guid>/categories/%E9%9D%A2%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>运维</title>
+      <link>/categories/%E8%BF%90%E7%BB%B4/</link>
+      <pubDate>Fri, 03 Aug 2018 20:03:39 +0000</pubDate>
+      
+      <guid>/categories/%E8%BF%90%E7%BB%B4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>算法</title>
+      <link>/categories/%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Wed, 18 Apr 2018 10:44:15 +0000</pubDate>
+      
+      <guid>/categories/%E7%AE%97%E6%B3%95/</guid>
       <description></description>
     </item>
     
@@ -26,6 +71,24 @@
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>theme</title>
+      <link>/categories/theme/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/theme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>软件</title>
+      <link>/categories/%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Fri, 11 Jan 2013 20:03:39 +0000</pubDate>
+      
+      <guid>/categories/%E8%BD%AF%E4%BB%B6/</guid>
       <description></description>
     </item>
     

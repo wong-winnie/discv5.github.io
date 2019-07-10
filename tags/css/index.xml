@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>CSS on Hehaitao</title>
+    <title>CSS on Hehaitao.vip</title>
     <link>/tags/css/</link>
-    <description>Recent content in CSS on Hehaitao</description>
+    <description>Recent content in CSS on Hehaitao.vip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 16 Apr 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 11 May 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/css/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2018年度总结</title>
+      <link>/post/2018yearsummary/</link>
+      <pubDate>Sat, 11 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2018yearsummary/</guid>
+      <description>&lt;p&gt;现在来总结和审视2018年的工作和生活来的有点晚，但是又不得不这么做。要想有更好的发展或者一步步往前走就必须要清楚的计划和及时审视自己的目标有没有达到。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Basic HTML Elements</title>
