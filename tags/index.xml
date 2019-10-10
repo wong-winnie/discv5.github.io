@@ -6,10 +6,91 @@
     <description>Recent content in Tags on Hehaitao.vip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 06 Jul 2019 10:49:32 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>contract</title>
+      <link>/tags/contract/</link>
+      <pubDate>Thu, 15 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/contract/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>zookeeper</title>
+      <link>/tags/zookeeper/</link>
+      <pubDate>Mon, 12 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/zookeeper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>usdt</title>
+      <link>/tags/usdt/</link>
+      <pubDate>Sun, 11 Aug 2019 09:03:39 +0000</pubDate>
+      
+      <guid>/tags/usdt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>blockchain</title>
+      <link>/tags/blockchain/</link>
+      <pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/blockchain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>eth</title>
+      <link>/tags/eth/</link>
+      <pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/eth/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>/tags/docker/</link>
+      <pubDate>Tue, 06 Aug 2019 10:49:32 +0000</pubDate>
+      
+      <guid>/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ssh</title>
+      <link>/tags/ssh/</link>
+      <pubDate>Tue, 06 Aug 2019 10:49:32 +0000</pubDate>
+      
+      <guid>/tags/ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>article</title>
+      <link>/tags/article/</link>
+      <pubDate>Tue, 06 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/article/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>rpc</title>
+      <link>/tags/rpc/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/rpc/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>linux</title>
@@ -21,47 +102,11 @@
     </item>
     
     <item>
-      <title>btc</title>
-      <link>/tags/btc/</link>
-      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
+      <title>tidb</title>
+      <link>/tags/tidb/</link>
+      <pubDate>Sat, 06 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/btc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>omni</title>
-      <link>/tags/omni/</link>
-      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
-      
-      <guid>/tags/omni/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rpc</title>
-      <link>/tags/rpc/</link>
-      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
-      
-      <guid>/tags/rpc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>usdt</title>
-      <link>/tags/usdt/</link>
-      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
-      
-      <guid>/tags/usdt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>eth</title>
-      <link>/tags/eth/</link>
-      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/eth/</guid>
+      <guid>/tags/tidb/</guid>
       <description></description>
     </item>
     
@@ -122,7 +167,7 @@
     <item>
       <title>software</title>
       <link>/tags/software/</link>
-      <pubDate>Fri, 11 Jan 2013 20:03:39 +0000</pubDate>
+      <pubDate>Thu, 11 Jan 2018 20:03:39 +0000</pubDate>
       
       <guid>/tags/software/</guid>
       <description></description>

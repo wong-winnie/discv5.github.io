@@ -8,7 +8,9 @@
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<meta property="og:title" content="区块链技术" />
-<meta property="og:description" content="" />
+<meta property="og:description" content="Blog  鸟窝 Cosmin Harangus  杂文  [Building A Crypto Trading Platform] https://around25.com/blog/building-a-crypto-trading-platform-ethereum-wallet/ 3种优雅的Go channel用法 【虚拟货币钱包】从 BIP32、BIP39、BIP44 到 Ethereum HD Ｗallet 用 Go 编写一个简单的 WebSocket 推送服务 手把手教你使用Go基于zookeeper编写服务发现  Bitcoin USDT https://github.com/bitpay/insight https://github.com/OmniLayer/omnicore
+比特币RPC https://bitcoin.org/en/developer-reference
+ Omnilayer官网 区块链浏览器 JSON-RPC API insight比特币/USDT浏览器  Ethereum  Geth管理API文档 使用infura 提供的 API获取以太坊交易记录 以太坊go-ethereum签名部分源码解析 Python ethereum Examples Ethereum基础：交易和消息 Geth JSON RPC API Parity JSON RPC API go-ethereum-code-analysis  XRP EOS NANO Libra Libra 白皮书 https://libra." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/post/%E5%8C%BA%E5%9D%97%E9%93%BE%E6%8A%80%E6%9C%AF/" />
 <meta property="article:published_time" content="2018-07-10T00:00:00&#43;00:00"/>
@@ -16,7 +18,9 @@
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="区块链技术"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:description" content="Blog  鸟窝 Cosmin Harangus  杂文  [Building A Crypto Trading Platform] https://around25.com/blog/building-a-crypto-trading-platform-ethereum-wallet/ 3种优雅的Go channel用法 【虚拟货币钱包】从 BIP32、BIP39、BIP44 到 Ethereum HD Ｗallet 用 Go 编写一个简单的 WebSocket 推送服务 手把手教你使用Go基于zookeeper编写服务发现  Bitcoin USDT https://github.com/bitpay/insight https://github.com/OmniLayer/omnicore
+比特币RPC https://bitcoin.org/en/developer-reference
+ Omnilayer官网 区块链浏览器 JSON-RPC API insight比特币/USDT浏览器  Ethereum  Geth管理API文档 使用infura 提供的 API获取以太坊交易记录 以太坊go-ethereum签名部分源码解析 Python ethereum Examples Ethereum基础：交易和消息 Geth JSON RPC API Parity JSON RPC API go-ethereum-code-analysis  XRP EOS NANO Libra Libra 白皮书 https://libra."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -43,10 +47,13 @@
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/post/%E5%8D%9A%E5%AE%A2%E4%B8%BB%E9%9D%A2%E6%9D%BF/">博客主面板</a>
+			<a class="menu__link" href="/post/%E5%8D%9A%E5%AE%A2%E5%9C%B0%E5%9B%BE/">博客地图</a>
 		</li>
 		<li class="menu__item">
 			<a class="menu__link" href="/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">编程语言</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/">智能合约</a>
 		</li>
 		<li class="menu__item">
 			<a class="menu__link" href="/post/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/">程序人生</a>
@@ -65,6 +72,9 @@
 		</li>
 		<li class="menu__item">
 			<a class="menu__link" href="/post/%E8%BF%90%E7%BB%B4%E7%AC%94%E8%AE%B0/">运维笔记</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
 		</li>
 		<li class="menu__item">
 			<a class="menu__link" href="/about/">关于我的JOB</a>
@@ -91,11 +101,87 @@
 <div class="post__toc toc">
 	<div class="toc__title">Page content</div>
 	<div class="toc__menu">
-		
+		<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#blog">Blog</a></li>
+<li><a href="#杂文">杂文</a></li>
+<li><a href="#bitcoin">Bitcoin</a></li>
+<li><a href="#usdt">USDT</a></li>
+<li><a href="#ethereum">Ethereum</a></li>
+<li><a href="#xrp">XRP</a></li>
+<li><a href="#eos">EOS</a></li>
+<li><a href="#nano">NANO</a></li>
+<li><a href="#libra">Libra</a></li>
+</ul></li>
+</ul>
+</nav>
 	</div>
 </div>
 <div class="content post__content clearfix">
 			
+
+<h2 id="blog">Blog</h2>
+
+<ul>
+<li><a href="https://colobu.com/">鸟窝</a></li>
+<li><a href="https://github.com/cosmin-harangus?tab=repositories">Cosmin Harangus</a></li>
+</ul>
+
+<h2 id="杂文">杂文</h2>
+
+<ul>
+<li>[Building A Crypto Trading Platform] <a href="https://around25.com/blog/building-a-crypto-trading-platform-ethereum-wallet/">https://around25.com/blog/building-a-crypto-trading-platform-ethereum-wallet/</a></li>
+<li><a href="https://mzh.io/3%E7%A7%8D%E4%BC%98%E9%9B%85%E7%9A%84Go-channel%E7%94%A8%E6%B3%95">3种优雅的Go channel用法</a></li>
+<li><a href="https://www.jianshu.com/p/54a2b14dfdf2">【虚拟货币钱包】从 BIP32、BIP39、BIP44 到 Ethereum HD Ｗallet</a></li>
+<li><a href="https://juejin.im/post/5ac0e11f518825555e5dfd1c">用 Go 编写一个简单的 WebSocket 推送服务</a></li>
+<li><a href="https://juejin.im/post/5ab45e2751882510fd3f8d1e">手把手教你使用Go基于zookeeper编写服务发现</a></li>
+</ul>
+
+<h2 id="bitcoin">Bitcoin</h2>
+
+<h2 id="usdt">USDT</h2>
+
+<p><a href="https://github.com/bitpay/insight">https://github.com/bitpay/insight</a>
+<a href="https://github.com/OmniLayer/omnicore">https://github.com/OmniLayer/omnicore</a></p>
+
+<p>比特币RPC <a href="https://bitcoin.org/en/developer-reference">https://bitcoin.org/en/developer-reference</a></p>
+
+<ul>
+<li><a href="https://www.omnilayer.org/">Omnilayer官网</a></li>
+<li><a href="https://www.omniexplorer.info/">区块链浏览器</a></li>
+<li><a href="https://github.com/OmniLayer/omnicore/blob/master/src/omnicore/doc/rpc-api.md">JSON-RPC API</a></li>
+<li><a href="https://insight.bitpay.com/">insight比特币/USDT浏览器</a></li>
+</ul>
+
+<h2 id="ethereum">Ethereum</h2>
+
+<ul>
+<li><a href="http://cw.hubwiz.com/card/c/geth-rpc-api/">Geth管理API文档</a></li>
+<li><a href="https://blog.csdn.net/fangdengfu123/article/details/82621537">使用infura 提供的 API获取以太坊交易记录</a></li>
+<li><a href="https://www.cnblogs.com/gregoryli/p/8631450.html">以太坊go-ethereum签名部分源码解析</a></li>
+<li><a href="https://www.programcreek.com/python/example/99233/ethereum.transactions.Transaction">Python ethereum Examples</a></li>
+<li><a href="http://blog.luoyuanhang.com/2018/04/20/eth-basis-transaction-and-message/">Ethereum基础：交易和消息</a></li>
+<li><a href="https://github.com/ethereum/wiki/wiki/JSON-RPC#json-rpc-api">Geth JSON RPC API</a></li>
+<li><a href="https://wiki.parity.io/JSONRPC">Parity JSON RPC API</a></li>
+<li><a href="https://github.com/ZtesoftCS/go-ethereum-code-analysis">go-ethereum-code-analysis</a></li>
+</ul>
+
+<h2 id="xrp">XRP</h2>
+
+<h2 id="eos">EOS</h2>
+
+<h2 id="nano">NANO</h2>
+
+<h2 id="libra">Libra</h2>
+
+<p>Libra 白皮书
+<a href="https://libra.org/zh-CN/white-paper/?noredirect=zh-Hans-CN">https://libra.org/zh-CN/white-paper/?noredirect=zh-Hans-CN</a></p>
+
+<p>My First Transaction
+<a href="https://developers.libra.org/docs/my-first-transaction">https://developers.libra.org/docs/my-first-transaction</a></p>
+
 		</div>
 		
 	</article>
@@ -118,7 +204,7 @@
 		<a class="post-nav__link" href="/post/%E6%9E%B6%E6%9E%84%E5%B8%88%E4%B9%8B%E8%B7%AF/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">架构师之路</p></a>
 	</div>
 	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/post/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">程序人生</p></a>
+		<a class="post-nav__link" href="/post/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">人工智能</p></a>
 	</div>
 </nav>
 
@@ -137,16 +223,16 @@
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/%E6%9E%B6%E6%9E%84%E5%B8%88%E4%B9%8B%E8%B7%AF/zookeeper%E5%AE%A2%E6%88%B7%E7%AB%AF%E6%93%8D%E4%BD%9C/">zookeeper客户端操作</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/golang%E8%AF%AD%E8%A8%80%E5%AE%9E%E6%88%98/">Golang语言实战</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/omnicore%E7%AC%94%E8%AE%B0/">Omnicore笔记</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E6%95%99%E7%A8%8B/">以太坊教程</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/%E5%BC%80%E6%BA%90%E4%BA%A4%E6%98%93%E6%89%80/">开源交易所</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/%E6%90%AD%E5%BB%BA%E5%85%AC%E6%9C%89%E9%93%BE/">搭建公有链</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/linux%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C/">Linux操作手册</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/tidb%E4%BB%8B%E7%BB%8D/">TIDB介绍</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/%E8%BF%90%E7%BB%B4%E7%AC%94%E8%AE%B0/">运维笔记</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/bitcoinapi/">Bitcoin API</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/omnicoreapi/">Omnicore API</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/ethereumapi/">Ethereum API</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/eth%E4%BA%A4%E6%98%93%E6%89%80%E5%85%85%E5%B8%81/">ETH交易所充币</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/2018%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/">2018年度总结</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/eth%E6%90%AD%E5%BB%BA%E5%85%A8%E8%8A%82%E7%82%B9/">ETH搭建全节点</a></li>
 		</ul>
 	</div>
 </div>
@@ -156,6 +242,8 @@
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="/categories/%e4%b8%bb%e9%a2%98">主题</a></li>
 			<li class="widget__item"><a class="widget__link" href="/categories/%e5%8c%ba%e5%9d%97%e9%93%be">区块链</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/%e6%95%b0%e6%8d%ae%e5%ba%93">数据库</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/%e6%9e%b6%e6%9e%84%e5%b8%88">架构师</a></li>
 			<li class="widget__item"><a class="widget__link" href="/categories/%e7%ae%97%e6%b3%95">算法</a></li>
 			<li class="widget__item"><a class="widget__link" href="/categories/%e8%bd%af%e4%bb%b6">软件</a></li>
 			<li class="widget__item"><a class="widget__link" href="/categories/%e8%bf%90%e7%bb%b4">运维</a></li>
@@ -168,17 +256,20 @@
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
 		<a class="widget-taglist__link widget__link btn" href="/tags/bitcoin" title="Bitcoin">Bitcoin (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blockchain" title="Blockchain">Blockchain (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/btc" title="Btc">Btc (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/ecdh" title="Ecdh">Ecdh (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/eth" title="Eth">Eth (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/eth" title="Eth">Eth (5)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hugo" title="Hugo">Hugo (4)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/interview" title="Interview">Interview (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/linux" title="Linux">Linux (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/omni" title="Omni">Omni (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/omni" title="Omni">Omni (2)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/parity" title="Parity">Parity (1)</a>
-		<a class="widget-taglist__link widget__link btn" href="/tags/rpc" title="Rpc">Rpc (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rpc" title="Rpc">Rpc (3)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/software" title="Software">Software (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tidb" title="Tidb">Tidb (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/usdt" title="Usdt">Usdt (2)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/zookeeper" title="Zookeeper">Zookeeper (1)</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/%e6%80%bb%e7%bb%93" title="总结">总结 (1)</a>
 	</div>
 </div>

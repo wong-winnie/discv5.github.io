@@ -6,44 +6,35 @@
     <description>Recent content in eth on Hehaitao.vip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 18 May 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 10 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/eth/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Ethereum API</title>
-      <link>/post/ethereumapi/</link>
-      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
+      <title>以太坊教程</title>
+      <link>/post/%E5%8C%BA%E5%9D%97%E9%93%BE/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E6%95%99%E7%A8%8B/</link>
+      <pubDate>Sat, 10 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/ethereumapi/</guid>
-      <description></description>
+      <guid>/post/%E5%8C%BA%E5%9D%97%E9%93%BE/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E6%95%99%E7%A8%8B/</guid>
+      <description>&lt;p&gt;以太坊教程&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>ETH交易所充币</title>
-      <link>/post/eth%E4%BA%A4%E6%98%93%E6%89%80%E5%85%85%E5%B8%81/</link>
-      <pubDate>Sat, 11 May 2019 18:05:49 +0000</pubDate>
+      <title>Golang语言实战</title>
+      <link>/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang%E8%AF%AD%E8%A8%80%E5%AE%9E%E6%88%98/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/eth%E4%BA%A4%E6%98%93%E6%89%80%E5%85%85%E5%B8%81/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ETH搭建全节点</title>
-      <link>/post/eth%E6%90%AD%E5%BB%BA%E5%85%A8%E8%8A%82%E7%82%B9/</link>
-      <pubDate>Wed, 08 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/eth%E6%90%AD%E5%BB%BA%E5%85%A8%E8%8A%82%E7%82%B9/</guid>
-      <description></description>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang%E8%AF%AD%E8%A8%80%E5%AE%9E%E6%88%98/</guid>
+      <description>学习导航 Golang 时间和日期笔记 Golang float64，in64相互转换精度控制  Golang 浮点数操作  //将float64转成精确的int64 func Wrap(num float64, retain int) int64 { return int64(num * math.Pow10(retain)) } //将int64恢复成正常的float64 func Unwrap(num int64, retain int) float64 { return float64(num) / math.Pow10(retain) } //精准float64 func WrapToFloat64(num float64, retain int) float64 { return num * math.Pow10(retain) } //精准int64 func UnwrapToInt64(num int64, retain int) int64 { return int64(Unwrap(num, retain)) }  Golang 时间操作  Golang time 时间戳、日期字符串相互转化  package main import &amp;quot;time&amp;quot; import &amp;quot;fmt&amp;quot; //import &amp;quot;strconv&amp;quot; func main() { fmt.</description>
     </item>
     
     <item>
       <title>ETH搭建私有链</title>
-      <link>/post/eth%E6%90%AD%E5%BB%BA%E7%A7%81%E6%9C%89%E9%93%BE/</link>
+      <link>/post/%E5%8C%BA%E5%9D%97%E9%93%BE/eth%E6%90%AD%E5%BB%BA%E7%A7%81%E6%9C%89%E9%93%BE/</link>
       <pubDate>Mon, 06 May 2019 10:49:32 +0000</pubDate>
       
-      <guid>/post/eth%E6%90%AD%E5%BB%BA%E7%A7%81%E6%9C%89%E9%93%BE/</guid>
+      <guid>/post/%E5%8C%BA%E5%9D%97%E9%93%BE/eth%E6%90%AD%E5%BB%BA%E7%A7%81%E6%9C%89%E9%93%BE/</guid>
       <description>&lt;p&gt;以太坊私有链搭建，可以给想接触和玩的新手提供一个入门体验，你们真正感受下区块链的魅力。还有就是在测试环境中也可以的，以太坊主网数据同步始终都是一个硬伤，硬盘消耗太大而且国内同步一般很难完全实现的了，下面的文章就是为了更大家提供一定的方便，详细的讲解里面的步骤。&lt;/p&gt;</description>
     </item>
     

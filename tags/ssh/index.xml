@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ssh on Hehaitao.vip</title>
+    <link>/tags/ssh/</link>
+    <description>Recent content in ssh on Hehaitao.vip</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Tue, 06 Aug 2019 10:49:32 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/ssh/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>linux操作手册2</title>
+      <link>/post/%E8%BF%90%E7%BB%B4%E7%AC%94%E8%AE%B0/linux%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C2/</link>
+      <pubDate>Tue, 06 Aug 2019 10:49:32 +0000</pubDate>
+      
+      <guid>/post/%E8%BF%90%E7%BB%B4%E7%AC%94%E8%AE%B0/linux%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C2/</guid>
+      <description>centos安装基础工具 yum install net-tools.x86_64 # ifconfig  centos7安装docker https://www.cnblogs.com/yufeng218/p/8370670.html
+centos安装yapi https://www.jianshu.com/p/a97d2efb23c5
+centos安装gogs https://www.jianshu.com/p/2a7acb07b352
+linux远程ssh服务器 pem文件授权
+ chmod -R 400 *.pem
+ 脚本代码
+ chmod -R 755 *.sh
+ #/bin/bash #Verson:0.1 #Auther:lovelace #Pragram:This pragram is calculation your grade #import an argument echo -e &#39; [1 block1 ssh] 13.125.218.23 \n [11 block1 sftp] 13.125.218.23 \n [2 n1 ssh] 54.180.128.157 \n [22 n1 sftp] 54.180.128.157 \n [3 n3 ssh] 13.124.131.227 \n [33 n3 sftp] 13.</description>
+    </item>
+    
+  </channel>
+</rss>

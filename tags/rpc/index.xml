@@ -6,27 +6,18 @@
     <description>Recent content in rpc on Hehaitao.vip</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 18 May 2019 09:03:39 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/tags/rpc/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Bitcoin API</title>
-      <link>/post/bitcoinapi/</link>
-      <pubDate>Sat, 18 May 2019 09:03:39 +0000</pubDate>
+      <title>Golang语言实战</title>
+      <link>/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang%E8%AF%AD%E8%A8%80%E5%AE%9E%E6%88%98/</link>
+      <pubDate>Wed, 17 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>/post/bitcoinapi/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ethereum API</title>
-      <link>/post/ethereumapi/</link>
-      <pubDate>Sat, 18 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/post/ethereumapi/</guid>
-      <description></description>
+      <guid>/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang%E8%AF%AD%E8%A8%80%E5%AE%9E%E6%88%98/</guid>
+      <description>学习导航 Golang 时间和日期笔记 Golang float64，in64相互转换精度控制  Golang 浮点数操作  //将float64转成精确的int64 func Wrap(num float64, retain int) int64 { return int64(num * math.Pow10(retain)) } //将int64恢复成正常的float64 func Unwrap(num int64, retain int) float64 { return float64(num) / math.Pow10(retain) } //精准float64 func WrapToFloat64(num float64, retain int) float64 { return num * math.Pow10(retain) } //精准int64 func UnwrapToInt64(num int64, retain int) int64 { return int64(Unwrap(num, retain)) }  Golang 时间操作  Golang time 时间戳、日期字符串相互转化  package main import &amp;quot;time&amp;quot; import &amp;quot;fmt&amp;quot; //import &amp;quot;strconv&amp;quot; func main() { fmt.</description>
     </item>
     
   </channel>

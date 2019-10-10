@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>linux操作手册2 - Hehaitao.vip</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+	<meta property="og:title" content="linux操作手册2" />
+<meta property="og:description" content="centos安装基础工具 yum install net-tools.x86_64 # ifconfig  centos7安装docker https://www.cnblogs.com/yufeng218/p/8370670.html
+centos安装yapi https://www.jianshu.com/p/a97d2efb23c5
+centos安装gogs https://www.jianshu.com/p/2a7acb07b352
+linux远程ssh服务器 pem文件授权
+ chmod -R 400 *.pem
+ 脚本代码
+ chmod -R 755 *.sh
+ #/bin/bash #Verson:0.1 #Auther:lovelace #Pragram:This pragram is calculation your grade #import an argument echo -e &#39; [1 block1 ssh] 13.125.218.23 \n [11 block1 sftp] 13.125.218.23 \n [2 n1 ssh] 54.180.128.157 \n [22 n1 sftp] 54.180.128.157 \n [3 n3 ssh] 13.124.131.227 \n [33 n3 sftp] 13." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/post/%E8%BF%90%E7%BB%B4%E7%AC%94%E8%AE%B0/linux%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C2/" />
+<meta property="article:published_time" content="2019-08-06T10:49:32&#43;00:00"/>
+<meta property="article:modified_time" content="2019-08-06T10:49:32&#43;00:00"/>
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="linux操作手册2"/>
+<meta name="twitter:description" content="centos安装基础工具 yum install net-tools.x86_64 # ifconfig  centos7安装docker https://www.cnblogs.com/yufeng218/p/8370670.html
+centos安装yapi https://www.jianshu.com/p/a97d2efb23c5
+centos安装gogs https://www.jianshu.com/p/2a7acb07b352
+linux远程ssh服务器 pem文件授权
+ chmod -R 400 *.pem
+ 脚本代码
+ chmod -R 755 *.sh
+ #/bin/bash #Verson:0.1 #Auther:lovelace #Pragram:This pragram is calculation your grade #import an argument echo -e &#39; [1 block1 ssh] 13.125.218.23 \n [11 block1 sftp] 13.125.218.23 \n [2 n1 ssh] 54.180.128.157 \n [22 n1 sftp] 54.180.128.157 \n [3 n3 ssh] 13.124.131.227 \n [33 n3 sftp] 13."/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	<link rel="stylesheet" href="/css/custom.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="Hehaitao.vip" rel="home">
+				<div class="logo__title">Hehaitao.vip</div>
+				<div class="logo__tagline">Nothing Is Impossible</div>
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/post/%E9%A6%96%E9%A1%B5/">首页</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/">编程语言</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/">程序人生</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/%E6%9E%B6%E6%9E%84%E5%B8%88/">架构师</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/%E5%8C%BA%E5%9D%97%E9%93%BE/">区块链</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/%E8%BF%90%E7%BB%B4%E7%AC%94%E8%AE%B0/">运维笔记</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD/">人工智能</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/about/">关于我的JOB</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">linux操作手册2</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2019-08-06T10:49:32">August 06, 2019</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/%e8%bf%90%e7%bb%b4%e7%ac%94%e8%ae%b0" rel="category">运维笔记</a></span>
+</div>
+</div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#centos安装基础工具">centos安装基础工具</a>
+<ul>
+<li><a href="#centos7安装docker">centos7安装docker</a></li>
+<li><a href="#centos安装yapi">centos安装yapi</a></li>
+<li><a href="#centos安装gogs">centos安装gogs</a></li>
+</ul></li>
+<li><a href="#linux远程ssh服务器">linux远程ssh服务器</a></li>
+<li><a href="#nginx配置重定向和转发-跨域问题解决">nginx配置重定向和转发,跨域问题解决</a></li>
+<li><a href="#nginx配置多个vue项目">nginx配置多个vue项目</a></li>
+</ul></li>
+<li><a href="#vim常用命令">vim常用命令</a></li>
+<li><a href="#查看centos版本">查看centos版本</a></li>
+<li><a href="#查看连接数命令">查看连接数命令</a></li>
+<li><a href="#基础命令操作">基础命令操作</a></li>
+<li><a href="#删除远程分支">删除远程分支</a></li>
+<li><a href="#合并分支">合并分支：</a></li>
+<li><a href="#全局配置">全局配置</a></li>
+<li><a href="#快捷键命令">快捷键命令</a></li>
+<li><a href="#git自动补全设置">Git自动补全设置</a>
+<ul>
+<li>
+<ul>
+<li><a href="#lnmp-nginx常用rewrite-伪静态规则">LNMP/Nginx常用Rewrite(伪静态规则)</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+	</div>
+</div>
+<div class="content post__content clearfix">
+			
+
+<h2 id="centos安装基础工具">centos安装基础工具</h2>
+
+<pre><code>yum install net-tools.x86_64   # ifconfig
+
+
+</code></pre>
+
+<h3 id="centos7安装docker">centos7安装docker</h3>
+
+<p><a href="https://www.cnblogs.com/yufeng218/p/8370670.html">https://www.cnblogs.com/yufeng218/p/8370670.html</a></p>
+
+<h3 id="centos安装yapi">centos安装yapi</h3>
+
+<p><a href="https://www.jianshu.com/p/a97d2efb23c5">https://www.jianshu.com/p/a97d2efb23c5</a></p>
+
+<h3 id="centos安装gogs">centos安装gogs</h3>
+
+<p><a href="https://www.jianshu.com/p/2a7acb07b352">https://www.jianshu.com/p/2a7acb07b352</a></p>
+
+<h2 id="linux远程ssh服务器">linux远程ssh服务器</h2>
+
+<p>pem文件授权</p>
+
+<blockquote>
+<p>chmod -R 400 *.pem</p>
+</blockquote>
+
+<p>脚本代码</p>
+
+<blockquote>
+<p>chmod -R 755 *.sh</p>
+</blockquote>
+
+<pre><code>#/bin/bash
+#Verson:0.1
+#Auther:lovelace
+#Pragram:This pragram is calculation your grade
+#import an argument
+echo -e '
+[1 block1 ssh] 13.125.218.23 \n [11 block1 sftp] 13.125.218.23 \n
+ [2 n1 ssh] 54.180.128.157 \n [22 n1 sftp]  54.180.128.157 \n 
+[3 n3 ssh] 13.124.131.227 \n [33 n3 sftp]  13.124.131.227 \n'
+
+read -p &quot;Please input your number:  &quot; x
+declare -i x
+#jugemet $x value is none or not
+if [ &quot;$x&quot; == &quot;&quot; ];then
+    echo &quot;You don't input your number....&quot;
+    exit 5
+fi
+#jugement the gread level  
+if [[ &quot;$x&quot; -eq &quot;1&quot; ]];then
+    sudo ssh -i ./pem/blockchain1.pem root@13.125.218.23
+elif [[ &quot;$x&quot; -eq &quot;11&quot; ]];then
+    sudo sftp  -i ./pem/blockchain1.pem root@13.125.218.23
+elif [[ &quot;$x&quot; -eq &quot;2&quot; ]];then
+    sudo ssh  -i ./pem/buisiness1.pem centos@54.180.128.157
+elif [[ &quot;$x&quot; -eq &quot;22&quot; ]];then
+    sudo sftp  -i ./pem/buisiness1.pem centos@54.180.128.157
+elif [[ &quot;$x&quot; -eq &quot;3&quot; ]];then
+    sudo ssh  -i ./pem/buisiness1.pem centos@13.124.131.227
+elif [[ &quot;$x&quot; -eq &quot;33&quot; ]];then
+    sudo sftp  -i ./pem/buisiness1.pem centos@13.124.131.227
+else
+    echo &quot;Unknow argument....&quot;
+fi
+
+
+</code></pre>
+
+<h2 id="nginx配置重定向和转发-跨域问题解决">nginx配置重定向和转发,跨域问题解决</h2>
+
+<p>配置如下</p>
+
+<pre><code>server {
+        listen       8090;
+        server_name  127.0.0.1;
+        location /{
+              root /home/tomcat/font/dist;
+              index index.html login.html login.htm;
+              try_files $uri $uri/ /index.html;
+              add_header 'Access-Control-Allow-Origin' '*';
+              add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
+              add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range';
+              add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range';
+ 
+        }
+ 
+        location ^~/server_context/history/ {
+              rewrite ^/server_context/history/(.*) /server_context/$1 break;
+              proxy_pass http://127.0.0.1:8030;
+        }
+ 
+          location ^~/server_context/ {
+              proxy_pass http://127.0.0.1:8040/server_context/;
+            
+        }
+}
+
+</code></pre>
+
+<h2 id="nginx配置多个vue项目">nginx配置多个vue项目</h2>
+
+<p>需求</p>
+
+<ul>
+<li>blog: <a href="https://www.yoursite.com/blog">https://www.yoursite.com/blog</a></li>
+<li>test: <a href="https://www.yoursite.com/test">https://www.yoursite.com/test</a></li>
+</ul>
+
+<p>vue项目中配置</p>
+
+<pre><code>vue-router 设置 base 路径
+config/index.js 修改 assetsPublicPath
+assetsPublicPath: '/blog/'
+</code></pre>
+
+<p>nginx配置</p>
+
+<pre><code>location /blog {
+  try_files $uri $uri/ /blog/index.html;
+}
+</code></pre>
+
+<p>参考地址：<a href="https://segmentfault.com/a/1190000014464699">https://segmentfault.com/a/1190000014464699</a></p>
+
+<h1 id="vim常用命令">vim常用命令</h1>
+
+<p>set smartcase # 设置大小写敏感
+:%s/foo/bar/g # 会在全局范围(%)查找foo并替换为bar，所有出现都会被替换（g）</p>
+
+<h1 id="查看centos版本">查看centos版本</h1>
+
+<p>cat /etc/redhat-release
+cat /proc/version</p>
+
+<h1 id="查看连接数命令">查看连接数命令</h1>
+
+<p>netstat -ant |grep &lsquo;ESTABLISHED&rsquo; | awk &lsquo;{print $4}&rsquo; | grep -i &ldquo;6665&rdquo; | wc -l</p>
+
+<p>Git操作命令</p>
+
+<h1 id="基础命令操作">基础命令操作</h1>
+
+<p>ssh-keygen #产生公私钥
+git status #查看状态
+git branch -a #查看分支列表
+git pull #拉取代码
+git reset &ndash;hard #回滚本地未提交的修改
+git reset &ndash;hard 665424f7dbf #回滚到指定版本
+git checkout -b fea_clock #创建新分支并切换
+git add -A / . #添加全部修改
+git commit -m &ldquo;add&rdquo; #提交修改
+git push origin master #提交到master分支
+git checkout fea_clock #切换到fea_clock分支
+git merge fea_clock
+git checkout a.cpp #回退修改的文件
+git cherry-pick  665424f7dbf # 合并某个提交
+git remote -v     #查看当前git路径</p>
+
+<h1 id="删除远程分支">删除远程分支</h1>
+
+<p>git rebase &ndash;abort # 终止rebase错误
+git push origin :fea_bug
+git remote prune origin
+git branch -D fea_bug</p>
+
+<h1 id="合并分支">合并分支：</h1>
+
+<p>git branch -a
+git checkout fea_clock
+git add .
+git commit -m &ldquo;update&rdquo;</p>
+
+<p>git rebase develop 或者
+git rebase -i 665424f7dbf</p>
+
+<p>git checkout develop
+git merge fea_clock
+git push origin develop</p>
+
+<h1 id="全局配置">全局配置</h1>
+
+<p>git config &ndash;global user.name &ldquo;ht_927&rdquo;
+git config &ndash;global user.email &ldquo;ht_927@126.com&rdquo;</p>
+
+<h1 id="快捷键命令">快捷键命令</h1>
+
+<p>git config &ndash;global alias.tr &ldquo;log &ndash;graph &ndash;decorate &ndash;pretty=format:&lsquo;%h -%C(red)%d%Creset %s (%Cblue%cn%Creset %ci &ndash; %cr)&rsquo; &ndash;abbrev-commit&rdquo;</p>
+
+<h1 id="git自动补全设置">Git自动补全设置</h1>
+
+<pre><code>1. 
+</code></pre>
+
+<p>下载git-completion.bash 并放到home 目录下：</p>
+
+<p>curl <a href="https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash">https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash</a> -o ~/.git-completion.bash
+    1.
+将如下行放到.bash_profile 文件中</p>
+
+<p>if [ -f ~/.git-completion.bash ]; then
+. ~/.git-completion.bash
+fi
+    1.
+将其立即生效：</p>
+
+<p>source ~/.bash_profile
+    1.
+此时就可以代码补全了，比如我要切换到某个branch，则只需要输入git branch 然后按「TAB」键即可选则需要的branch分支了。</p>
+
+<p>Docker 操作指南</p>
+
+<p>docker-compose -f docker-compose-peer.yaml up -d</p>
+
+<p>1.停止所有的container，这样才能够删除其中的images：</p>
+
+<p>docker stop $(docker ps -a -q)</p>
+
+<p>如果想要删除所有container的话再加一个指令：</p>
+
+<p>docker rm $(docker ps -a -q)</p>
+
+<p>连停带删一起来
+docker rm -f $(docker ps -aq)</p>
+
+<p>查看docker容器：
+docker ps -a</p>
+
+<p>重启docker容器：
+docker restart c4f5e1aa05a8</p>
+
+<p>进入docker里面：
+docker exec -it c4f5e1aa05a8 /bin/bash</p>
+
+<p>2.查看当前有些什么images</p>
+
+<p>docker images</p>
+
+<p>3.删除images，通过image的id来指定删除谁</p>
+
+<p>docker rmi <image id></p>
+
+<p>想要删除untagged images，也就是那些id为<None>的image的话可以用</p>
+
+<p>docker rmi $(docker images | grep &ldquo;^<none>&rdquo; | awk &ldquo;{print $3}&rdquo;)</p>
+
+<p>要删除全部image的话</p>
+
+<p>docker rmi $(docker images -q)</p>
+
+<p>sudo docker export 7691a814370e &gt; ubuntu.tar</p>
+
+<p>docker安装软件</p>
+
+<p>docker pull mysql
+docker run -p 3306:3306 &ndash;name mysql -v ~/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:
+docker  exec -i -t 3bb555abd8ab /bin/bash</p>
+
+<p>docker pull redis
+docker run -d &ndash;name redis -p 6379:6379 redis
+docker exec -i -t redis /bin/bash</p>
+
+<p>docker pull nginx</p>
+
+<h3 id="lnmp-nginx常用rewrite-伪静态规则">LNMP/Nginx常用Rewrite(伪静态规则)</h3>
+
+<p>相信现在大部分用Linux VPS的朋友都在使用这个迅速传播的Nginx或LNMP一键安装包（lnmp安装包已经自带了下面大部分伪静态规则），Nginx和Apache的伪静态是不一样的，今天就整理一下最常见的PHP程序的nginx Rewrite(伪静态规则)。目前已收集Wordpress、Wordpress二级目录、Discuz、Discuz X、PHPWind、Typecho、codeiginiter/thinkphp/laravel/yii2框架、drupal、DEDECMS、PHPCMS、ECSHOP、ShopEX、SaBlog：
+WordPress：</p>
+
+<pre><code>location / {
+try_files $uri $uri/ /index.php?$args;
+}
+
+# Add trailing slash to */wp-admin requests.
+rewrite /wp-admin$ $scheme://$host$uri/ permanent;
+WordPress在二级目录：
+
+location /wp/ {
+try_files $uri $uri/ /wp/index.php?$args;
+}
+
+# Add trailing slash to */wp-admin requests.
+rewrite /wp-admin$ $scheme://$host$uri/ permanent;
+
+</code></pre>
+
+<p>里面的wp改成你的二级目录名称
+Discuz：</p>
+
+<p>location / {
+rewrite ^/archiver/((fid|tid)-[\w-]+.html)$ /archiver/index.php?$1 last;
+rewrite ^/forum-([0-9]+)-([0-9]+).html$ /forumdisplay.php?fid=$1&amp;page=$2 last;
+rewrite ^/thread-([0-9]+)-([0-9]+)-([0-9]+).html$ /viewthread.php?tid=$1&amp;extra=page%3D$3&amp;page=$2 last;
+rewrite ^/space-(username|uid)-(.+).html$ /space.php?$1=$2 last;
+rewrite ^/tag-(.+).html$ /tag.php?name=$1 last;
+}
+Discuz X：</p>
+
+<p>rewrite ^([^.]<em>)/topic-(.+).html$ $1/portal.php?mod=topic&amp;topic=$2 last;
+rewrite ^([^.]</em>)/article-([0-9]+)-([0-9]+).html$ $1/portal.php?mod=view&amp;aid=$2&amp;page=$3 last;
+rewrite ^([^.]<em>)/forum-(\w+)-([0-9]+).html$ $1/forum.php?mod=forumdisplay&amp;fid=$2&amp;page=$3 last;
+rewrite ^([^.]</em>)/thread-([0-9]+)-([0-9]+)-([0-9]+).html$ $1/forum.php?mod=viewthread&amp;tid=$2&amp;extra=page%3D$4&amp;page=$3 last;
+rewrite ^([^.]<em>)/group-([0-9]+)-([0-9]+).html$ $1/forum.php?mod=group&amp;fid=$2&amp;page=$3 last;
+rewrite ^([^.]</em>)/space-(username|uid)-(.+).html$ $1/home.php?mod=space&amp;$2=$3 last;
+rewrite ^([^.]<em>)/blog-([0-9]+)-([0-9]+).html$ $1/home.php?mod=space&amp;uid=$2&amp;do=blog&amp;id=$3 last;
+rewrite ^([^.]</em>)/(fid|tid)-([0-9]+).html$ $1/index.php?action=$2&amp;value=$3 last;
+rewrite ^([^.]<em>)/([a-z]+[a-z0-9_]</em>)-([a-z0-9_-]+).html$ $1/plugin.php?id=$2:$3 last;
+if (!-e $request_filename) {
+return 404;
+}</p>
+
+<p>Discz X在二级目录下运行：
+location /bbs/ {
+rewrite ^([^.]<em>)/topic-(.+).html$ $1/portal.php?mod=topic&amp;topic=$2 last;
+rewrite ^([^.]</em>)/article-([0-9]+)-([0-9]+).html$ $1/portal.php?mod=view&amp;aid=$2&amp;page=$3 last;
+rewrite ^([^.]<em>)/forum-(\w+)-([0-9]+).html$ $1/forum.php?mod=forumdisplay&amp;fid=$2&amp;page=$3 last;
+rewrite ^([^.]</em>)/thread-([0-9]+)-([0-9]+)-([0-9]+).html$ $1/forum.php?mod=viewthread&amp;tid=$2&amp;extra=page%3D$4&amp;page=$3 last;
+rewrite ^([^.]<em>)/group-([0-9]+)-([0-9]+).html$ $1/forum.php?mod=group&amp;fid=$2&amp;page=$3 last;
+rewrite ^([^.]</em>)/space-(username|uid)-(.+).html$ $1/home.php?mod=space&amp;$2=$3 last;
+rewrite ^([^.]<em>)/blog-([0-9]+)-([0-9]+).html$ $1/home.php?mod=space&amp;uid=$2&amp;do=blog&amp;id=$3 last;
+rewrite ^([^.]</em>)/(fid|tid)-([0-9]+).html$ $1/index.php?action=$2&amp;value=$3 last;
+rewrite ^([^.]<em>)/([a-z]+[a-z0-9_]</em>)-([a-z0-9_-]+).html$ $1/plugin.php?id=$2:$3 last;
+if (!-e $request_filename) {
+return 404;
+}
+}
+上面bbs更改为自己的二级目录名
+Typecho：</p>
+
+<p>if (!-e $request_filename) {
+rewrite ^(.*)$ /index.php$1 last;
+}</p>
+
+<p>Typecho在二级目录下运行：
+location /typecho/ {
+if (!-e $request_filename) {
+rewrite ^(.*)$ /typecho/index.php$1 last;
+}
+}
+PHPWind：</p>
+
+<p>location / {
+rewrite ^(.<em>)-htm-(.</em>)$ $1.php?$2 last;
+rewrite ^(.*)/simple/([a-z0-9_]+.html)$ $1/simple/index.php?$2 last;
+}</p>
+
+<p>：
+codeigniter框架：
+location / {
+try_files $uri $uri/ /index.php;
+}
+thinkphp框架：
+location / {
+if (!-e $request_filename) {
+rewrite ^(.*)$ /index.php?s=/$1 last;
+break;
+}
+}
+laravel框架：
+location / {
+try_files $uri $uri/ /index.php?$query_string;
+}
+yii2框架：
+location / {
+try_files $uri $uri/ /index.php$is_args$args;
+}</p>
+
+<p>drupal：
+if (!-e $request_filename) {
+rewrite ^/(.*)$ /index.php?q=$1 last;
+}</p>
+
+<p>joomla：
+location / {
+try_files $uri $uri/ /index.php?$args;
+}</p>
+
+<p>PHPCMS：
+location / {
+rewrite ^/caipu-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?m=content&amp;c=index&amp;a=show&amp;catid=$1&amp;id=$2&amp;page=$3 last;
+rewrite ^/content-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?m=content&amp;c=index&amp;a=show&amp;catid=$1&amp;id=$2&amp;page=$3 last;
+rewrite ^/list-([0-9]+)-([0-9]+).html /index.php?m=content&amp;c=index&amp;a=lists&amp;catid=$1&amp;page=$2 last;
+rewrite ^/tag-([^.]<em>)-([0-9]+)-([0-9]+).html /index.php?m=content&amp;c=tag&amp;catid=$2&amp;tag=$1&amp;page=$3 last;
+rewrite ^/comment-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?m=comment&amp;c=index&amp;a=init&amp;commentid=content_$1-$2-$3 last;
+rewrite ^/([^.]</em>).html /index.php?m=member&amp;c=index&amp;a=$1 last;
+}
+ECSHOP：</p>
+
+<p>if (!-e $request_filename)
+{
+rewrite &ldquo;^/index.html&rdquo; /index.php last;
+rewrite &ldquo;^/category$&rdquo; /index.php last;
+rewrite &ldquo;^/feed-c([0-9]+).xml$&rdquo; /feed.php?cat=$1 last;
+rewrite &ldquo;^/feed-b([0-9]+).xml$&rdquo; /feed.php?brand=$1 last;
+rewrite &ldquo;^/feed.xml$&rdquo; /feed.php last;
+rewrite &ldquo;^/category-([0-9]+)-b([0-9]+)-min([0-9]+)-max([0-9]+)-attr([^-]<em>)-([0-9]+)-(.+)-([a-zA-Z]+)(.</em>).html$&rdquo; /category.php?id=$1&amp;brand=$2&amp;price_min=$3&amp;price_max=$4&amp;filter_attr=$5&amp;page=$6&amp;sort=$7&amp;order=$8 last;
+rewrite &ldquo;^/category-([0-9]+)-b([0-9]+)-min([0-9]+)-max([0-9]+)-attr([^-]<em>)(.</em>).html$&rdquo; /category.php?id=$1&amp;brand=$2&amp;price_min=$3&amp;price_max=$4&amp;filter_attr=$5 last;
+rewrite &ldquo;^/category-([0-9]+)-b([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.<em>).html$&rdquo; /category.php?id=$1&amp;brand=$2&amp;page=$3&amp;sort=$4&amp;order=$5 last;
+rewrite &ldquo;^/category-([0-9]+)-b([0-9]+)-([0-9]+)(.</em>).html$&rdquo; /category.php?id=$1&amp;brand=$2&amp;page=$3 last;
+rewrite &ldquo;^/category-([0-9]+)-b([0-9]+)(.<em>).html$&rdquo; /category.php?id=$1&amp;brand=$2 last;
+rewrite &ldquo;^/category-([0-9]+)(.</em>).html$&rdquo; /category.php?id=$1 last;
+rewrite &ldquo;^/goods-([0-9]+)(.<em>).html&rdquo; /goods.php?id=$1 last;
+rewrite &ldquo;^/article_cat-([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.</em>).html$&rdquo; /article_cat.php?id=$1&amp;page=$2&amp;sort=$3&amp;order=$4 last;
+rewrite &ldquo;^/article_cat-([0-9]+)-([0-9]+)(.<em>).html$&rdquo; /article_cat.php?id=$1&amp;page=$2 last;
+rewrite &ldquo;^/article_cat-([0-9]+)(.</em>).html$&rdquo; /article_cat.php?id=$1 last;
+rewrite &ldquo;^/article-([0-9]+)(.<em>).html$&rdquo; /article.php?id=$1 last;
+rewrite &ldquo;^/brand-([0-9]+)-c([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+).html&rdquo; /brand.php?id=$1&amp;cat=$2&amp;page=$3&amp;sort=$4&amp;order=$5 last;
+rewrite &ldquo;^/brand-([0-9]+)-c([0-9]+)-([0-9]+)(.</em>).html&rdquo; /brand.php?id=$1&amp;cat=$2&amp;page=$3 last;
+rewrite &ldquo;^/brand-([0-9]+)-c([0-9]+)(.<em>).html&rdquo; /brand.php?id=$1&amp;cat=$2 last;
+rewrite &ldquo;^/brand-([0-9]+)(.</em>).html&rdquo; /brand.php?id=$1 last;
+rewrite &ldquo;^/tag-(.<em>).html&rdquo; /search.php?keywords=$1 last;
+rewrite &ldquo;^/snatch-([0-9]+).html$&rdquo; /snatch.php?id=$1 last;
+rewrite &ldquo;^/group_buy-([0-9]+).html$&rdquo; /group_buy.php?act=view&amp;id=$1 last;
+rewrite &ldquo;^/auction-([0-9]+).html$&rdquo; /auction.php?act=view&amp;id=$1 last;
+rewrite &ldquo;^/exchange-id([0-9]+)(.</em>).html$&rdquo; /exchange.php?id=$1&amp;act=view last;
+rewrite &ldquo;^/exchange-([0-9]+)-min([0-9]+)-max([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.<em>).html$&rdquo; /exchange.php?cat_id=$1&amp;integral_min=$2&amp;integral_max=$3&amp;page=$4&amp;sort=$5&amp;order=$6 last;
+rewrite ^/exchange-([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.</em>).html$&rdquo; /exchange.php?cat_id=$1&amp;page=$2&amp;sort=$3&amp;order=$4 last;
+rewrite &ldquo;^/exchange-([0-9]+)-([0-9]+)(.<em>).html$&rdquo; /exchange.php?cat_id=$1&amp;page=$2 last;
+rewrite &ldquo;^/exchange-([0-9]+)(.</em>).html$&rdquo; /exchange.php?cat_id=$1 last;
+}
+SHOPEX：</p>
+
+<p>location / {
+if (!-e $request_filename) {
+rewrite ^/(.+.(html|xml|json|htm|php|jsp|asp|shtml))$ /index.php?$1 last;
+}
+}
+SaBlog 2.0：(感谢追寻36[正冰]博客提供)</p>
+
+<pre><code># 只带月份的归档
+rewrite &quot;^/date/([0-9]{6})/?([0-9]+)?/?$&quot; /index.php?action=article&amp;setdate=$1&amp;page=$2 last;
+# 无分类翻页
+rewrite ^/page/([0-9]+)?/?$ /index.php?action=article&amp;page=$1 last;
+# 分类
+rewrite ^/category/([0-9]+)/?([0-9]+)?/?$ /index.php?action=article&amp;cid=$1&amp;page=$2 last;
+rewrite ^/category/([^/]+)/?([0-9]+)?/?$ /index.php?action=article&amp;curl=$1&amp;page=$2 last;
+# 归档、高级搜索
+rewrite ^/(archives|search|article|links)/?$ /index.php?action=$1 last;
+# 全部评论、标签列表、引用列表 带分页
+rewrite ^/(comments|tagslist|trackbacks|article)/?([0-9]+)?/?$ /index.php?action=$1&amp;page=$2 last;
+# tags
+rewrite ^/tag/([^/]+)/?([0-9]+)?/?$ /index.php?action=article&amp;item=$1&amp;page=$2 last;
+# 文章
+rewrite ^/archives/([0-9]+)/?([0-9]+)?/?$ /index.php?action=show&amp;id=$1&amp;page=$2 last;
+# RSS rewrite ^/rss/([0-9]+)?/?$ /rss.php?cid=$1 last;
+rewrite ^/rss/([^/]+)/?$ /rss.php?url=$1 last;
+# 用户 rewrite ^/uid/([0-9]+)/?([0-9]+)?/?$ /index.php?action=article&amp;uid=$1&amp;page=$2 last;
+rewrite ^/user/([^/]+)/?([0-9]+)?/?$ /index.php?action=article&amp;user=$1&amp;page=$2 last;
+# 地图文件
+rewrite sitemap.xml sitemap.php last;
+# 自定义链接
+rewrite ^(.*)/([0-9a-zA-Z\-\_]+)/?([0-9]+)?/?$ $1/index.php?action=show&amp;alias=$2&amp;page=$3 last;
+DEDECMS：
+
+location / {
+rewrite &quot;^/index.html$&quot; /index.php last;
+rewrite &quot;^/list-([0-9]+)\.html$&quot; /plus/list.php?tid=$1 last;
+rewrite &quot;^/list-([0-9]+)-([0-9]+)-([0-9]+)\.html$&quot; /plus/list.php?tid=$1&amp;totalresult=$2&amp;PageNo=$3 last;
+rewrite &quot;^/view-([0-9]+)-1\.html$&quot; /plus/view.php?arcID=$1 last;
+rewrite &quot;^/view-([0-9]+)-([0-9]+)\.html$&quot; /plus/view.php?aid=$1&amp;pageno=$2 last;
+rewrite &quot;^/tags.html$&quot; /tags.php last;
+rewrite &quot;^/tag-([0-9]+)-([0-9]+)\.html$&quot; /tags.php?/$1/$2/ last;
+break;
+}
+
+</code></pre>
+
+		</div>
+		
+<div class="post__tags tags clearfix">
+	<svg class="tags__icon icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/ssh/" rel="tag">ssh</a></li>
+	</ul>
+</div>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="John Doe avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About John Doe</span>
+	</div>
+	<div class="authorbox__description">
+		John Doe&#39;s true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E5%88%A9%E7%94%A8%E6%97%B6%E9%97%B4%E7%9A%84/" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">你是怎么利用时间的</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/%E8%BF%90%E7%BB%B4%E7%AC%94%E8%AE%B0/docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">docker学习笔记</p></a>
+	</div>
+</nav>
+
+
+			</div>
+			<aside class="sidebar"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<label>
+			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
+		</label>
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="/" />
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/%E5%8C%BA%E5%9D%97%E9%93%BE/%E6%99%BA%E8%83%BD%E5%90%88%E7%BA%A6/">智能合约</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/%E6%9E%B6%E6%9E%84%E5%B8%88/zookeeper%E6%95%99%E7%A8%8B/">zookeeper教程</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/%E5%8C%BA%E5%9D%97%E9%93%BE/usdt%E6%95%99%E7%A8%8B/">USDT教程</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/%E5%8C%BA%E5%9D%97%E9%93%BE/%E4%BB%A5%E5%A4%AA%E5%9D%8A%E6%95%99%E7%A8%8B/">以太坊教程</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/%E8%BF%90%E7%BB%B4%E7%AC%94%E8%AE%B0/docker%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">docker学习笔记</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/%E8%BF%90%E7%BB%B4%E7%AC%94%E8%AE%B0/linux%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C2/">linux操作手册2</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/%E7%A8%8B%E5%BA%8F%E4%BA%BA%E7%94%9F/%E4%BD%A0%E6%98%AF%E6%80%8E%E4%B9%88%E5%88%A9%E7%94%A8%E6%97%B6%E9%97%B4%E7%9A%84/">你是怎么利用时间的</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/golang%E8%AF%AD%E8%A8%80%E5%AE%9E%E6%88%98/">Golang语言实战</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/%E5%8C%BA%E5%9D%97%E9%93%BE/%E4%BA%A4%E6%98%93%E6%89%80/">开源交易所</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/%E5%8C%BA%E5%9D%97%E9%93%BE/%E6%90%AD%E5%BB%BA%E5%85%AC%E6%9C%89%E9%93%BE/">搭建公有链</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/categories/%e4%b8%bb%e9%a2%98">主题</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/%e5%8c%ba%e5%9d%97%e9%93%be">区块链</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/%e6%95%b0%e6%8d%ae%e5%ba%93">数据库</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/%e6%9e%b6%e6%9e%84%e5%b8%88">架构师</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/%e7%a8%8b%e5%ba%8f%e4%ba%ba%e7%94%9f">程序人生</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/%e7%ae%97%e6%b3%95">算法</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/%e8%bf%90%e7%bb%b4%e7%ac%94%e8%ae%b0">运维笔记</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/%e9%98%85%e8%af%bb%e4%b8%8e%e6%80%9d%e8%80%83">阅读与思考</a></li>
+			<li class="widget__item"><a class="widget__link" href="/categories/%e9%9d%a2%e8%af%95">面试</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/article" title="Article">Article (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/bitcoin" title="Bitcoin">Bitcoin (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/blockchain" title="Blockchain">Blockchain (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/contract" title="Contract">Contract (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/docker" title="Docker">Docker (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ecdh" title="Ecdh">Ecdh (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/eth" title="Eth">Eth (3)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo" title="Hugo">Hugo (4)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/interview" title="Interview">Interview (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/linux" title="Linux">Linux (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/parity" title="Parity">Parity (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/rpc" title="Rpc">Rpc (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/software" title="Software">Software (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ssh" title="Ssh">Ssh (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/tidb" title="Tidb">Tidb (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/usdt" title="Usdt">Usdt (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/zookeeper" title="Zookeeper">Zookeeper (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/%e6%80%bb%e7%bb%93" title="总结">总结 (1)</a>
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Facebook" rel="noopener noreferrer" href="https://facebook.com/username" target="_blank">
+				<svg class="widget-social__link-icon icon icon-facebook" width="24" height="24" viewBox="0 0 352 352"><path d="m0 32v288c0 17.5 14.5 32 32 32h288c17.5 0 32-14.5 32-32v-288c0-17.5-14.5-32-32-32h-288c-17.5 0-32 14.5-32 32zm320 0v288h-83v-108h41.5l6-48h-47.5v-31c0-14 3.5-23.5 23.5-23.5h26v-43.5c-4.4-.6-19.8-1.5-37.5-1.5-36.9 0-62 22.2-62 63.5v36h-42v48h42v108h-155v-288z"/></svg>
+				<span>Facebook</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/username" target="_blank">
+				<svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Instagram" rel="noopener noreferrer" href="https://www.instagram.com/username" target="_blank">
+				<svg class="widget-social__link-icon icon icon-instagram" width="24" height="24" viewBox="0 0 256 256"><circle cx="193" cy="59" r="15"/><path fill-rule="evenodd" d="M101 0h54c41 0 58.4 3.9 74.5 17C256.2 37.5 256 74.8 256 97.7v60c0 26.7 0 60.4-26.5 81.4-16 13.4-33.5 16.9-74.5 16.9h-54c-41 0-57.5-3.5-74.5-16.9C1 218.9.5 186.3.1 160.5L0 155V97.7c0-23-.2-60.2 26.5-80.7C45 2 60 0 101 0zm4.9 23h44.3c45.8 0 58.3 3.5 70.3 17.5 11.8 13.2 12 30.1 12.5 62.9V156c.2 20.8.3 45.8-12.5 59.5-12 14-24.5 17.5-70.3 17.5h-44.3c-45.9 0-57.3-3.5-70.4-17.5-12.2-13-12.3-36.5-12.4-56.7v-55.6c.4-32.6.7-49.6 12.4-62.7C48 26.5 60 23 105.9 23zm19.6 144.5a42 42 0 1 0 0-84 42 42 0 0 0 0 84zm0 22.5a64.5 64.5 0 1 0 0-129 64.5 64.5 0 0 0 0 129z"/></svg>
+				<span>Instagram</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="LinkedIn" rel="noopener noreferrer" href="https://linkedin.com/in/username" target="_blank">
+				<svg class="widget-social__link-icon icon icon-linkedin" width="24" height="24" viewBox="0 0 352 352"><path d="M0,40v272c0,21.9,18.1,40,40,40h272c21.9,0,40-18.1,40-40V40c0-21.9-18.1-40-40-40H40C18.1,0,0,18.1,0,40z M312,32 c4.6,0,8,3.4,8,8v272c0,4.6-3.4,8-8,8H40c-4.6,0-8-3.4-8-8V40c0-4.6,3.4-8,8-8H312z M59.5,87c0,15.2,12.3,27.5,27.5,27.5 c15.2,0,27.5-12.3,27.5-27.5c0-15.2-12.3-27.5-27.5-27.5C71.8,59.5,59.5,71.8,59.5,87z M187,157h-1v-21h-45v152h47v-75 c0-19.8,3.9-39,28.5-39c24.2,0,24.5,22.4,24.5,40v74h47v-83.5c0-40.9-8.7-72-56.5-72C208.5,132.5,193.3,145.1,187,157z M64,288h47.5 V136H64V288z"/></svg>
+				<span>LinkedIn</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Telegram" rel="noopener noreferrer" href="https://t.me/username" target="_blank">
+				<svg class="widget-social__link-icon icon icon-telegram" width="24" height="24" viewBox="0 0 132 110"><path fill="#ddd" d="M50 103c-4 0-3-1-5-5L34 60l88-52"/><path fill="#aaa" d="M50 103c3 0 4-1 6-3l16-16-20-12"/><path fill="#fff" d="M52 72l48 36c6 3 10 2 11-5l20-93c2-8-3-11-8-9L7 45c-8 4-8 8-1 10l29 9 69-43c3-2 6-1 4 1"/></svg>
+				<span>Telegram</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/username" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitLab" rel="noopener noreferrer" href="https://gitlab.com/username" target="_blank">
+				<svg class="widget-social__link-icon icon icon-gitlab" width="24" height="24" viewBox="0 0 265 265"><path d="M128.075 236.075l47.104-144.97H80.97l47.104 144.97z M14.956 91.104L.642 135.16a9.752 9.752 0 0 0 3.542 10.903l123.891 90.012-113.12-144.97z M14.956 91.105H80.97L52.601 3.79c-1.46-4.493-7.816-4.492-9.275 0l-28.37 87.315z M241.194 91.104l14.314 44.056a9.752 9.752 0 0 1-3.543 10.903l-123.89 90.012 113.119-144.97z M241.194 91.105h-66.015l28.37-87.315c1.46-4.493 7.816-4.492 9.275 0l28.37 87.315z"/></svg>
+				<span>GitLab</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Bitbucket" rel="noopener noreferrer" href="https://bitbucket.org/username" target="_blank">
+				<svg class="widget-social__link-icon icon icon-bitbucket" width="24" height="24" viewBox="0 0 256 231"><path d="M8.308 0A8.202 8.202 0 0 0 .106 9.516l34.819 211.373a11.155 11.155 0 0 0 10.909 9.31h167.04a8.202 8.202 0 0 0 8.201-6.89l34.82-213.752a8.202 8.202 0 0 0-8.203-9.514L8.308 0zm146.616 152.768h-53.315l-14.436-75.42h80.67l-12.919 75.42z"/></svg>
+				<span>Bitbucket</span>
+			</a>
+		</div>
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Email" href="mailto:example@example.com">
+				<svg class="widget-social__link-icon icon icon-mail" width="24" height="24" viewBox="0 0 416 288"><path d="m0 16v256 16h16 384 16v-16-256-16h-16-384-16zm347 16-139 92.5-139-92.5zm-148 125.5 9 5.5 9-5.5 167-111.5v210h-352v-210z"/></svg>
+				<span>example@example.com</span>
+			</a>
+		</div>
+	</div>
+</div>
+</aside>
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2019 John Doe.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script></body>
+</html>

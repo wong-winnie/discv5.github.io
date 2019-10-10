@@ -13,10 +13,10 @@
     
     <item>
       <title>DH密钥交换和ECDH原理</title>
-      <link>/post/dh%E5%AF%86%E9%92%A5%E4%BA%A4%E6%8D%A2%E5%92%8Cecdh%E5%8E%9F%E7%90%86/</link>
+      <link>/post/%E5%8C%BA%E5%9D%97%E9%93%BE/dh%E5%AF%86%E9%92%A5%E4%BA%A4%E6%8D%A2%E5%92%8Cecdh%E5%8E%9F%E7%90%86/</link>
       <pubDate>Wed, 18 Apr 2018 10:44:15 +0000</pubDate>
       
-      <guid>/post/dh%E5%AF%86%E9%92%A5%E4%BA%A4%E6%8D%A2%E5%92%8Cecdh%E5%8E%9F%E7%90%86/</guid>
+      <guid>/post/%E5%8C%BA%E5%9D%97%E9%93%BE/dh%E5%AF%86%E9%92%A5%E4%BA%A4%E6%8D%A2%E5%92%8Cecdh%E5%8E%9F%E7%90%86/</guid>
       <description>&lt;p&gt;下面我们以Alice和Bob为例叙述Diffie-Hellman密钥交换的原理。&lt;/p&gt;</description>
     </item>
     
