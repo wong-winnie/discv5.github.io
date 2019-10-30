@@ -1,255 +1,880 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>linux操作手册2</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.750b69bd.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
         
         
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extras.css">
+    
+    
+      
         
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>linux操作手册2 - 何海涛</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">何海涛</a>
-                </div>
-
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="../..">首页</a>
-                            </li>
-                            <li >
-                                <a href="../../about/">关于我的JOB</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">人工智能 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../人工智能/人工智能/">人工智能</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">区块链 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../区块链/DH密钥交换和ECDH原理/">DH密钥交换和ECDH原理</a>
-</li>
-                                    
-<li >
-    <a href="../../区块链/ETH搭建私有链/">ETH搭建私有链</a>
-</li>
-                                    
-<li >
-    <a href="../../区块链/Parity使用总结/">Parity使用总结</a>
-</li>
-                                    
-<li >
-    <a href="../../区块链/USDT教程/">USDT教程</a>
-</li>
-                                    
-<li >
-    <a href="../../区块链/交易所/">开源交易所</a>
-</li>
-                                    
-<li >
-    <a href="../../区块链/交易所钱包充币/">交易所充币.md</a>
-</li>
-                                    
-<li >
-    <a href="../../区块链/交易所钱包归集/">交易所钱包归集</a>
-</li>
-                                    
-<li >
-    <a href="../../区块链/以太坊教程/">以太坊教程</a>
-</li>
-                                    
-<li >
-    <a href="../../区块链/区块链/">区块链</a>
-</li>
-                                    
-<li >
-    <a href="../../区块链/搭建公有链/">搭建公有链</a>
-</li>
-                                    
-<li >
-    <a href="../../区块链/智能合约/">智能合约</a>
-</li>
-                                    
-<li >
-    <a href="../../区块链/比特币教程/">比特币教程</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">架构师 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../架构师/TIDB介绍/">TIDB介绍</a>
-</li>
-                                    
-<li >
-    <a href="../../架构师/zookeeper教程/">zookeeper教程</a>
-</li>
-                                    
-<li >
-    <a href="../../架构师/架构师/">架构师</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">程序人生 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../程序人生/2018年度总结/">2018年度总结</a>
-</li>
-                                    
-<li >
-    <a href="../../程序人生/你是怎么利用时间的/">你是怎么利用时间的</a>
-</li>
-                                    
-<li >
-    <a href="../../程序人生/程序人生/">程序人生</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">编程语言 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../编程语言/Golang语言实战/">Golang语言实战</a>
-</li>
-                                    
-<li >
-    <a href="../../编程语言/编程语言/">编程语言</a>
-</li>
-                                    
-<li >
-    <a href="../../编程语言/面试宝典/">面试宝典</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">运维笔记 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../docker学习笔记/">docker学习笔记</a>
-</li>
-                                    
-<li >
-    <a href="../linux操作手册1/">linux操作手册1</a>
-</li>
-                                    
-<li class="active">
-    <a href="./">linux操作手册2</a>
-</li>
-                                    
-<li >
-    <a href="../软件辅助工具/">软件辅助工具</a>
-</li>
-                                    
-<li >
-    <a href="../运维笔记/">运维笔记</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li >
-                                <a rel="next" href="../linux操作手册1/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="../软件辅助工具/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-140489311-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="#4a90e2" data-md-color-accent="#131121">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#centos" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="何海涛" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              何海涛
+            </span>
+            <span class="md-header-nav__topic">
+              linux操作手册2
+            </span>
+          
         </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#centos">centos安装基础工具</a></li>
-            <li><a href="#centos7docker">centos7安装docker</a></li>
-            <li><a href="#centosyapi">centos安装yapi</a></li>
-            <li><a href="#centosgogs">centos安装gogs</a></li>
-        <li class="main "><a href="#linuxssh">linux远程ssh服务器</a></li>
-        <li class="main "><a href="#nginx">nginx配置重定向和转发,跨域问题解决</a></li>
-        <li class="main "><a href="#nginxvue">nginx配置多个vue项目</a></li>
-        <li class="main "><a href="#vim">vim常用命令</a></li>
-        <li class="main "><a href="#centos_1">查看centos版本</a></li>
-        <li class="main "><a href="#_1">查看连接数命令</a></li>
-        <li class="main "><a href="#_2">基础命令操作</a></li>
-        <li class="main "><a href="#_3">删除远程分支</a></li>
-        <li class="main "><a href="#_4">合并分支：</a></li>
-        <li class="main "><a href="#_5">全局配置</a></li>
-        <li class="main "><a href="#_6">快捷键命令</a></li>
-        <li class="main "><a href="#git">Git自动补全设置</a></li>
-            <li><a href="#lnmpnginxrewrite">LNMP/Nginx常用Rewrite(伪静态规则)</a></li>
+
+  
+
+<a href="https://github.com/nanocurrency/nano-docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    nanocurrency/nano-docs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="何海涛" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    何海涛
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/nanocurrency/nano-docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    nanocurrency/nano-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="首页" class="md-nav__link">
+      首页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      人工智能
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        人工智能
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../人工智能/人工智能/" title="人工智能" class="md-nav__link">
+      人工智能
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      区块链
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        区块链
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../区块链/DH密钥交换和ECDH原理/" title="DH密钥交换和ECDH原理" class="md-nav__link">
+      DH密钥交换和ECDH原理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../区块链/ETH搭建私有链/" title="ETH搭建私有链" class="md-nav__link">
+      ETH搭建私有链
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../区块链/Parity使用总结/" title="Parity使用总结" class="md-nav__link">
+      Parity使用总结
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../区块链/USDT教程/" title="USDT教程" class="md-nav__link">
+      USDT教程
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../区块链/交易所/" title="开源交易所" class="md-nav__link">
+      开源交易所
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../区块链/交易所钱包充币/" title="交易所充币.md" class="md-nav__link">
+      交易所充币.md
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../区块链/交易所钱包归集/" title="交易所钱包归集" class="md-nav__link">
+      交易所钱包归集
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../区块链/以太坊教程/" title="以太坊教程" class="md-nav__link">
+      以太坊教程
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../区块链/区块链/" title="区块链" class="md-nav__link">
+      区块链
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../区块链/搭建公有链/" title="搭建公有链" class="md-nav__link">
+      搭建公有链
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../区块链/智能合约/" title="智能合约" class="md-nav__link">
+      智能合约
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../区块链/比特币教程/" title="比特币教程" class="md-nav__link">
+      比特币教程
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      架构师
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        架构师
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../架构师/TIDB介绍/" title="TIDB介绍" class="md-nav__link">
+      TIDB介绍
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../架构师/zookeeper教程/" title="zookeeper教程" class="md-nav__link">
+      zookeeper教程
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../架构师/架构师/" title="架构师" class="md-nav__link">
+      架构师
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      程序人生
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        程序人生
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../程序人生/2018年度总结/" title="2018年度总结" class="md-nav__link">
+      2018年度总结
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../程序人生/你是怎么利用时间的/" title="你是怎么利用时间的" class="md-nav__link">
+      你是怎么利用时间的
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../程序人生/关于我/" title="关于我的JOB" class="md-nav__link">
+      关于我的JOB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../程序人生/程序人生/" title="程序人生" class="md-nav__link">
+      程序人生
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      编程语言
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        编程语言
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../编程语言/Golang语言实战/" title="Golang语言实战" class="md-nav__link">
+      Golang语言实战
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../编程语言/编程语言/" title="编程语言" class="md-nav__link">
+      编程语言
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../编程语言/面试宝典/" title="面试宝典" class="md-nav__link">
+      面试宝典
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      运维笔记
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        运维笔记
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../docker学习笔记/" title="docker学习笔记" class="md-nav__link">
+      docker学习笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../linux操作手册1/" title="linux操作手册1" class="md-nav__link">
+      linux操作手册1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        linux操作手册2
+      </label>
+    
+    <a href="./" title="linux操作手册2" class="md-nav__link md-nav__link--active">
+      linux操作手册2
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#centos7docker" title="centos7安装docker" class="md-nav__link">
+    centos7安装docker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#centosyapi" title="centos安装yapi" class="md-nav__link">
+    centos安装yapi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#centosgogs" title="centos安装gogs" class="md-nav__link">
+    centos安装gogs
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
     </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+  
+</nav>
+    
+  </li>
 
-<h2 id="centos">centos安装基础工具</h2>
-<pre><code>yum install net-tools.x86_64   # ifconfig
+        
+          
+          
+          
 
 
-</code></pre>
+  <li class="md-nav__item">
+    <a href="../软件辅助工具/" title="软件辅助工具" class="md-nav__link">
+      软件辅助工具
+    </a>
+  </li>
 
-<h3 id="centos7docker">centos7安装docker</h3>
-<p>https://www.cnblogs.com/yufeng218/p/8370670.html</p>
-<h3 id="centosyapi">centos安装yapi</h3>
-<p>https://www.jianshu.com/p/a97d2efb23c5</p>
-<h3 id="centosgogs">centos安装gogs</h3>
-<p>https://www.jianshu.com/p/2a7acb07b352</p>
-<h2 id="linuxssh">linux远程ssh服务器</h2>
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../运维笔记/" title="运维笔记" class="md-nav__link">
+      运维笔记
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#centos7docker" title="centos7安装docker" class="md-nav__link">
+    centos7安装docker
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#centosyapi" title="centos安装yapi" class="md-nav__link">
+    centos安装yapi
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#centosgogs" title="centos安装gogs" class="md-nav__link">
+    centos安装gogs
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/nanocurrency/nano-docs/edit/master/docs/运维笔记/linux操作手册2.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h2 id="centos">centos安装基础工具<a class="headerlink" href="#centos" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span>yum install net-tools.x86_64   # ifconfig
+</pre></div>
+
+<h3 id="centos7docker">centos7安装docker<a class="headerlink" href="#centos7docker" title="Permanent link">&para;</a></h3>
+<p><a href="https://www.cnblogs.com/yufeng218/p/8370670.html">https://www.cnblogs.com/yufeng218/p/8370670.html</a></p>
+<h3 id="centosyapi">centos安装yapi<a class="headerlink" href="#centosyapi" title="Permanent link">&para;</a></h3>
+<p><a href="https://www.jianshu.com/p/a97d2efb23c5">https://www.jianshu.com/p/a97d2efb23c5</a></p>
+<h3 id="centosgogs">centos安装gogs<a class="headerlink" href="#centosgogs" title="Permanent link">&para;</a></h3>
+<p><a href="https://www.jianshu.com/p/2a7acb07b352">https://www.jianshu.com/p/2a7acb07b352</a></p>
+<h2 id="linuxssh">linux远程ssh服务器<a class="headerlink" href="#linuxssh" title="Permanent link">&para;</a></h2>
 <p>pem文件授权</p>
 <blockquote>
 <p>chmod -R 400 *.pem</p>
@@ -258,21 +883,21 @@
 <blockquote>
 <p>chmod -R 755 *.sh</p>
 </blockquote>
-<pre><code>#/bin/bash
+<div class="codehilite"><pre><span></span>#/bin/bash
 #Verson:0.1
 #Auther:lovelace
 #Pragram:This pragram is calculation your grade
 #import an argument
-echo -e '
+echo -e &#39;
 [1 block1 ssh] 13.125.218.23 \n [11 block1 sftp] 13.125.218.23 \n
  [2 n1 ssh] 54.180.128.157 \n [22 n1 sftp]  54.180.128.157 \n 
-[3 n3 ssh] 13.124.131.227 \n [33 n3 sftp]  13.124.131.227 \n'
+[3 n3 ssh] 13.124.131.227 \n [33 n3 sftp]  13.124.131.227 \n&#39;
 
 read -p &quot;Please input your number:  &quot; x
 declare -i x
 #jugemet $x value is none or not
 if [ &quot;$x&quot; == &quot;&quot; ];then
-    echo &quot;You don't input your number....&quot;
+    echo &quot;You don&#39;t input your number....&quot;
     exit 5
 fi
 #jugement the gread level  
@@ -291,23 +916,21 @@ elif [[ &quot;$x&quot; -eq &quot;33&quot; ]];then
 else
     echo &quot;Unknow argument....&quot;
 fi
+</pre></div>
 
-
-</code></pre>
-
-<h2 id="nginx">nginx配置重定向和转发,跨域问题解决</h2>
+<h2 id="nginx">nginx配置重定向和转发,跨域问题解决<a class="headerlink" href="#nginx" title="Permanent link">&para;</a></h2>
 <p>配置如下</p>
-<pre><code>server {
+<div class="codehilite"><pre><span></span>server {
         listen       8090;
         server_name  127.0.0.1;
         location /{
               root /home/tomcat/font/dist;
               index index.html login.html login.htm;
               try_files $uri $uri/ /index.html;
-              add_header 'Access-Control-Allow-Origin' '*';
-              add_header 'Access-Control-Allow-Methods' 'GET, POST, OPTIONS';
-              add_header 'Access-Control-Allow-Headers' 'DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range';
-              add_header 'Access-Control-Expose-Headers' 'Content-Length,Content-Range';
+              add_header &#39;Access-Control-Allow-Origin&#39; &#39;*&#39;;
+              add_header &#39;Access-Control-Allow-Methods&#39; &#39;GET, POST, OPTIONS&#39;;
+              add_header &#39;Access-Control-Allow-Headers&#39; &#39;DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range&#39;;
+              add_header &#39;Access-Control-Expose-Headers&#39; &#39;Content-Length,Content-Range&#39;;
 
         }
 
@@ -321,38 +944,37 @@ fi
 
         }
 }
+</pre></div>
 
-</code></pre>
-
-<h2 id="nginxvue">nginx配置多个vue项目</h2>
+<h2 id="nginxvue">nginx配置多个vue项目<a class="headerlink" href="#nginxvue" title="Permanent link">&para;</a></h2>
 <p>需求</p>
 <ul>
-<li>blog: https://www.yoursite.com/blog</li>
-<li>test: https://www.yoursite.com/test</li>
+<li>blog: <a href="https://www.yoursite.com/blog">https://www.yoursite.com/blog</a></li>
+<li>test: <a href="https://www.yoursite.com/test">https://www.yoursite.com/test</a></li>
 </ul>
 <p>vue项目中配置</p>
-<pre><code>vue-router 设置 base 路径
+<div class="codehilite"><pre><span></span>vue-router 设置 base 路径
 config/index.js 修改 assetsPublicPath
-assetsPublicPath: '/blog/'
-</code></pre>
+assetsPublicPath: &#39;/blog/&#39;
+</pre></div>
 
 <p>nginx配置</p>
-<pre><code>location /blog {
+<div class="codehilite"><pre><span></span>location /blog {
   try_files $uri $uri/ /blog/index.html;
 }
-</code></pre>
+</pre></div>
 
-<p>参考地址：https://segmentfault.com/a/1190000014464699</p>
-<h1 id="vim">vim常用命令</h1>
+<p>参考地址：<a href="https://segmentfault.com/a/1190000014464699">https://segmentfault.com/a/1190000014464699</a></p>
+<h1 id="vim">vim常用命令<a class="headerlink" href="#vim" title="Permanent link">&para;</a></h1>
 <p>set smartcase # 设置大小写敏感
 :%s/foo/bar/g # 会在全局范围(%)查找foo并替换为bar，所有出现都会被替换（g）</p>
-<h1 id="centos_1">查看centos版本</h1>
+<h1 id="centos_1">查看centos版本<a class="headerlink" href="#centos_1" title="Permanent link">&para;</a></h1>
 <p>cat /etc/redhat-release
 cat /proc/version</p>
-<h1 id="_1">查看连接数命令</h1>
+<h1 id="_1">查看连接数命令<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
 <p>netstat -ant |grep 'ESTABLISHED' | awk '{print $4}' | grep -i "6665" | wc -l</p>
 <p>Git操作命令</p>
-<h1 id="_2">基础命令操作</h1>
+<h1 id="_2">基础命令操作<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h1>
 <p>ssh-keygen #产生公私钥
 git status #查看状态
 git branch -a #查看分支列表
@@ -368,12 +990,12 @@ git merge fea_clock
 git checkout a.cpp #回退修改的文件
 git cherry-pick  665424f7dbf # 合并某个提交
 git remote -v     #查看当前git路径</p>
-<h1 id="_3">删除远程分支</h1>
+<h1 id="_3">删除远程分支<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h1>
 <p>git rebase --abort # 终止rebase错误
 git push origin :fea_bug
 git remote prune origin
 git branch -D fea_bug</p>
-<h1 id="_4">合并分支：</h1>
+<h1 id="_4">合并分支：<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h1>
 <p>git branch -a
 git checkout fea_clock
 git add .
@@ -383,16 +1005,18 @@ git rebase -i 665424f7dbf</p>
 <p>git checkout develop
 git merge fea_clock
 git push origin develop</p>
-<h1 id="_5">全局配置</h1>
+<h1 id="_5">全局配置<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h1>
 <p>git config --global user.name "ht_927" 
-git config --global user.email "ht_927@126.com"</p>
-<h1 id="_6">快捷键命令</h1>
+git config --global user.email "<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#104;&#116;&#95;&#57;&#50;&#55;&#64;&#49;&#50;&#54;&#46;&#99;&#111;&#109;">&#104;&#116;&#95;&#57;&#50;&#55;&#64;&#49;&#50;&#54;&#46;&#99;&#111;&#109;</a>"</p>
+<h1 id="_6">快捷键命令<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h1>
 <p>git config --global alias.tr "log --graph --decorate --pretty=format:'%h -%C(red)%d%Creset %s (%Cblue%cn%Creset %ci -- %cr)' --abbrev-commit"</p>
-<h1 id="git">Git自动补全设置</h1>
-<pre><code>1.
-</code></pre>
+<h1 id="git">Git自动补全设置<a class="headerlink" href="#git" title="Permanent link">&para;</a></h1>
+<div class="codehilite"><pre><span></span>1.
+</pre></div>
+
+
 <p>下载git-completion.bash 并放到home 目录下： </p>
-<p>curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash 
+<p>curl <a href="https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash">https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash</a> -o ~/.git-completion.bash 
     1. 
 将如下行放到.bash_profile 文件中 </p>
 <p>if [ -f ~/.git-completion.bash ]; then 
@@ -434,10 +1058,10 @@ docker  exec -i -t 3bb555abd8ab /bin/bash</p>
 docker run -d --name redis -p 6379:6379 redis
 docker exec -i -t redis /bin/bash</p>
 <p>docker pull nginx</p>
-<h3 id="lnmpnginxrewrite">LNMP/Nginx常用Rewrite(伪静态规则)</h3>
+<h3 id="lnmpnginxrewrite">LNMP/Nginx常用Rewrite(伪静态规则)<a class="headerlink" href="#lnmpnginxrewrite" title="Permanent link">&para;</a></h3>
 <p>相信现在大部分用Linux VPS的朋友都在使用这个迅速传播的Nginx或LNMP一键安装包（lnmp安装包已经自带了下面大部分伪静态规则），Nginx和Apache的伪静态是不一样的，今天就整理一下最常见的PHP程序的nginx Rewrite(伪静态规则)。目前已收集Wordpress、Wordpress二级目录、Discuz、Discuz X、PHPWind、Typecho、codeiginiter/thinkphp/laravel/yii2框架、drupal、DEDECMS、PHPCMS、ECSHOP、ShopEX、SaBlog：
-WordPress：</p>
-<pre><code>location / {
+WordPress：
+<div class="codehilite"><pre><span></span>location / {
 try_files $uri $uri/ /index.php?$args;
 }
 
@@ -451,140 +1075,176 @@ try_files $uri $uri/ /wp/index.php?$args;
 
 # Add trailing slash to */wp-admin requests.
 rewrite /wp-admin$ $scheme://$host$uri/ permanent;
-
-</code></pre>
-
-<p>里面的wp改成你的二级目录名称
+</pre></div>
+里面的wp改成你的二级目录名称
 Discuz：</p>
 <p>location / {
-rewrite ^/archiver/((fid|tid)-[\w-]+.html)$ /archiver/index.php?$1 last;
-rewrite ^/forum-([0-9]+)-([0-9]+).html$ /forumdisplay.php?fid=$1&amp;page=$2 last;
-rewrite ^/thread-([0-9]+)-([0-9]+)-([0-9]+).html$ /viewthread.php?tid=$1&amp;extra=page%3D$3&amp;page=$2 last;
-rewrite ^/space-(username|uid)-(.+).html$ /space.php?$1=$2 last;
+rewrite ^/archiver/((fid|tid)-[\w-]+.html)$ /archiver/index.php?<span><span class="MathJax_Preview">1 last;
+rewrite ^/forum-([0-9]+)-([0-9]+)\.html</span><script type="math/tex">1 last;
+rewrite ^/forum-([0-9]+)-([0-9]+)\.html</script></span> /forumdisplay.php?fid=<span><span class="MathJax_Preview">1&amp;page=</span><script type="math/tex">1&page=</script></span>2 last;
+rewrite ^/thread-([0-9]+)-([0-9]+)-([0-9]+).html$ /viewthread.php?tid=<span><span class="MathJax_Preview">1&amp;extra=page%3D</span><script type="math/tex">1&extra=page%3D</script></span>3&amp;page=<span><span class="MathJax_Preview">2 last;
+rewrite ^/space-(username|uid)-(.+)\.html</span><script type="math/tex">2 last;
+rewrite ^/space-(username|uid)-(.+)\.html</script></span> /space.php?<span><span class="MathJax_Preview">1=</span><script type="math/tex">1=</script></span>2 last;
 rewrite ^/tag-(.+).html$ /tag.php?name=$1 last;
 }
 Discuz X：</p>
-<p>rewrite ^([^.]<em>)/topic-(.+).html$ $1/portal.php?mod=topic&amp;topic=$2 last;
-rewrite ^([^.]</em>)/article-([0-9]+)-([0-9]+).html$ $1/portal.php?mod=view&amp;aid=$2&amp;page=$3 last;
-rewrite ^([^.]<em>)/forum-(\w+)-([0-9]+).html$ $1/forum.php?mod=forumdisplay&amp;fid=$2&amp;page=$3 last;
-rewrite ^([^.]</em>)/thread-([0-9]+)-([0-9]+)-([0-9]+).html$ $1/forum.php?mod=viewthread&amp;tid=$2&amp;extra=page%3D$4&amp;page=$3 last;
-rewrite ^([^.]<em>)/group-([0-9]+)-([0-9]+).html$ $1/forum.php?mod=group&amp;fid=$2&amp;page=$3 last;
-rewrite ^([^.]</em>)/space-(username|uid)-(.+).html$ $1/home.php?mod=space&amp;$2=$3 last;
-rewrite ^([^.]<em>)/blog-([0-9]+)-([0-9]+).html$ $1/home.php?mod=space&amp;uid=$2&amp;do=blog&amp;id=$3 last;
-rewrite ^([^.]</em>)/(fid|tid)-([0-9]+).html$ $1/index.php?action=$2&amp;value=$3 last;
-rewrite ^([^.]<em>)/([a-z]+[a-z0-9_]</em>)-([a-z0-9_-]+).html$ $1/plugin.php?id=$2:$3 last;
+<p>rewrite <sup>([</sup>.]<em>)/topic-(.+).html$ <span><span class="MathJax_Preview">1/portal.php?mod=topic&amp;topic=</span><script type="math/tex">1/portal.php?mod=topic&topic=</script></span>2 last;
+rewrite <sup>([</sup>.]</em>)/article-([0-9]+)-([0-9]+).html$ <span><span class="MathJax_Preview">1/portal.php?mod=view&amp;aid=</span><script type="math/tex">1/portal.php?mod=view&aid=</script></span>2&amp;page=<span><span class="MathJax_Preview">3 last;
+rewrite ^([^\.]*)/forum-(\w+)-([0-9]+)\.html</span><script type="math/tex">3 last;
+rewrite ^([^\.]*)/forum-(\w+)-([0-9]+)\.html</script></span> <span><span class="MathJax_Preview">1/forum.php?mod=forumdisplay&amp;fid=</span><script type="math/tex">1/forum.php?mod=forumdisplay&fid=</script></span>2&amp;page=<span><span class="MathJax_Preview">3 last;
+rewrite ^([^\.]*)/thread-([0-9]+)-([0-9]+)-([0-9]+)\.html</span><script type="math/tex">3 last;
+rewrite ^([^\.]*)/thread-([0-9]+)-([0-9]+)-([0-9]+)\.html</script></span> <span><span class="MathJax_Preview">1/forum.php?mod=viewthread&amp;tid=</span><script type="math/tex">1/forum.php?mod=viewthread&tid=</script></span>2&amp;extra=page%3D<span><span class="MathJax_Preview">4&amp;page=</span><script type="math/tex">4&page=</script></span>3 last;
+rewrite <sup>([</sup>.]*)/group-([0-9]+)-([0-9]+).html$ <span><span class="MathJax_Preview">1/forum.php?mod=group&amp;fid=</span><script type="math/tex">1/forum.php?mod=group&fid=</script></span>2&amp;page=<span><span class="MathJax_Preview">3 last;
+rewrite ^([^\.]*)/space-(username|uid)-(.+)\.html</span><script type="math/tex">3 last;
+rewrite ^([^\.]*)/space-(username|uid)-(.+)\.html</script></span> <span><span class="MathJax_Preview">1/home.php?mod=space&amp;</span><script type="math/tex">1/home.php?mod=space&</script></span>2=<span><span class="MathJax_Preview">3 last;
+rewrite ^([^\.]*)/blog-([0-9]+)-([0-9]+)\.html</span><script type="math/tex">3 last;
+rewrite ^([^\.]*)/blog-([0-9]+)-([0-9]+)\.html</script></span> <span><span class="MathJax_Preview">1/home.php?mod=space&amp;uid=</span><script type="math/tex">1/home.php?mod=space&uid=</script></span>2&amp;do=blog&amp;id=<span><span class="MathJax_Preview">3 last;
+rewrite ^([^\.]*)/(fid|tid)-([0-9]+)\.html</span><script type="math/tex">3 last;
+rewrite ^([^\.]*)/(fid|tid)-([0-9]+)\.html</script></span> <span><span class="MathJax_Preview">1/index.php?action=</span><script type="math/tex">1/index.php?action=</script></span>2&amp;value=<span><span class="MathJax_Preview">3 last;
+rewrite ^([^\.]*)/([a-z]+[a-z0-9_]*)-([a-z0-9_\-]+)\.html</span><script type="math/tex">3 last;
+rewrite ^([^\.]*)/([a-z]+[a-z0-9_]*)-([a-z0-9_\-]+)\.html</script></span> <span><span class="MathJax_Preview">1/plugin.php?id=</span><script type="math/tex">1/plugin.php?id=</script></span>2:$3 last;
 if (!-e $request_filename) {
 return 404;
 }</p>
 <p>Discz X在二级目录下运行：
 location /bbs/ {
-rewrite ^([^.]<em>)/topic-(.+).html$ $1/portal.php?mod=topic&amp;topic=$2 last;
-rewrite ^([^.]</em>)/article-([0-9]+)-([0-9]+).html$ $1/portal.php?mod=view&amp;aid=$2&amp;page=$3 last;
-rewrite ^([^.]<em>)/forum-(\w+)-([0-9]+).html$ $1/forum.php?mod=forumdisplay&amp;fid=$2&amp;page=$3 last;
-rewrite ^([^.]</em>)/thread-([0-9]+)-([0-9]+)-([0-9]+).html$ $1/forum.php?mod=viewthread&amp;tid=$2&amp;extra=page%3D$4&amp;page=$3 last;
-rewrite ^([^.]<em>)/group-([0-9]+)-([0-9]+).html$ $1/forum.php?mod=group&amp;fid=$2&amp;page=$3 last;
-rewrite ^([^.]</em>)/space-(username|uid)-(.+).html$ $1/home.php?mod=space&amp;$2=$3 last;
-rewrite ^([^.]<em>)/blog-([0-9]+)-([0-9]+).html$ $1/home.php?mod=space&amp;uid=$2&amp;do=blog&amp;id=$3 last;
-rewrite ^([^.]</em>)/(fid|tid)-([0-9]+).html$ $1/index.php?action=$2&amp;value=$3 last;
-rewrite ^([^.]<em>)/([a-z]+[a-z0-9_]</em>)-([a-z0-9_-]+).html$ $1/plugin.php?id=$2:$3 last;
+rewrite <sup>([</sup>.]<em>)/topic-(.+).html$ <span><span class="MathJax_Preview">1/portal.php?mod=topic&amp;topic=</span><script type="math/tex">1/portal.php?mod=topic&topic=</script></span>2 last;
+rewrite <sup>([</sup>.]</em>)/article-([0-9]+)-([0-9]+).html$ <span><span class="MathJax_Preview">1/portal.php?mod=view&amp;aid=</span><script type="math/tex">1/portal.php?mod=view&aid=</script></span>2&amp;page=<span><span class="MathJax_Preview">3 last;
+rewrite ^([^\.]*)/forum-(\w+)-([0-9]+)\.html</span><script type="math/tex">3 last;
+rewrite ^([^\.]*)/forum-(\w+)-([0-9]+)\.html</script></span> <span><span class="MathJax_Preview">1/forum.php?mod=forumdisplay&amp;fid=</span><script type="math/tex">1/forum.php?mod=forumdisplay&fid=</script></span>2&amp;page=<span><span class="MathJax_Preview">3 last;
+rewrite ^([^\.]*)/thread-([0-9]+)-([0-9]+)-([0-9]+)\.html</span><script type="math/tex">3 last;
+rewrite ^([^\.]*)/thread-([0-9]+)-([0-9]+)-([0-9]+)\.html</script></span> <span><span class="MathJax_Preview">1/forum.php?mod=viewthread&amp;tid=</span><script type="math/tex">1/forum.php?mod=viewthread&tid=</script></span>2&amp;extra=page%3D<span><span class="MathJax_Preview">4&amp;page=</span><script type="math/tex">4&page=</script></span>3 last;
+rewrite <sup>([</sup>.]*)/group-([0-9]+)-([0-9]+).html$ <span><span class="MathJax_Preview">1/forum.php?mod=group&amp;fid=</span><script type="math/tex">1/forum.php?mod=group&fid=</script></span>2&amp;page=<span><span class="MathJax_Preview">3 last;
+rewrite ^([^\.]*)/space-(username|uid)-(.+)\.html</span><script type="math/tex">3 last;
+rewrite ^([^\.]*)/space-(username|uid)-(.+)\.html</script></span> <span><span class="MathJax_Preview">1/home.php?mod=space&amp;</span><script type="math/tex">1/home.php?mod=space&</script></span>2=<span><span class="MathJax_Preview">3 last;
+rewrite ^([^\.]*)/blog-([0-9]+)-([0-9]+)\.html</span><script type="math/tex">3 last;
+rewrite ^([^\.]*)/blog-([0-9]+)-([0-9]+)\.html</script></span> <span><span class="MathJax_Preview">1/home.php?mod=space&amp;uid=</span><script type="math/tex">1/home.php?mod=space&uid=</script></span>2&amp;do=blog&amp;id=<span><span class="MathJax_Preview">3 last;
+rewrite ^([^\.]*)/(fid|tid)-([0-9]+)\.html</span><script type="math/tex">3 last;
+rewrite ^([^\.]*)/(fid|tid)-([0-9]+)\.html</script></span> <span><span class="MathJax_Preview">1/index.php?action=</span><script type="math/tex">1/index.php?action=</script></span>2&amp;value=<span><span class="MathJax_Preview">3 last;
+rewrite ^([^\.]*)/([a-z]+[a-z0-9_]*)-([a-z0-9_\-]+)\.html</span><script type="math/tex">3 last;
+rewrite ^([^\.]*)/([a-z]+[a-z0-9_]*)-([a-z0-9_\-]+)\.html</script></span> <span><span class="MathJax_Preview">1/plugin.php?id=</span><script type="math/tex">1/plugin.php?id=</script></span>2:$3 last;
 if (!-e $request_filename) {
 return 404;
 }
 }
 上面bbs更改为自己的二级目录名
 Typecho：</p>
-<p>if (!-e $request_filename) {
-rewrite ^(.*)$ /index.php$1 last;
+<p>if (!-e <span><span class="MathJax_Preview">request_filename) {
+rewrite ^(.*)</span><script type="math/tex">request_filename) {
+rewrite ^(.*)</script></span> /index.php$1 last;
 }</p>
 <p>Typecho在二级目录下运行：
 location /typecho/ {
-if (!-e $request_filename) {
-rewrite ^(.*)$ /typecho/index.php$1 last;
+if (!-e <span><span class="MathJax_Preview">request_filename) {
+rewrite ^(.*)</span><script type="math/tex">request_filename) {
+rewrite ^(.*)</script></span> /typecho/index.php$1 last;
 }
 }
 PHPWind：</p>
 <p>location / {
-rewrite ^(.<em>)-htm-(.</em>)$ $1.php?$2 last;
-rewrite ^(.*)/simple/([a-z0-9_]+.html)$ $1/simple/index.php?$2 last;
+rewrite ^(.<em>)-htm-(.</em>)$ <span><span class="MathJax_Preview">1.php?</span><script type="math/tex">1.php?</script></span>2 last;
+rewrite ^(.*)/simple/([a-z0-9_]+.html)$ <span><span class="MathJax_Preview">1/simple/index.php?</span><script type="math/tex">1/simple/index.php?</script></span>2 last;
 }</p>
 <p>：
 codeigniter框架：
 location / {
-try_files $uri $uri/ /index.php;
+try_files $uri <span><span class="MathJax_Preview">uri/ /index.php;
 }
 thinkphp框架：
 location / {
-if (!-e $request_filename) {
-rewrite ^(.*)$ /index.php?s=/$1 last;
+if (!-e <span><span class="MathJax_Preview">request_filename) {
+rewrite ^(.*)</span><script type="math/tex">request_filename) {
+rewrite ^(.*)</script></span> /index.php?s=/ /index.php?s=/</span><script type="math/tex">uri/ /index.php;
+}
+thinkphp框架：
+location / {
+if (!-e <span><span class="MathJax_Preview">request_filename) {
+rewrite ^(.*)</span><script type="math/tex">request_filename) {
+rewrite ^(.*)</script></span> /index.php?s=/ /index.php?s=/</script></span>1 last;
 break;
 }
 }
 laravel框架：
 location / {
-try_files $uri $uri/ /index.php?$query_string;
+try_files $uri <span><span class="MathJax_Preview">uri/ /index.php?</span><script type="math/tex">uri/ /index.php?</script></span>query_string;
 }
 yii2框架：
 location / {
-try_files $uri $uri/ /index.php$is_args$args;
+try_files <span><span class="MathJax_Preview">uri <span><span class="MathJax_Preview">uri/ /index.php</span><script type="math/tex">uri/ /index.php</script></span>is_argsis_args</span><script type="math/tex">uri <span><span class="MathJax_Preview">uri/ /index.php</span><script type="math/tex">uri/ /index.php</script></span>is_argsis_args</script></span>args;
 }</p>
 <p>drupal：
-if (!-e $request_filename) {
-rewrite ^/(.*)$ /index.php?q=$1 last;
+if (!-e <span><span class="MathJax_Preview">request_filename) {
+rewrite ^/(.*)</span><script type="math/tex">request_filename) {
+rewrite ^/(.*)</script></span> /index.php?q=$1 last;
 }</p>
 <p>joomla：
 location / {
-try_files $uri $uri/ /index.php?$args;
+try_files $uri <span><span class="MathJax_Preview">uri/ /index.php?</span><script type="math/tex">uri/ /index.php?</script></span>args;
 }</p>
 <p>PHPCMS：
 location / {
-rewrite ^/caipu-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?m=content&amp;c=index&amp;a=show&amp;catid=$1&amp;id=$2&amp;page=$3 last;
-rewrite ^/content-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?m=content&amp;c=index&amp;a=show&amp;catid=$1&amp;id=$2&amp;page=$3 last;
-rewrite ^/list-([0-9]+)-([0-9]+).html /index.php?m=content&amp;c=index&amp;a=lists&amp;catid=$1&amp;page=$2 last;
-rewrite ^/tag-([^.]<em>)-([0-9]+)-([0-9]+).html /index.php?m=content&amp;c=tag&amp;catid=$2&amp;tag=$1&amp;page=$3 last;
-rewrite ^/comment-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?m=comment&amp;c=index&amp;a=init&amp;commentid=content_$1-$2-$3 last;
-rewrite ^/([^.]</em>).html /index.php?m=member&amp;c=index&amp;a=$1 last;
+rewrite ^/caipu-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?m=content&amp;c=index&amp;a=show&amp;catid=<span><span class="MathJax_Preview">1&amp;id=</span><script type="math/tex">1&id=</script></span>2&amp;page=<span><span class="MathJax_Preview">3 last;
+rewrite ^/content-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?m=content&amp;c=index&amp;a=show&amp;catid=</span><script type="math/tex">3 last;
+rewrite ^/content-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?m=content&c=index&a=show&catid=</script></span>1&amp;id=<span><span class="MathJax_Preview">2&amp;page=</span><script type="math/tex">2&page=</script></span>3 last;
+rewrite ^/list-([0-9]+)-([0-9]+).html /index.php?m=content&amp;c=index&amp;a=lists&amp;catid=<span><span class="MathJax_Preview">1&amp;page=</span><script type="math/tex">1&page=</script></span>2 last;
+rewrite <sup>/tag-([</sup>.]<em>)-([0-9]+)-([0-9]+).html /index.php?m=content&amp;c=tag&amp;catid=<span><span class="MathJax_Preview">2&amp;tag=</span><script type="math/tex">2&tag=</script></span>1&amp;page=<span><span class="MathJax_Preview">3 last;
+rewrite ^/comment-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?m=comment&amp;c=index&amp;a=init&amp;commentid=content_</span><script type="math/tex">3 last;
+rewrite ^/comment-([0-9]+)-([0-9]+)-([0-9]+).html /index.php?m=comment&c=index&a=init&commentid=content_</script></span>1-<span><span class="MathJax_Preview">2-</span><script type="math/tex">2-</script></span>3 last;
+rewrite <sup>/([</sup>.]</em>).html /index.php?m=member&amp;c=index&amp;a=$1 last;
 }
 ECSHOP：</p>
-<p>if (!-e $request_filename)
+<p>if (!-e <span><span class="MathJax_Preview">request_filename)
 {
-rewrite "^/index.html" /index.php last;
-rewrite "^/category$" /index.php last;
-rewrite "^/feed-c([0-9]+).xml$" /feed.php?cat=$1 last;
-rewrite "^/feed-b([0-9]+).xml$" /feed.php?brand=$1 last;
-rewrite "^/feed.xml$" /feed.php last;
-rewrite "^/category-([0-9]+)-b([0-9]+)-min([0-9]+)-max([0-9]+)-attr([^-]<em>)-([0-9]+)-(.+)-([a-zA-Z]+)(.</em>).html$" /category.php?id=$1&amp;brand=$2&amp;price_min=$3&amp;price_max=$4&amp;filter_attr=$5&amp;page=$6&amp;sort=$7&amp;order=$8 last;
-rewrite "^/category-([0-9]+)-b([0-9]+)-min([0-9]+)-max([0-9]+)-attr([^-]<em>)(.</em>).html$" /category.php?id=$1&amp;brand=$2&amp;price_min=$3&amp;price_max=$4&amp;filter_attr=$5 last;
-rewrite "^/category-([0-9]+)-b([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.<em>).html$" /category.php?id=$1&amp;brand=$2&amp;page=$3&amp;sort=$4&amp;order=$5 last;
-rewrite "^/category-([0-9]+)-b([0-9]+)-([0-9]+)(.</em>).html$" /category.php?id=$1&amp;brand=$2&amp;page=$3 last;
-rewrite "^/category-([0-9]+)-b([0-9]+)(.<em>).html$" /category.php?id=$1&amp;brand=$2 last;
-rewrite "^/category-([0-9]+)(.</em>).html$" /category.php?id=$1 last;
-rewrite "^/goods-([0-9]+)(.<em>).html" /goods.php?id=$1 last;
-rewrite "^/article_cat-([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.</em>).html$" /article_cat.php?id=$1&amp;page=$2&amp;sort=$3&amp;order=$4 last;
-rewrite "^/article_cat-([0-9]+)-([0-9]+)(.<em>).html$" /article_cat.php?id=$1&amp;page=$2 last;
-rewrite "^/article_cat-([0-9]+)(.</em>).html$" /article_cat.php?id=$1 last;
-rewrite "^/article-([0-9]+)(.<em>).html$" /article.php?id=$1 last;
-rewrite "^/brand-([0-9]+)-c([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+).html" /brand.php?id=$1&amp;cat=$2&amp;page=$3&amp;sort=$4&amp;order=$5 last;
-rewrite "^/brand-([0-9]+)-c([0-9]+)-([0-9]+)(.</em>).html" /brand.php?id=$1&amp;cat=$2&amp;page=$3 last;
-rewrite "^/brand-([0-9]+)-c([0-9]+)(.<em>).html" /brand.php?id=$1&amp;cat=$2 last;
-rewrite "^/brand-([0-9]+)(.</em>).html" /brand.php?id=$1 last;
-rewrite "^/tag-(.<em>).html" /search.php?keywords=$1 last;
-rewrite "^/snatch-([0-9]+).html$" /snatch.php?id=$1 last;
-rewrite "^/group_buy-([0-9]+).html$" /group_buy.php?act=view&amp;id=$1 last;
-rewrite "^/auction-([0-9]+).html$" /auction.php?act=view&amp;id=$1 last;
-rewrite "^/exchange-id([0-9]+)(.</em>).html$" /exchange.php?id=$1&amp;act=view last;
-rewrite "^/exchange-([0-9]+)-min([0-9]+)-max([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.<em>).html$" /exchange.php?cat_id=$1&amp;integral_min=$2&amp;integral_max=$3&amp;page=$4&amp;sort=$5&amp;order=$6 last;
-rewrite ^/exchange-([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.</em>).html$" /exchange.php?cat_id=$1&amp;page=$2&amp;sort=$3&amp;order=$4 last;
-rewrite "^/exchange-([0-9]+)-([0-9]+)(.<em>).html$" /exchange.php?cat_id=$1&amp;page=$2 last;
-rewrite "^/exchange-([0-9]+)(.</em>).html$" /exchange.php?cat_id=$1 last;
+rewrite "^/index\.html" /index.php last;
+rewrite "^/category</span><script type="math/tex">request_filename)
+{
+rewrite "^/index\.html" /index.php last;
+rewrite "^/category</script></span>" /index.php last;
+rewrite "^/feed-c([0-9]+).xml<span><span class="MathJax_Preview">" /feed.php?cat=</span><script type="math/tex">" /feed.php?cat=</script></span>1 last;
+rewrite "^/feed-b([0-9]+).xml<span><span class="MathJax_Preview">" /feed.php?brand=</span><script type="math/tex">" /feed.php?brand=</script></span>1 last;
+rewrite "^/feed.xml<span><span class="MathJax_Preview">" /feed.php last;
+rewrite "^/category-([0-9]+)-b([0-9]+)-min([0-9]+)-max([0-9]+)-attr([^-]*)-([0-9]+)-(.+)-([a-zA-Z]+)(.*)\.html</span><script type="math/tex">" /feed.php last;
+rewrite "^/category-([0-9]+)-b([0-9]+)-min([0-9]+)-max([0-9]+)-attr([^-]*)-([0-9]+)-(.+)-([a-zA-Z]+)(.*)\.html</script></span>" /category.php?id=<span><span class="MathJax_Preview">1&amp;brand=</span><script type="math/tex">1&brand=</script></span>2&amp;price_min=<span><span class="MathJax_Preview">3&amp;price_max=</span><script type="math/tex">3&price_max=</script></span>4&amp;filter_attr=<span><span class="MathJax_Preview">5&amp;page=</span><script type="math/tex">5&page=</script></span>6&amp;sort=<span><span class="MathJax_Preview">7&amp;order=</span><script type="math/tex">7&order=</script></span>8 last;
+rewrite "<sup>/category-([0-9]+)-b([0-9]+)-min([0-9]+)-max([0-9]+)-attr([</sup>-]<em>)(.</em>).html<span><span class="MathJax_Preview">" /category.php?id=</span><script type="math/tex">" /category.php?id=</script></span>1&amp;brand=<span><span class="MathJax_Preview">2&amp;price_min=</span><script type="math/tex">2&price_min=</script></span>3&amp;price_max=<span><span class="MathJax_Preview">4&amp;filter_attr=</span><script type="math/tex">4&filter_attr=</script></span>5 last;
+rewrite "^/category-([0-9]+)-b([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.<em>).html<span><span class="MathJax_Preview">" /category.php?id=</span><script type="math/tex">" /category.php?id=</script></span>1&amp;brand=<span><span class="MathJax_Preview">2&amp;page=</span><script type="math/tex">2&page=</script></span>3&amp;sort=<span><span class="MathJax_Preview">4&amp;order=</span><script type="math/tex">4&order=</script></span>5 last;
+rewrite "^/category-([0-9]+)-b([0-9]+)-([0-9]+)(.</em>).html<span><span class="MathJax_Preview">" /category.php?id=</span><script type="math/tex">" /category.php?id=</script></span>1&amp;brand=<span><span class="MathJax_Preview">2&amp;page=</span><script type="math/tex">2&page=</script></span>3 last;
+rewrite "^/category-([0-9]+)-b([0-9]+)(.<em>).html<span><span class="MathJax_Preview">" /category.php?id=</span><script type="math/tex">" /category.php?id=</script></span>1&amp;brand=<span><span class="MathJax_Preview">2 last;
+rewrite "^/category-([0-9]+)(.*)\.html</span><script type="math/tex">2 last;
+rewrite "^/category-([0-9]+)(.*)\.html</script></span>" /category.php?id=<span><span class="MathJax_Preview">1 last;
+rewrite "^/goods-([0-9]+)(.*)\.html" /goods.php?id=</span><script type="math/tex">1 last;
+rewrite "^/goods-([0-9]+)(.*)\.html" /goods.php?id=</script></span>1 last;
+rewrite "^/article_cat-([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.</em>).html<span><span class="MathJax_Preview">" /article_cat.php?id=</span><script type="math/tex">" /article_cat.php?id=</script></span>1&amp;page=<span><span class="MathJax_Preview">2&amp;sort=</span><script type="math/tex">2&sort=</script></span>3&amp;order=<span><span class="MathJax_Preview">4 last;
+rewrite "^/article_cat-([0-9]+)-([0-9]+)(.*)\.html</span><script type="math/tex">4 last;
+rewrite "^/article_cat-([0-9]+)-([0-9]+)(.*)\.html</script></span>" /article_cat.php?id=<span><span class="MathJax_Preview">1&amp;page=</span><script type="math/tex">1&page=</script></span>2 last;
+rewrite "^/article_cat-([0-9]+)(.<em>).html<span><span class="MathJax_Preview">" /article_cat.php?id=</span><script type="math/tex">" /article_cat.php?id=</script></span>1 last;
+rewrite "^/article-([0-9]+)(.</em>).html<span><span class="MathJax_Preview">" /article.php?id=</span><script type="math/tex">" /article.php?id=</script></span>1 last;
+rewrite "^/brand-([0-9]+)-c([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+).html" /brand.php?id=<span><span class="MathJax_Preview">1&amp;cat=</span><script type="math/tex">1&cat=</script></span>2&amp;page=<span><span class="MathJax_Preview">3&amp;sort=</span><script type="math/tex">3&sort=</script></span>4&amp;order=<span><span class="MathJax_Preview">5 last;
+rewrite "^/brand-([0-9]+)-c([0-9]+)-([0-9]+)(.*)\.html" /brand.php?id=</span><script type="math/tex">5 last;
+rewrite "^/brand-([0-9]+)-c([0-9]+)-([0-9]+)(.*)\.html" /brand.php?id=</script></span>1&amp;cat=<span><span class="MathJax_Preview">2&amp;page=</span><script type="math/tex">2&page=</script></span>3 last;
+rewrite "^/brand-([0-9]+)-c([0-9]+)(.<em>).html" /brand.php?id=<span><span class="MathJax_Preview">1&amp;cat=</span><script type="math/tex">1&cat=</script></span>2 last;
+rewrite "^/brand-([0-9]+)(.</em>).html" /brand.php?id=<span><span class="MathJax_Preview">1 last;
+rewrite "^/tag-(.*)\.html" /search.php?keywords=</span><script type="math/tex">1 last;
+rewrite "^/tag-(.*)\.html" /search.php?keywords=</script></span>1 last;
+rewrite "^/snatch-([0-9]+).html<span><span class="MathJax_Preview">" /snatch.php?id=</span><script type="math/tex">" /snatch.php?id=</script></span>1 last;
+rewrite "^/group_buy-([0-9]+).html<span><span class="MathJax_Preview">" /group_buy.php?act=view&amp;id=</span><script type="math/tex">" /group_buy.php?act=view&id=</script></span>1 last;
+rewrite "^/auction-([0-9]+).html<span><span class="MathJax_Preview">" /auction.php?act=view&amp;id=</span><script type="math/tex">" /auction.php?act=view&id=</script></span>1 last;
+rewrite "^/exchange-id([0-9]+)(.<em>).html<span><span class="MathJax_Preview">" /exchange.php?id=</span><script type="math/tex">" /exchange.php?id=</script></span>1&amp;act=view last;
+rewrite "^/exchange-([0-9]+)-min([0-9]+)-max([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.</em>).html<span><span class="MathJax_Preview">" /exchange.php?cat_id=</span><script type="math/tex">" /exchange.php?cat_id=</script></span>1&amp;integral_min=<span><span class="MathJax_Preview">2&amp;integral_max=</span><script type="math/tex">2&integral_max=</script></span>3&amp;page=<span><span class="MathJax_Preview">4&amp;sort=</span><script type="math/tex">4&sort=</script></span>5&amp;order=<span><span class="MathJax_Preview">6 last;
+rewrite ^/exchange-([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.*)\.html</span><script type="math/tex">6 last;
+rewrite ^/exchange-([0-9]+)-([0-9]+)-(.+)-([a-zA-Z]+)(.*)\.html</script></span>" /exchange.php?cat_id=<span><span class="MathJax_Preview">1&amp;page=</span><script type="math/tex">1&page=</script></span>2&amp;sort=<span><span class="MathJax_Preview">3&amp;order=</span><script type="math/tex">3&order=</script></span>4 last;
+rewrite "^/exchange-([0-9]+)-([0-9]+)(.*).html<span><span class="MathJax_Preview">" /exchange.php?cat_id=</span><script type="math/tex">" /exchange.php?cat_id=</script></span>1&amp;page=<span><span class="MathJax_Preview">2 last;
+rewrite "^/exchange-([0-9]+)(.*)\.html</span><script type="math/tex">2 last;
+rewrite "^/exchange-([0-9]+)(.*)\.html</script></span>" /exchange.php?cat_id=$1 last;
 }
 SHOPEX：</p>
 <p>location / {
-if (!-e $request_filename) {
-rewrite ^/(.+.(html|xml|json|htm|php|jsp|asp|shtml))$ /index.php?$1 last;
+if (!-e <span><span class="MathJax_Preview">request_filename) {
+rewrite ^/(.+\.(html|xml|json|htm|php|jsp|asp|shtml))</span><script type="math/tex">request_filename) {
+rewrite ^/(.+\.(html|xml|json|htm|php|jsp|asp|shtml))</script></span> /index.php?$1 last;
 }
 }
-SaBlog 2.0：(感谢追寻36[正冰]博客提供)</p>
-<pre><code># 只带月份的归档
+SaBlog 2.0：(感谢追寻36[正冰]博客提供)
+<div class="codehilite"><pre><span></span># 只带月份的归档
 rewrite &quot;^/date/([0-9]{6})/?([0-9]+)?/?$&quot; /index.php?action=article&amp;setdate=$1&amp;page=$2 last;
 # 无分类翻页
 rewrite ^/page/([0-9]+)?/?$ /index.php?action=article&amp;page=$1 last;
@@ -619,84 +1279,107 @@ rewrite &quot;^/tags.html$&quot; /tags.php last;
 rewrite &quot;^/tag-([0-9]+)-([0-9]+)\.html$&quot; /tags.php?/$1/$2/ last;
 break;
 }
+</pre></div></p>
+                
+                  
+                
+              
+              
+                
 
-</code></pre></div>
+
+              
+            </article>
+          </div>
         </div>
-
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
-
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../linux操作手册1/" title="linux操作手册1" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                linux操作手册1
+              </span>
             </div>
-            <div class="modal-footer">
+          </a>
+        
+        
+          <a href="../软件辅助工具/" title="软件辅助工具" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                软件辅助工具
+              </span>
             </div>
-        </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/nanocurrency" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/nano" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://chat.nano.org" class="md-footer-social__link fa fa-comments"></a>
+    
+      <a href="https://reddit.com/r/nanocurrency" class="md-footer-social__link fa fa-reddit"></a>
+    
+      <a href="https://medium.com/nanocurrency" class="md-footer-social__link fa fa-medium"></a>
+    
+      <a href="https://facebook.com/nanofoundation" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://linkedin.com/company/nano-foundation" class="md-footer-social__link fa fa-linkedin"></a>
+    
+      <a href="https://www.youtube.com/nanocurrency/" class="md-footer-social__link fa fa-youtube"></a>
+    
+      <a href="https://www.instagram.com/nanocurrency/" class="md-footer-social__link fa fa-instagram"></a>
+    
+  </div>
 
-    </body>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.39abc4af.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+      
+    
+  </body>
 </html>

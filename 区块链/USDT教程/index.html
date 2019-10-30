@@ -1,394 +1,1230 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.2.0">
+    
+    
+      
+        <title>USDT教程</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.750b69bd.css">
+      
+        <link rel="stylesheet" href="../../assets/stylesheets/application-palette.224b79ff.css">
+      
+      
         
         
+        <meta name="theme-color" content="">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Noto Sans","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extras.css">
+    
+    
+      
         
-        <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>USDT教程 - 何海涛</title>
-        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../../css/font-awesome.min.css" rel="stylesheet">
-        <link href="../../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-
-        <script src="../../js/jquery-1.10.2.min.js" defer></script>
-        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-        <script>hljs.initHighlightingOnLoad();</script> 
-    </head>
-
-    <body>
-
-        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-            <div class="container">
-
-                <!-- Collapsed navigation -->
-                <div class="navbar-header">
-                    <!-- Expander button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="../..">何海涛</a>
-                </div>
-
-                <!-- Expanded navigation -->
-                <div class="navbar-collapse collapse">
-                        <!-- Main navigation -->
-                        <ul class="nav navbar-nav">
-                            <li >
-                                <a href="../..">首页</a>
-                            </li>
-                            <li >
-                                <a href="../../about/">关于我的JOB</a>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">人工智能 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../人工智能/人工智能/">人工智能</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown active">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">区块链 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../DH密钥交换和ECDH原理/">DH密钥交换和ECDH原理</a>
-</li>
-                                    
-<li >
-    <a href="../ETH搭建私有链/">ETH搭建私有链</a>
-</li>
-                                    
-<li >
-    <a href="../Parity使用总结/">Parity使用总结</a>
-</li>
-                                    
-<li class="active">
-    <a href="./">USDT教程</a>
-</li>
-                                    
-<li >
-    <a href="../交易所/">开源交易所</a>
-</li>
-                                    
-<li >
-    <a href="../交易所钱包充币/">交易所充币.md</a>
-</li>
-                                    
-<li >
-    <a href="../交易所钱包归集/">交易所钱包归集</a>
-</li>
-                                    
-<li >
-    <a href="../以太坊教程/">以太坊教程</a>
-</li>
-                                    
-<li >
-    <a href="../区块链/">区块链</a>
-</li>
-                                    
-<li >
-    <a href="../搭建公有链/">搭建公有链</a>
-</li>
-                                    
-<li >
-    <a href="../智能合约/">智能合约</a>
-</li>
-                                    
-<li >
-    <a href="../比特币教程/">比特币教程</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">架构师 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../架构师/TIDB介绍/">TIDB介绍</a>
-</li>
-                                    
-<li >
-    <a href="../../架构师/zookeeper教程/">zookeeper教程</a>
-</li>
-                                    
-<li >
-    <a href="../../架构师/架构师/">架构师</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">程序人生 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../程序人生/2018年度总结/">2018年度总结</a>
-</li>
-                                    
-<li >
-    <a href="../../程序人生/你是怎么利用时间的/">你是怎么利用时间的</a>
-</li>
-                                    
-<li >
-    <a href="../../程序人生/程序人生/">程序人生</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">编程语言 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../编程语言/Golang语言实战/">Golang语言实战</a>
-</li>
-                                    
-<li >
-    <a href="../../编程语言/编程语言/">编程语言</a>
-</li>
-                                    
-<li >
-    <a href="../../编程语言/面试宝典/">面试宝典</a>
-</li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">运维笔记 <b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    
-<li >
-    <a href="../../运维笔记/docker学习笔记/">docker学习笔记</a>
-</li>
-                                    
-<li >
-    <a href="../../运维笔记/linux操作手册1/">linux操作手册1</a>
-</li>
-                                    
-<li >
-    <a href="../../运维笔记/linux操作手册2/">linux操作手册2</a>
-</li>
-                                    
-<li >
-    <a href="../../运维笔记/软件辅助工具/">软件辅助工具</a>
-</li>
-                                    
-<li >
-    <a href="../../运维笔记/运维笔记/">运维笔记</a>
-</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                    <ul class="nav navbar-nav navbar-right">
-                        <li>
-                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
-                                <i class="fa fa-search"></i> Search
-                            </a>
-                        </li>
-                            <li >
-                                <a rel="next" href="../Parity使用总结/">
-                                    <i class="fa fa-arrow-left"></i> Previous
-                                </a>
-                            </li>
-                            <li >
-                                <a rel="prev" href="../交易所/">
-                                    Next <i class="fa fa-arrow-right"></i>
-                                </a>
-                            </li>
-                    </ul>
-                </div>
-            </div>
+<script>
+  window.ga = window.ga || function() {
+    (ga.q = ga.q || []).push(arguments)
+  }
+  ga.l = +new Date
+  /* Setup integration and send page view */
+  ga("create", "UA-140489311-1", "auto")
+  ga("set", "anonymizeIp", true)
+  ga("send", "pageview")
+  /* Register handler to log search on blur */
+  document.addEventListener("DOMContentLoaded", () => {
+    if (document.forms.search) {
+      var query = document.forms.search.query
+      query.addEventListener("blur", function() {
+        if (this.value) {
+          var path = document.location.pathname;
+          ga("send", "pageview", path + "?q=" + this.value)
+        }
+      })
+    }
+  })
+</script>
+<script async src="https://www.google-analytics.com/analytics.js"></script>
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="#4a90e2" data-md-color-accent="#131121">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="__github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="何海涛" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              何海涛
+            </span>
+            <span class="md-header-nav__topic">
+              USDT教程
+            </span>
+          
         </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
 
-        <div class="container">
-                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
-    <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#_1">交易</a></li>
-            <li><a href="#1">1、准备两个地址</a></li>
-            <li><a href="#2-uxto-usdt">2、分别找到发送地址 和热钱包地址的一笔UXTO 作为发送USDT交易的载体</a></li>
-            <li><a href="#3">3、创建负载</a></li>
-            <li><a href="#4usdt">4、创建USDT交易</a></li>
-            <li><a href="#5">5、在交易上绑定代币数据</a></li>
-            <li><a href="#6">6、在交易上添加接收地址</a></li>
-            <li><a href="#7">7、在交易上指定矿工费用</a></li>
-            <li><a href="#8">8、对交易签名</a></li>
-            <li><a href="#9">9、广播交易</a></li>
-        <li class="main "><a href="#_2">命令</a></li>
-            <li><a href="#omnicore-cli-getinfo">omnicore-cli getinfo</a></li>
-            <li><a href="#omnicore-cli-importaddress-1exibj8pkxmspb6dnamlfczytrsnsuuess">omnicore-cli importaddress "1EXiBj8pkxmsPb6dNAMLFcZYTRSNsUUesS"</a></li>
-        <li class="main "><a href="#_3">接口</a></li>
-            <li><a href="#_4">前言</a></li>
-            <li><a href="#omni_send">omn​​i_send</a></li>
-            <li><a href="#omni_sendall">omni_sendall</a></li>
-            <li><a href="#omni_sendrawtx">omn​​i_sendrawtx</a></li>
-            <li><a href="#omni_getinfo">omn​​i_getinfo</a></li>
-            <li><a href="#omni_getbalance">omni_getbalance</a></li>
-            <li><a href="#omni_getallbalancesforaddress">omni_getallbalancesforaddress</a></li>
-            <li><a href="#omni_gettransaction">omni_gettransaction</a></li>
-            <li><a href="#omni_listtransactions">omni_listtransactions</a></li>
-            <li><a href="#omni_listpendingtransactions">omni_listpendingtransactions</a></li>
-            <li><a href="#_5">变更历史</a></li>
-            <li><a href="#_6">附录</a></li>
+
+  
+
+<a href="https://github.com/nanocurrency/nano-docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    nanocurrency/nano-docs
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../.." title="何海涛" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    何海涛
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://github.com/nanocurrency/nano-docs/" title="Go to repository" class="md-source" data-md-source="github">
+  
+    <div class="md-source__icon">
+      <svg viewBox="0 0 24 24" width="24" height="24">
+        <use xlink:href="#__github" width="24" height="24"></use>
+      </svg>
+    </div>
+  
+  <div class="md-source__repository">
+    nanocurrency/nano-docs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="首页" class="md-nav__link">
+      首页
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      人工智能
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        人工智能
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../人工智能/人工智能/" title="人工智能" class="md-nav__link">
+      人工智能
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      区块链
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        区块链
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../DH密钥交换和ECDH原理/" title="DH密钥交换和ECDH原理" class="md-nav__link">
+      DH密钥交换和ECDH原理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ETH搭建私有链/" title="ETH搭建私有链" class="md-nav__link">
+      ETH搭建私有链
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Parity使用总结/" title="Parity使用总结" class="md-nav__link">
+      Parity使用总结
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        USDT教程
+      </label>
+    
+    <a href="./" title="USDT教程" class="md-nav__link md-nav__link--active">
+      USDT教程
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="交易" class="md-nav__link">
+    交易
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" title="1、准备两个地址" class="md-nav__link">
+    1、准备两个地址
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-uxto-usdt" title="2、分别找到发送地址 和热钱包地址的一笔UXTO 作为发送USDT交易的载体" class="md-nav__link">
+    2、分别找到发送地址 和热钱包地址的一笔UXTO 作为发送USDT交易的载体
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" title="3、创建负载" class="md-nav__link">
+    3、创建负载
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4usdt" title="4、创建USDT交易" class="md-nav__link">
+    4、创建USDT交易
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" title="5、在交易上绑定代币数据" class="md-nav__link">
+    5、在交易上绑定代币数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" title="6、在交易上添加接收地址" class="md-nav__link">
+    6、在交易上添加接收地址
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" title="7、在交易上指定矿工费用" class="md-nav__link">
+    7、在交易上指定矿工费用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" title="8、对交易签名" class="md-nav__link">
+    8、对交易签名
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" title="9、广播交易" class="md-nav__link">
+    9、广播交易
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="命令" class="md-nav__link">
+    命令
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#omnicore-cli-getinfo" title="omnicore-cli getinfo" class="md-nav__link">
+    omnicore-cli getinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omnicore-cli-importaddress-1exibj8pkxmspb6dnamlfczytrsnsuuess" title="omnicore-cli importaddress "1EXiBj8pkxmsPb6dNAMLFcZYTRSNsUUesS"" class="md-nav__link">
+    omnicore-cli importaddress "1EXiBj8pkxmsPb6dNAMLFcZYTRSNsUUesS"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="接口" class="md-nav__link">
+    接口
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="前言" class="md-nav__link">
+    前言
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_send" title="omn​​i_send" class="md-nav__link">
+    omn​​i_send
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_sendall" title="omni_sendall" class="md-nav__link">
+    omni_sendall
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_sendrawtx" title="omn​​i_sendrawtx" class="md-nav__link">
+    omn​​i_sendrawtx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_getinfo" title="omn​​i_getinfo" class="md-nav__link">
+    omn​​i_getinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_getbalance" title="omni_getbalance" class="md-nav__link">
+    omni_getbalance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_getallbalancesforaddress" title="omni_getallbalancesforaddress" class="md-nav__link">
+    omni_getallbalancesforaddress
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_gettransaction" title="omni_gettransaction" class="md-nav__link">
+    omni_gettransaction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_listtransactions" title="omni_listtransactions" class="md-nav__link">
+    omni_listtransactions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_listpendingtransactions" title="omni_listpendingtransactions" class="md-nav__link">
+    omni_listpendingtransactions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="变更历史" class="md-nav__link">
+    变更历史
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="附录" class="md-nav__link">
+    附录
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
     </ul>
-</div></div>
-                <div class="col-md-9" role="main">
+  
+</nav>
+    
+  </li>
 
-<p>Omni Core是Bitcoin Core的一个分支，其Omni协议功能支持作为顶层的新功能层添加。因此，与API的交互以与Bitcoin Core相同的方式（JSON-RPC）完成，只需使用额外的RPC即可使用Omni协议功能。
-<!--more--></p>
-<h2 id="_1">交易</h2>
-<p>最近几天在对接USDT钱包，遇到一个问题就是根本没办法通过omni 钱包提供的API来实现钱包归集，因为API提供的接口都需要发送USDT的地址有一定的BTC数量才可以发送交易，所以没办只能找其他方案替代，请教了其他人后才知道只能通过创建BTC的原生交易才能达到这个效果，折腾了好几天，终于把这个流程给整理通顺了，估计还有很多人会遇到这个问题，所以记录下来为后面的人节省一些时间。</p>
-<h3 id="1">1、准备两个地址</h3>
-<p>首先两个地址, 发送USDT（地址里面要有USDT，这里通常可能是交易所用户的USDT钱包地址）地址和付手续费的地址（地址里面要有足够的BTC，这里通常可能是热钱包地址）</p>
-<p>本次案例中</p>
-<p>发送USDT地址为： mn7w1M4fwJzRr4zYy5dMSSfBg1ZC9e4xH4</p>
-<p>付手续费地址为： muPuXyRqLBRf8Xyj28d2As8ya4iaw8XWGe</p>
-<p>接收USDT地址为：muPuXyRqLBRf8Xyj28d2As8ya4iaw8XWGe</p>
-<h3 id="2-uxto-usdt">2、分别找到发送地址 和热钱包地址的一笔UXTO 作为发送USDT交易的载体</h3>
-<p>指令：listunspent 0 999999 '["mn7w1M4fwJzRr4zYy5dMSSfBg1ZC9e4xH4"]'</p>
-<pre><code>{
+        
+          
+          
+          
 
-&quot;txid&quot;: &quot;7ef4ca48422fbd055eb7375145cb59bdadaba13caf29b4279c506a7ba846a33e&quot;,
 
-&quot;vout&quot;: 0,
+  <li class="md-nav__item">
+    <a href="../交易所/" title="开源交易所" class="md-nav__link">
+      开源交易所
+    </a>
+  </li>
 
-&quot;address&quot;: &quot;mn7w1M4fwJzRr4zYy5dMSSfBg1ZC9e4xH4&quot;,
+        
+          
+          
+          
 
-&quot;scriptPubKey&quot;: &quot;76a914486e3cf761cc47642135140da02669c04dd2451088ac&quot;,
 
-&quot;amount&quot;: 0.00081189,
+  <li class="md-nav__item">
+    <a href="../交易所钱包充币/" title="交易所充币.md" class="md-nav__link">
+      交易所充币.md
+    </a>
+  </li>
 
-&quot;confirmations&quot;: 31103,
+        
+          
+          
+          
 
-&quot;spendable&quot;: true,
 
-&quot;solvable&quot;: true
+  <li class="md-nav__item">
+    <a href="../交易所钱包归集/" title="交易所钱包归集" class="md-nav__link">
+      交易所钱包归集
+    </a>
+  </li>
 
-}
+        
+          
+          
+          
 
-</code></pre>
 
-<p>指令：listunspent 0 999999 '["muPuXyRqLBRf8Xyj28d2As8ya4iaw8XWGe"]'</p>
-<p>得到UXTO:</p>
-<pre><code>{
+  <li class="md-nav__item">
+    <a href="../以太坊教程/" title="以太坊教程" class="md-nav__link">
+      以太坊教程
+    </a>
+  </li>
 
-&quot;txid&quot;: &quot;0b381b15082156911ca8db2761910fe9545356778d70dd09be30fc0bece9ed9d&quot;,
+        
+          
+          
+          
 
-&quot;vout&quot;: 1,
 
-&quot;address&quot;: &quot;muPuXyRqLBRf8Xyj28d2As8ya4iaw8XWGe&quot;,
+  <li class="md-nav__item">
+    <a href="../区块链/" title="区块链" class="md-nav__link">
+      区块链
+    </a>
+  </li>
 
-&quot;account&quot;: &quot;sys&quot;,
+        
+          
+          
+          
 
-&quot;scriptPubKey&quot;: &quot;76a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac&quot;,
 
-&quot;amount&quot;: 0.00992750,
+  <li class="md-nav__item">
+    <a href="../搭建公有链/" title="搭建公有链" class="md-nav__link">
+      搭建公有链
+    </a>
+  </li>
 
-&quot;confirmations&quot;: 4137,
+        
+          
+          
+          
 
-&quot;spendable&quot;: true,
 
-&quot;solvable&quot;: true
+  <li class="md-nav__item">
+    <a href="../智能合约/" title="智能合约" class="md-nav__link">
+      智能合约
+    </a>
+  </li>
 
-}
+        
+          
+          
+          
 
-</code></pre>
 
-<h3 id="3">3、创建负载</h3>
-<blockquote>
-<p>指令：</p>
-</blockquote>
-<p>createrawtransaction '[{"txid":"7ef4ca48422fbd055eb7375145cb59bdadaba13caf29b4279c506a7ba846a33e","vout":0},{"txid":"0b381b15082156911ca8db2761910fe9545356778d70dd09be30fc0bece9ed9d","vout":1,"scriptPubKey":"76a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac","value": 0.00992750}]' '{}'</p>
-<blockquote>
-<p>得到：</p>
-</blockquote>
-<p>01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff0000000000</p>
-<h3 id="4usdt">4、创建USDT交易</h3>
-<p>指令(代币ID，发送代币数量)：omni_createpayload_simplesend 31 2.0</p>
-<p>得到：000000000000000100000000001e8480</p>
-<h3 id="5">5、在交易上绑定代币数据</h3>
-<blockquote>
-<p>指令：</p>
-</blockquote>
-<p>omni_createrawtx_opreturn 01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff0000000000 000000000000000100000000001e8480</p>
-<blockquote>
-<p>得到（事务hash）：</p>
-</blockquote>
-<p>01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff010000000000000000166a146f6d6e69000000000000000100000000001e848000000000</p>
-<h3 id="6">6、在交易上添加接收地址</h3>
-<blockquote>
-<p>指令：</p>
-</blockquote>
-<p>omni_createrawtx_reference 01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff010000000000000000166a146f6d6e69000000000000000100000000001e848000000000 muPuXyRqLBRf8Xyj28d2As8ya4iaw8XWGe</p>
-<blockquote>
-<p>得到（事务hash）：</p>
-</blockquote>
-<p>01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff020000000000000000166a146f6d6e69000000000000000100000000001e848022020000000000001976a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac00000000</p>
-<h3 id="7">7、在交易上指定矿工费用</h3>
-<blockquote>
-<p>指令：（事务HASH，交易信息，找零地址，手续费）</p>
-</blockquote>
-<p>omni_createrawtx_change 01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff020000000000000000166a146f6d6e69000000000000000100000000001e848022020000000000001976a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac00000000 '[{"txid":"7ef4ca48422fbd055eb7375145cb59bdadaba13caf29b4279c506a7ba846a33e","vout":1,"scriptPubKey":"76a914486e3cf761cc47642135140da02669c04dd2451088ac","value": 0.0002},{"txid":"0b381b15082156911ca8db2761910fe9545356778d70dd09be30fc0bece9ed9d","vout":1,"scriptPubKey":"76a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac","value": 0.0002}]' muPuXyRqLBRf8Xyj28d2As8ya4iaw8XWGe 0.0002</p>
-<blockquote>
-<p>得到（事务hash）：</p>
-</blockquote>
-<pre><code>01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff020000000000000000166a146f6d6e69000000000000000100000000001e848022020000000000001976a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac00000000
-</code></pre>
+  <li class="md-nav__item">
+    <a href="../比特币教程/" title="比特币教程" class="md-nav__link">
+      比特币教程
+    </a>
+  </li>
 
-<h3 id="8">8、对交易签名</h3>
-<blockquote>
-<p>指令：</p>
-</blockquote>
-<pre><code>signrawtransaction 01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff020000000000000000166a146f6d6e69000000000000000100000000001e848022020000000000001976a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac00000000
-</code></pre>
+        
+      </ul>
+    </nav>
+  </li>
 
-<blockquote>
-<p>得到（区块信息）：</p>
-</blockquote>
-<pre><code>{
+    
+      
+      
+      
 
-&quot;hex&quot;: &quot;01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e000000006b483045022100d790995554bbda790f44db19a6e59e84ab5c2ab27577be1c406f09e76d6e7fe402204db6ef71c96a22fd91e230787a521c47e3acc0a9b66dae2b08151ef74c1a0e5e012103ad3414464aec8d4f0cdc3fd2540a255c0bc8f20d157f6aa39ce67564e92d3077ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b010000006a473044022073d01e964d0a94540adc5d9db778d2b768043ba071cf5f49af2c2b07a99f6db702202e9870ac127e0ba06226c69242016255e9230816d6eab96ca89ad968111a49a7012103e6f952da72a83b16443d70dbb2e30473b25d6c71a6fdc01fbfbf0638805b4218ffffffff020000000000000000166a146f6d6e69000000000000000100000000001e848022020000000000001976a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac00000000&quot;,
 
-&quot;complete&quot;: true
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      架构师
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        架构师
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
 
-}
-</code></pre>
 
-<h3 id="9">9、广播交易</h3>
-<blockquote>
-<p>指令：</p>
-</blockquote>
-<p>Sendrawtransaction 01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e000000006b483045022100d790995554bbda790f44db19a6e59e84ab5c2ab27577be1c406f09e76d6e7fe402204db6ef71c96a22fd91e230787a521c47e3acc0a9b66dae2b08151ef74c1a0e5e012103ad3414464aec8d4f0cdc3fd2540a255c0bc8f20d157f6aa39ce67564e92d3077ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b010000006a473044022073d01e964d0a94540adc5d9db778d2b768043ba071cf5f49af2c2b07a99f6db702202e9870ac127e0ba06226c69242016255e9230816d6eab96ca89ad968111a49a7012103e6f952da72a83b16443d70dbb2e30473b25d6c71a6fdc01fbfbf0638805b4218ffffffff020000000000000000166a146f6d6e69000000000000000100000000001e848022020000000000001976a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac00000000</p>
-<blockquote>
-<p>得到（交易ID）：</p>
-</blockquote>
-<p>ab28fcd449d1f8e57ead070d798d80fe8f962168341b383adf5bf07fe80e652d</p>
-<p>注意：每次操作后可用指令：</p>
-<p>decoderawtransaction 事务ID 和 omni_decodetransaction 事务ID来查看当前构建的交易信息情况。</p>
-<blockquote>
-<p><strong>参考地址</strong></p>
-</blockquote>
-<p>https://www.zhihu.com/people/duan-pan-ykjym/activities</p>
-<!--more-->
+  <li class="md-nav__item">
+    <a href="../../架构师/TIDB介绍/" title="TIDB介绍" class="md-nav__link">
+      TIDB介绍
+    </a>
+  </li>
 
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../架构师/zookeeper教程/" title="zookeeper教程" class="md-nav__link">
+      zookeeper教程
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../架构师/架构师/" title="架构师" class="md-nav__link">
+      架构师
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      程序人生
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        程序人生
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../程序人生/2018年度总结/" title="2018年度总结" class="md-nav__link">
+      2018年度总结
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../程序人生/你是怎么利用时间的/" title="你是怎么利用时间的" class="md-nav__link">
+      你是怎么利用时间的
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../程序人生/关于我/" title="关于我的JOB" class="md-nav__link">
+      关于我的JOB
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../程序人生/程序人生/" title="程序人生" class="md-nav__link">
+      程序人生
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      编程语言
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        编程语言
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../编程语言/Golang语言实战/" title="Golang语言实战" class="md-nav__link">
+      Golang语言实战
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../编程语言/编程语言/" title="编程语言" class="md-nav__link">
+      编程语言
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../编程语言/面试宝典/" title="面试宝典" class="md-nav__link">
+      面试宝典
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      运维笔记
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        运维笔记
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../运维笔记/docker学习笔记/" title="docker学习笔记" class="md-nav__link">
+      docker学习笔记
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../运维笔记/linux操作手册1/" title="linux操作手册1" class="md-nav__link">
+      linux操作手册1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../运维笔记/linux操作手册2/" title="linux操作手册2" class="md-nav__link">
+      linux操作手册2
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../运维笔记/软件辅助工具/" title="软件辅助工具" class="md-nav__link">
+      软件辅助工具
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../运维笔记/运维笔记/" title="运维笔记" class="md-nav__link">
+      运维笔记
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" title="交易" class="md-nav__link">
+    交易
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" title="1、准备两个地址" class="md-nav__link">
+    1、准备两个地址
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-uxto-usdt" title="2、分别找到发送地址 和热钱包地址的一笔UXTO 作为发送USDT交易的载体" class="md-nav__link">
+    2、分别找到发送地址 和热钱包地址的一笔UXTO 作为发送USDT交易的载体
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" title="3、创建负载" class="md-nav__link">
+    3、创建负载
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4usdt" title="4、创建USDT交易" class="md-nav__link">
+    4、创建USDT交易
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" title="5、在交易上绑定代币数据" class="md-nav__link">
+    5、在交易上绑定代币数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" title="6、在交易上添加接收地址" class="md-nav__link">
+    6、在交易上添加接收地址
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" title="7、在交易上指定矿工费用" class="md-nav__link">
+    7、在交易上指定矿工费用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" title="8、对交易签名" class="md-nav__link">
+    8、对交易签名
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" title="9、广播交易" class="md-nav__link">
+    9、广播交易
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="命令" class="md-nav__link">
+    命令
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#omnicore-cli-getinfo" title="omnicore-cli getinfo" class="md-nav__link">
+    omnicore-cli getinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omnicore-cli-importaddress-1exibj8pkxmspb6dnamlfczytrsnsuuess" title="omnicore-cli importaddress "1EXiBj8pkxmsPb6dNAMLFcZYTRSNsUUesS"" class="md-nav__link">
+    omnicore-cli importaddress "1EXiBj8pkxmsPb6dNAMLFcZYTRSNsUUesS"
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="接口" class="md-nav__link">
+    接口
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="前言" class="md-nav__link">
+    前言
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_send" title="omn​​i_send" class="md-nav__link">
+    omn​​i_send
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_sendall" title="omni_sendall" class="md-nav__link">
+    omni_sendall
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_sendrawtx" title="omn​​i_sendrawtx" class="md-nav__link">
+    omn​​i_sendrawtx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_getinfo" title="omn​​i_getinfo" class="md-nav__link">
+    omn​​i_getinfo
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_getbalance" title="omni_getbalance" class="md-nav__link">
+    omni_getbalance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_getallbalancesforaddress" title="omni_getallbalancesforaddress" class="md-nav__link">
+    omni_getallbalancesforaddress
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_gettransaction" title="omni_gettransaction" class="md-nav__link">
+    omni_gettransaction
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_listtransactions" title="omni_listtransactions" class="md-nav__link">
+    omni_listtransactions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#omni_listpendingtransactions" title="omni_listpendingtransactions" class="md-nav__link">
+    omni_listpendingtransactions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="变更历史" class="md-nav__link">
+    变更历史
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="附录" class="md-nav__link">
+    附录
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/nanocurrency/nano-docs/edit/master/docs/区块链/USDT教程.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>USDT教程</h1>
+                
+                <p>Omni Core是Bitcoin Core的一个分支，其Omni协议功能支持作为顶层的新功能层添加。因此，与API的交互以与Bitcoin Core相同的方式（JSON-RPC）完成，只需使用额外的RPC即可使用Omni协议功能。
 <ul>
 <li><a href="https://github.com/OmniLayer/omnicore/wiki/Use-the-raw-transaction-API-to-create-a-Simple-Send-transaction">使用原始事务API创建简单发送事务</a></li>
 </ul>
-<h2 id="_2">命令</h2>
-<h3 id="omnicore-cli-getinfo">omnicore-cli getinfo</h3>
-<pre><code>{
+<h2 id="_2">命令<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="omnicore-cli-getinfo">omnicore-cli getinfo<a class="headerlink" href="#omnicore-cli-getinfo" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span>{
   &quot;version&quot;: 130200,
   &quot;protocolversion&quot;: 70015,
   &quot;walletversion&quot;: 130000,
@@ -403,16 +1239,15 @@
   &quot;keypoolsize&quot;: 100,
   &quot;paytxfee&quot;: 0.00000000,
   &quot;relayfee&quot;: 0.00001000,
-  &quot;errors&quot;: &quot;Warning: Unknown block versions being mined! It's possible unknown rules are in effect&quot;
+  &quot;errors&quot;: &quot;Warning: Unknown block versions being mined! It&#39;s possible unknown rules are in effect&quot;
 }
+</pre></div>
 
-</code></pre>
-
-<h3 id="omnicore-cli-importaddress-1exibj8pkxmspb6dnamlfczytrsnsuuess">omnicore-cli importaddress "1EXiBj8pkxmsPb6dNAMLFcZYTRSNsUUesS"</h3>
-<h2 id="_3">接口</h2>
-<h3 id="_4">前言</h3>
+<h3 id="omnicore-cli-importaddress-1exibj8pkxmspb6dnamlfczytrsnsuuess">omnicore-cli importaddress "1EXiBj8pkxmsPb6dNAMLFcZYTRSNsUUesS"<a class="headerlink" href="#omnicore-cli-importaddress-1exibj8pkxmspb6dnamlfczytrsnsuuess" title="Permanent link">&para;</a></h3>
+<h2 id="_3">接口<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="_4">前言<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>由于所有现有的比特币核心功能都是Omni Core固有的，因此默认情况下RPC端口保持8332与每个比特币核心一样。如果您希望与比特币核心一起运行Omni Core（例如，通过单独的数据中心），则可以使用该-rpcport<port>选项提名替代端口号。</p>
-<h3 id="omni_send">omn​​i_send</h3>
+<h3 id="omni_send">omn​​i_send<a class="headerlink" href="#omni_send" title="Permanent link">&para;</a></h3>
 <p>创建并广播一个简单的发送事务。</p>
 <p>参数：</p>
 <p>名称 | 类型 | 存在 | 描述
@@ -427,7 +1262,7 @@ referenceamount|string|可选的|发送给接收方的比特币金额（默认�
 <p><code>$ omnicore-cli “ omn​​i_send ”  “ 3M9qvHKtgARhqcMtM5cRT9VaiDJ5PSfQGY ”  “ 37FaKponF7zqoMLUjEiko25pDiuVH5YLEa ” 1 “ 100.0 ”</code></p>
 <p>结果：
 hash          //（字符串）十六进制编码的事务散列</p>
-<h3 id="omni_sendall">omni_sendall</h3>
+<h3 id="omni_sendall">omni_sendall<a class="headerlink" href="#omni_sendall" title="Permanent link">&para;</a></h3>
 <p>Transfers all available tokens in the given ecosystem to the recipient.</p>
 <p>Arguments:</p>
 <p>Name    Type    Presence    Description
@@ -440,7 +1275,7 @@ Result:</p>
 <p>"hash"  // (string) the hex-encoded transaction hash
 Example:</p>
 <p>$ omnicore-cli "omni_sendall" "3M9qvHKtgARhqcMtM5cRT9VaiDJ5PSfQGY" "37FaKponF7zqoMLUjEiko25pDiuVH5YLEa" 2</p>
-<h3 id="omni_sendrawtx">omn​​i_sendrawtx</h3>
+<h3 id="omni_sendrawtx">omn​​i_sendrawtx<a class="headerlink" href="#omni_sendrawtx" title="Permanent link">&para;</a></h3>
 <p>广播原始的Omni Layer交易。</p>
 <p>参数：</p>
 <p>名称  类型  存在  描述
@@ -457,7 +1292,7 @@ referenceamount 串   可选的 发送给接收方的比特币金额（默认情
      “ 1EqTta1Rt8ixAA32DuC29oukbsSWU62qAV ”
 数据检索
 用于数据检索的RPC可用于获取有关Omni生态系统状态的信息。</p>
-<h3 id="omni_getinfo">omn​​i_getinfo</h3>
+<h3 id="omni_getinfo">omn​​i_getinfo<a class="headerlink" href="#omni_getinfo" title="Permanent link">&para;</a></h3>
 <p>Returns various state information of the client and protocol.</p>
 <p>Arguments:</p>
 <p>None</p>
@@ -485,7 +1320,7 @@ referenceamount 串   可选的 发送给接收方的比特币金额（默认情
 }
 Example:</p>
 <p>$ omnicore-cli "omni_getinfo"</p>
-<h3 id="omni_getbalance">omni_getbalance</h3>
+<h3 id="omni_getbalance">omni_getbalance<a class="headerlink" href="#omni_getbalance" title="Permanent link">&para;</a></h3>
 <p>Returns the token balance for a given address and property.</p>
 <p>Arguments:</p>
 <p>Name    Type    Presence    Description
@@ -515,7 +1350,7 @@ Result:</p>
 ]
 Example:</p>
 <p>$ omnicore-cli "omni_getallbalancesforid" 1</p>
-<h3 id="omni_getallbalancesforaddress">omni_getallbalancesforaddress</h3>
+<h3 id="omni_getallbalancesforaddress">omni_getallbalancesforaddress<a class="headerlink" href="#omni_getallbalancesforaddress" title="Permanent link">&para;</a></h3>
 <p>Returns a list of all token balances for a given address.</p>
 <p>Arguments:</p>
 <p>Name    Type    Presence    Description
@@ -531,7 +1366,7 @@ Result:</p>
 ]
 Example:</p>
 <p>$ omnicore-cli "omni_getallbalancesforaddress" "1EXoDusjGwvnjZUyKkxZ4UHEf77z6A5S4P"</p>
-<h3 id="omni_gettransaction">omni_gettransaction</h3>
+<h3 id="omni_gettransaction">omni_gettransaction<a class="headerlink" href="#omni_gettransaction" title="Permanent link">&para;</a></h3>
 <p>Get detailed information about an Omni transaction.</p>
 <p>Arguments:</p>
 <p>Name    Type    Presence    Description
@@ -554,7 +1389,7 @@ Result:</p>
 }
 Example:</p>
 <p>$ omnicore-cli "omni_gettransaction" "1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"</p>
-<h3 id="omni_listtransactions">omni_listtransactions</h3>
+<h3 id="omni_listtransactions">omni_listtransactions<a class="headerlink" href="#omni_listtransactions" title="Permanent link">&para;</a></h3>
 <p>List wallet transactions, optionally filtered by an address and block boundaries.</p>
 <p>Arguments:</p>
 <p>Name    Type    Presence    Description
@@ -596,7 +1431,7 @@ Result:</p>
 ]
 Example:</p>
 <p>$ omnicore-cli "omni_listblocktransactions" 279007</p>
-<h3 id="omni_listpendingtransactions">omni_listpendingtransactions</h3>
+<h3 id="omni_listpendingtransactions">omni_listpendingtransactions<a class="headerlink" href="#omni_listpendingtransactions" title="Permanent link">&para;</a></h3>
 <p>Returns a list of unconfirmed Omni transactions, pending in the memory pool.</p>
 <p>Note: the validity of pending transactions is uncertain, and the state of the memory pool may change at any moment. It is recommended to check transactions after confirmation, and pending transactions should be considered as invalid.</p>
 <p>Arguments:</p>
@@ -619,7 +1454,7 @@ Result:</p>
 ]
 Example:</p>
 <p>$ omnicore-cli "omni_listpendingtransactions"</p>
-<h3 id="_5">变更历史</h3>
+<h3 id="_5">变更历史<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <p>以下调用在Omni Core 0.0.10中被替换，并且使用旧命令的查询被转发。</p>
 <p>send_MP 通过 omni_send
 sendtoowners_MP 通过 omni_sendsto
@@ -638,88 +1473,112 @@ getactivecrowdsales_MP 通过 omni_getactivecrowdsales
 getcrowdsale_MP 通过 omni_getcrowdsale
 getgrants_MP 通过 omni_getgrants
 getsto_MP通过omni_getsto或omni_gettransaction</p>
-<h3 id="_6">附录</h3>
+<h3 id="_6">附录<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Omnicore API 中文版：https://www.codetd.com/article/1692438</li>
-<li>Omnicore API 官方：https://github.com/OmniLayer/omnicore/blob/master/src/omnicore/doc/rpc-api.md</li>
-<li>WHC RPC业务解析：https://www.jianshu.com/p/3139b141832b</li>
-</ul></div>
-        </div>
+<li>Omnicore API 中文版：<a href="https://www.codetd.com/article/1692438">https://www.codetd.com/article/1692438</a></li>
+<li>Omnicore API 官方：<a href="https://github.com/OmniLayer/omnicore/blob/master/src/omnicore/doc/rpc-api.md">https://github.com/OmniLayer/omnicore/blob/master/src/omnicore/doc/rpc-api.md</a></li>
+<li>WHC RPC业务解析：<a href="https://www.jianshu.com/p/3139b141832b">https://www.jianshu.com/p/3139b141832b</a></li>
+</ul>
+                
+                  
+                
+              
+              
+                
 
-        <footer class="col-md-12">
-            <hr>
-            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
-        </footer>
-        <script>
-            var base_url = "../..",
-                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
-        </script>
-        <script src="../../js/base.js" defer></script>
-        <script src="../../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
-            </div>
-            <div class="modal-body">
-                <p>
-                    From here you can search these documents. Enter
-                    your search terms below.
-                </p>
-                <form role="form">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
-                    </div>
-                </form>
-                <div id="mkdocs-search-results"></div>
-            </div>
-            <div class="modal-footer">
-            </div>
+              
+            </article>
+          </div>
         </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Parity使用总结/" title="Parity使用总结" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Parity使用总结
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../交易所/" title="开源交易所" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                开源交易所
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
-</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
-            </div>
-            <div class="modal-body">
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th style="width: 20%;">Keys</th>
-                    <th>Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td class="help shortcut"><kbd>?</kbd></td>
-                    <td>Open this help</td>
-                  </tr>
-                  <tr>
-                    <td class="next shortcut"><kbd>n</kbd></td>
-                    <td>Next page</td>
-                  </tr>
-                  <tr>
-                    <td class="prev shortcut"><kbd>p</kbd></td>
-                    <td>Previous page</td>
-                  </tr>
-                  <tr>
-                    <td class="search shortcut"><kbd>s</kbd></td>
-                    <td>Search</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="modal-footer">
-            </div>
-        </div>
-    </div>
-</div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+  <div class="md-footer-social">
+    <link rel="stylesheet" href="../../assets/fonts/font-awesome.css">
+    
+      <a href="https://github.com/nanocurrency" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/nano" class="md-footer-social__link fa fa-twitter"></a>
+    
+      <a href="https://chat.nano.org" class="md-footer-social__link fa fa-comments"></a>
+    
+      <a href="https://reddit.com/r/nanocurrency" class="md-footer-social__link fa fa-reddit"></a>
+    
+      <a href="https://medium.com/nanocurrency" class="md-footer-social__link fa fa-medium"></a>
+    
+      <a href="https://facebook.com/nanofoundation" class="md-footer-social__link fa fa-facebook"></a>
+    
+      <a href="https://linkedin.com/company/nano-foundation" class="md-footer-social__link fa fa-linkedin"></a>
+    
+      <a href="https://www.youtube.com/nanocurrency/" class="md-footer-social__link fa fa-youtube"></a>
+    
+      <a href="https://www.instagram.com/nanocurrency/" class="md-footer-social__link fa fa-instagram"></a>
+    
+  </div>
 
-    </body>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.39abc4af.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+      
+        <script src="https://unpkg.com/mermaid@7.1.2/dist/mermaid.min.js"></script>
+      
+    
+  </body>
 </html>
