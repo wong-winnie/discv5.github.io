@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>docker学习笔记 - 何海涛</title>
+        <title>ETH搭建私有链 - 何海涛</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -61,56 +61,56 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">区块链 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
 <li >
-    <a href="../../区块链/DH密钥交换和ECDH原理/">DH密钥交换和ECDH原理</a>
+    <a href="../DH密钥交换和ECDH原理/">DH密钥交换和ECDH原理</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">ETH搭建私有链</a>
 </li>
                                     
 <li >
-    <a href="../../区块链/ETH搭建私有链/">ETH搭建私有链</a>
+    <a href="../Parity使用总结/">Parity使用总结</a>
 </li>
                                     
 <li >
-    <a href="../../区块链/Parity使用总结/">Parity使用总结</a>
+    <a href="../USDT教程/">USDT教程</a>
 </li>
                                     
 <li >
-    <a href="../../区块链/USDT教程/">USDT教程</a>
+    <a href="../交易所/">开源交易所</a>
 </li>
                                     
 <li >
-    <a href="../../区块链/交易所/">开源交易所</a>
+    <a href="../交易所钱包充币/">交易所充币.md</a>
 </li>
                                     
 <li >
-    <a href="../../区块链/交易所钱包充币/">交易所充币.md</a>
+    <a href="../交易所钱包归集/">交易所钱包归集</a>
 </li>
                                     
 <li >
-    <a href="../../区块链/交易所钱包归集/">交易所钱包归集</a>
+    <a href="../以太坊教程/">以太坊教程</a>
 </li>
                                     
 <li >
-    <a href="../../区块链/以太坊教程/">以太坊教程</a>
+    <a href="../区块链/">区块链</a>
 </li>
                                     
 <li >
-    <a href="../../区块链/区块链/">区块链</a>
+    <a href="../搭建公有链/">搭建公有链</a>
 </li>
                                     
 <li >
-    <a href="../../区块链/搭建公有链/">搭建公有链</a>
+    <a href="../智能合约/">智能合约</a>
 </li>
                                     
 <li >
-    <a href="../../区块链/智能合约/">智能合约</a>
-</li>
-                                    
-<li >
-    <a href="../../区块链/比特币教程/">比特币教程</a>
+    <a href="../比特币教程/">比特币教程</a>
 </li>
                                 </ul>
                             </li>
@@ -165,28 +165,28 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">运维笔记 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li class="active">
-    <a href="./">docker学习笔记</a>
+<li >
+    <a href="../../运维笔记/docker学习笔记/">docker学习笔记</a>
 </li>
                                     
 <li >
-    <a href="../linux操作手册1/">linux操作手册1</a>
+    <a href="../../运维笔记/linux操作手册1/">linux操作手册1</a>
 </li>
                                     
 <li >
-    <a href="../linux操作手册2/">linux操作手册2</a>
+    <a href="../../运维笔记/linux操作手册2/">linux操作手册2</a>
 </li>
                                     
 <li >
-    <a href="../软件辅助工具/">软件辅助工具</a>
+    <a href="../../运维笔记/软件辅助工具/">软件辅助工具</a>
 </li>
                                     
 <li >
-    <a href="../运维笔记/">运维笔记</a>
+    <a href="../../运维笔记/运维笔记/">运维笔记</a>
 </li>
                                 </ul>
                             </li>
@@ -199,12 +199,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../../编程语言/面试宝典/">
+                                <a rel="next" href="../DH密钥交换和ECDH原理/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../linux操作手册1/">
+                                <a rel="prev" href="../Parity使用总结/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -216,48 +216,160 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#1">1.安装软件</a></li>
-        <li class="main "><a href="#2">2.生产环境</a></li>
+        <li class="main active"><a href="#_1">新建创世文件</a></li>
+        <li class="main "><a href="#_2">初始化创世区块</a></li>
+        <li class="main "><a href="#_3">启动网络节点</a></li>
+        <li class="main "><a href="#_4">开始挖矿</a></li>
+        <li class="main "><a href="#_5">转账交易</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="1">1.安装软件</h2>
+<p>以太坊私有链搭建，可以给想接触和玩的新手提供一个入门体验，你们真正感受下区块链的魅力。还有就是在测试环境中也可以的，以太坊主网数据同步始终都是一个硬伤，硬盘消耗太大而且国内同步一般很难完全实现的了，下面的文章就是为了更大家提供一定的方便，详细的讲解里面的步骤。</p>
+<!--more-->
+
+<p>以太坊私有链搭建指南</p>
 <blockquote>
-<p>docker安装mysql</p>
+<p>https://g2ex.github.io/2017/09/12/ethereum-guidance/</p>
 </blockquote>
-<pre><code>docker pull mysql
-docker run -p 3306:3306 --name mysql -v ~/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:
-docker  exec -i -t 3bb555abd8ab /bin/bash
+<h3 id="_1">新建创世文件</h3>
+<p>/home/ubuntu/data/eth_data</p>
+<pre><code># genesis.json
+
+{
+ &quot;nonce&quot;: &quot;0x0000000000000042&quot;,
+ &quot;timestamp&quot;: &quot;0x0&quot;,
+ &quot;parentHash&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;,
+ &quot;mixhash&quot;: &quot;0x0000000000000000000000000000000000000000000000000000000000000000&quot;,
+ &quot;extraData&quot;: &quot;0x&quot;,
+ &quot;gasLimit&quot;: &quot;0x80000000&quot;,
+ &quot;difficulty&quot;: &quot;0x3&quot;,
+ &quot;coinbase&quot;: &quot;0x3333333333333333333333333333333333333333&quot;,
+ &quot;config&quot;:{
+    &quot;chainId&quot;: 55,
+    &quot;homesteadBlock&quot;: 0,
+    &quot;eip155Block&quot;: 0
+ },
+ &quot;alloc&quot;: {}
+}
 </code></pre>
 
-<blockquote>
-<p>docker安装redis</p>
-</blockquote>
-<pre><code>docker pull redis
-docker run -d --name redis -p 6379:6379 redis
-docker exec -i -t redis /bin/bash
+<p><strong>参数设置：</strong></p>
+<ul>
+<li>nonce：64位随机数，用于挖矿</li>
+<li>timestamp：创世块的时间戳</li>
+<li>parentHash：上一个区块的hash值，因为是创世块，所以这个值是0</li>
+<li>mixhash：与 nonce 配合用于挖矿，由上一个区块的一部分生成的 hash。</li>
+<li>extraData：附加信息，任意填写</li>
+<li>gasLimit ：对GAS的消耗总量限制，用来限制区块能包含的交易信息总和，因为我们就测试链，所以随意填写。</li>
+<li>difficulty：难度值，越大越难</li>
+<li>coinbase：矿工账号，第一个区块挖出后将给这个矿工账号发送奖励的以太币。</li>
+<li>alloc： 预设账号以及账号的以太币数量，测试链挖矿比较容易可以不配置</li>
+<li>chainId 指定了独立的区块链网络 ID，不同 ID 网络的节点无法互相连接。</li>
+</ul>
+<h3 id="_2">初始化创世区块</h3>
+<pre><code>geth --datadir=/home/ubuntu/data/eth_data init /home/ubuntu/data/eth_data/genesis.json
 </code></pre>
 
-<blockquote>
-<p>docker安装nginx</p>
-</blockquote>
-<pre><code>docker pull nginx
+<h3 id="_3">启动网络节点</h3>
+<pre><code>geth --identity &quot;TestNode&quot; --rpc --rpcapi web3,eth,net,db,personal,admin --rpcaddr 0.0.0.0 --rpcport &quot;8545&quot; --datadir=/home/ubuntu/data/eth_data --port &quot;30303&quot; --ws --wsaddr 0.0.0.0 --wsport &quot;8546&quot; --wsorigins=&quot;*&quot;  --nodiscover console
 </code></pre>
 
+<p><strong>参数说明</strong>
+- datadir, 设置当前区块链网络数据存放的位置
+- init，初始化，生成创世区块
+- identity, 自定义的节点名字
+- rpc , 允许 HTTP-RPC 访问
+- rpcport , HTTP_RPC的访问端口，默认为8545
+- port , 网络监听端口，默认为30303
+- datadir, 设置当前区块链网络数据存放的位置
+- console, 启动命令行模式，可以在Geth中执行命令
+- nodiscover, 私有链地址，不会被网上看到
+- </p>
+<h3 id="_4">开始挖矿</h3>
+<pre><code># 创建一个新账号，密码为123456
+personal.newAccount(&quot;123456&quot;)
+
+# 查看所有账号
+eth.accounts
+
+# 开始挖矿
+miner.start(1)
+
+
+# 停止挖矿
+miner.stop()
+
+# 查看节点
+admin.nodeInfo.enode
+
+# 加入节点
+admin.addPeer(&quot;enode://b753493071f1983fe7017425713dea2ef6a963db52d73b0ae6f0bc3a88f18bbe874237069c1d72f270a3213ce6f892b6c7b10524984051e2e556c63bad9ec387@192.168.1.126:30303&quot;)
+
+# 查看节点连接
+net.peerCount
+admin.peers
+
+# 查看账户金额
+web3.fromWei(eth.getBalance(eth.accounts[0]), &quot;ether&quot;)
+
+# 查看区块高度
+eth.blockNumber
+
+
+# 查看第10个区块的细节
+eth.getBlock(10)
+
+</code></pre>
+
+<p><strong>转换单位</strong>
+- Wei = 10^0 Wei
+- Ada = 10^3 Wei
+- Babbage = 10^6 Wei
+- Shannon = 10^9 Weiv
+- Szabo = 10^12 Wei
+- Finney = 10^15 Wei
+- Ether = 10^18 Wei
+- Einstein = 10^21 Wei
+- Douglas = 10^42 Wei
+- </p>
+<h3 id="_5">转账交易</h3>
+<p><strong>转账</strong>
+转账前先解锁账户</p>
 <blockquote>
-<p>docker安装YAPI</p>
+<p>eth.sendTransaction({from:eth.accounts[0],to:eth.accounts[1],value:web3.toWei(30,"ether")})</p>
+</blockquote>
+<p><strong>解锁账号</strong></p>
+<blockquote>
+<p>personal.unlockAccount(eth.accounts[0])</p>
+</blockquote>
+<p><strong>区块内容</strong></p>
+<blockquote>
+<p>eth.getBlock(11)</p>
 </blockquote>
 <pre><code>
-</code></pre>
-
-<blockquote>
-<p>docker安装gogs</p>
-</blockquote>
-<pre><code>
-</code></pre>
-
-<h2 id="2">2.生产环境</h2></div>
+  difficulty: 131072,
+  extraData: &quot;0xd88301080c846765746888676f312e31302e33856c696e7578&quot;,
+  gasLimit: 2124527304,
+  gasUsed: 21000,
+  hash: &quot;0x68495bf329e886a8043d1af74d145a870ae6aa2d4e42134499b3730e5c35d4fe&quot;,
+  logsBloom: &quot;0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000&quot;,
+  miner: &quot;0x9cac40f650e2cbe459dcb32c7c23103497134467&quot;,
+  mixHash: &quot;0xbbf5053e0409cded11f0c8f1059cad389d366723cb2f6c077d6c71c36d31a254&quot;,
+  nonce: &quot;0x3cc35610dc92f143&quot;,
+  number: 11,
+  parentHash: &quot;0x819037bcc65eb789eca82fcc3d6c686852ab8297df6396cffa6cfffeaffbcd88&quot;,
+  receiptsRoot: &quot;0x170861bbc9f17f29b4c8ef046f44fa7435c3ad3a54e752591c87050345c29d31&quot;,
+  sha3Uncles: &quot;0x1dcc4de8dec75d7aab85b567b6ccd41ad312451b948a7413f0a142fd40d49347&quot;,
+  size: 653,
+  stateRoot: &quot;0x6e44fbe836ebf62523a37bbbb1beaad0c0802be9ff5c4e7b19c16a1eb4c50112&quot;,
+  timestamp: 1529972844,
+  totalDifficulty: 1444675,
+  transactions: [&quot;0x8d6d1eb3c1c82be1f419d8f772048644361c41362fd8de27f8252470f975d6bb&quot;],
+  transactionsRoot: &quot;0x98881bb99ed82df9a69726705fb2ac2d1371e9ba992c52ed3b4cd3ee50762d38&quot;,
+  uncles: []
+}
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">

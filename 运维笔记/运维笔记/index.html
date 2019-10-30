@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>运维笔记 - 何海涛</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">何海涛</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">首页</a>
+                            </li>
+                            <li >
+                                <a href="../../about/">关于我的JOB</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">人工智能 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../人工智能/人工智能/">人工智能</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">区块链 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../区块链/DH密钥交换和ECDH原理/">DH密钥交换和ECDH原理</a>
+</li>
+                                    
+<li >
+    <a href="../../区块链/ETH搭建私有链/">ETH搭建私有链</a>
+</li>
+                                    
+<li >
+    <a href="../../区块链/Parity使用总结/">Parity使用总结</a>
+</li>
+                                    
+<li >
+    <a href="../../区块链/USDT教程/">USDT教程</a>
+</li>
+                                    
+<li >
+    <a href="../../区块链/交易所/">开源交易所</a>
+</li>
+                                    
+<li >
+    <a href="../../区块链/交易所钱包充币/">交易所充币.md</a>
+</li>
+                                    
+<li >
+    <a href="../../区块链/交易所钱包归集/">交易所钱包归集</a>
+</li>
+                                    
+<li >
+    <a href="../../区块链/以太坊教程/">以太坊教程</a>
+</li>
+                                    
+<li >
+    <a href="../../区块链/区块链/">区块链</a>
+</li>
+                                    
+<li >
+    <a href="../../区块链/搭建公有链/">搭建公有链</a>
+</li>
+                                    
+<li >
+    <a href="../../区块链/智能合约/">智能合约</a>
+</li>
+                                    
+<li >
+    <a href="../../区块链/比特币教程/">比特币教程</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">架构师 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../架构师/TIDB介绍/">TIDB介绍</a>
+</li>
+                                    
+<li >
+    <a href="../../架构师/zookeeper教程/">zookeeper教程</a>
+</li>
+                                    
+<li >
+    <a href="../../架构师/架构师/">架构师</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">程序人生 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../程序人生/2018年度总结/">2018年度总结</a>
+</li>
+                                    
+<li >
+    <a href="../../程序人生/你是怎么利用时间的/">你是怎么利用时间的</a>
+</li>
+                                    
+<li >
+    <a href="../../程序人生/程序人生/">程序人生</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">编程语言 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../编程语言/Golang语言实战/">Golang语言实战</a>
+</li>
+                                    
+<li >
+    <a href="../../编程语言/编程语言/">编程语言</a>
+</li>
+                                    
+<li >
+    <a href="../../编程语言/面试宝典/">面试宝典</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">运维笔记 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../docker学习笔记/">docker学习笔记</a>
+</li>
+                                    
+<li >
+    <a href="../linux操作手册1/">linux操作手册1</a>
+</li>
+                                    
+<li >
+    <a href="../linux操作手册2/">linux操作手册2</a>
+</li>
+                                    
+<li >
+    <a href="../软件辅助工具/">软件辅助工具</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">运维笔记</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../软件辅助工具/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="disabled">
+                                <a rel="prev" >
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#linux">Linux 指南</a></li>
+        <li class="main "><a href="#docker">Docker容器</a></li>
+            <li><a href="#_1">基础命令</a></li>
+            <li><a href="#_2">高级用法</a></li>
+        <li class="main "><a href="#pm2">PM2管理软件</a></li>
+        <li class="main "><a href="#mysql">Mysql</a></li>
+        <li class="main "><a href="#git">GIT命令</a></li>
+            <li><a href="#_3">常用命令</a></li>
+            <li><a href="#quick-setup">Quick setup</a></li>
+            <li><a href="#_4">删除远程分支</a></li>
+            <li><a href="#_5">合并分支</a></li>
+            <li><a href="#_6">全局配置</a></li>
+            <li><a href="#_7">快捷键命令</a></li>
+            <li><a href="#git_1">Git自动补全设置</a></li>
+        <li class="main "><a href="#nginx">Nginx</a></li>
+            <li><a href="#explorergmchain">浏览器 (explorer.gmcha.in)</a></li>
+            <li><a href="#web-vaultgmchain">Web钱包 (vault.gmcha.in)</a></li>
+            <li><a href="#pxygmchain">代理服务 (pxy.gmcha.in)</a></li>
+            <li><a href="#wss-wssgmchain">WSS服务 (wss.gmcha.in)</a></li>
+            <li><a href="#app-walletgmchain">钱包APP （wallet.gmcha.in）</a></li>
+        <li class="main "><a href="#_8">更多参考文献</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>集合docker， git， mysql, linux 等等</p>
+<!--more-->
+
+<h2 id="linux">Linux 指南</h2>
+<p>ubuntu  ALL=(ALL) NOPASSWD:ALL</p>
+<h2 id="docker">Docker容器</h2>
+<h3 id="_1">基础命令</h3>
+<p>1.停止所有的container，这样才能够删除其中的images：</p>
+<p><code>docker stop $(docker ps -a -q)</code></p>
+<p>如果想要删除所有container的话再加一个指令：</p>
+<p><code>docker rm $(docker ps -a -q)</code></p>
+<ul>
+<li>查看docker容器：</li>
+</ul>
+<p><code>docker ps -a</code></p>
+<ul>
+<li>重启docker容器：</li>
+</ul>
+<p><code>docker restart c4f5e1aa05a8</code></p>
+<ul>
+<li>进入docker里面：</li>
+</ul>
+<p><code>docker exec -it c4f5e1aa05a8 /bin/bash</code></p>
+<!-- more -->
+
+<p>2.查看当前有些什么images</p>
+<p><code>docker images</code></p>
+<p>3.删除images，通过image的id来指定删除谁</p>
+<p><code>docker rmi &lt;image id&gt;</code></p>
+<p>想要删除untagged images，也就是那些id为<None>的image的话可以用</p>
+<p><code>docker rmi $(docker images | grep "^&lt;none&gt;" | awk "{print $3}")</code></p>
+<p>要删除全部image的话</p>
+<pre><code>docker rmi $(docker images -q)
+
+sudo docker export 7691a814370e &gt; ubuntu.tar
+</code></pre>
+
+<h3 id="_2">高级用法</h3>
+<p><a href="/post/运维笔记/docker学习笔记">Docker学习笔记</a></p>
+<p><a href="/post/架构师/zookeeper客户端操作">zookeeper客户端操作</a></p>
+<h2 id="pm2">PM2管理软件</h2>
+<p>官方文档: http://pm2.keymetrics.io/docs/usage/quick-start</p>
+<p>安装软件: npm install -g pm2</p>
+<pre><code>pm2 start index.js --name=&quot;server&quot;  # 启动软件
+pm2 start index.js --name=&quot;wss&quot;  # 启动软件
+pm2 start server.js --name=&quot;explorer&quot;  # 启动软件
+pm2 start index.js  --name=&quot;pay&quot;  # 启动软件
+pm2 start index.js  --name=&quot;api&quot;  # 启动软件
+
+# 停止
+pm2 stop 0
+
+# 删除
+pm2 delete 0
+$ pm2 start app.js              # 启动app.js应用程序
+$ pm2 start app.js -i 4         # cluster mode 模式启动4个app.js的应用实例     # 4个应用程序会自动进行负载均衡
+$ pm2 start app.js --name=&quot;api&quot; # 启动应用程序并命名为 &quot;api&quot;
+$ pm2 start app.js --watch      # 当文件变化时自动重启应用
+$ pm2 start script.sh           # 启动 bash 脚本
+$ pm2 list                      # 列表 PM2 启动的所有的应用程序
+$ pm2 monit                     # 显示每个应用程序的CPU和内存占用情况
+$ pm2 show [app-name]           # 显示应用程序的所有信息
+$ pm2 logs                      # 显示所有应用程序的日志
+$ pm2 logs [app-name]           # 显示指定应用程序的日志
+$ pm2 flush
+$ pm2 stop all                  # 停止所有的应用程序
+$ pm2 stop 0                    # 停止 id为 0的指定应用程序
+$ pm2 restart all               # 重启所有应用
+$ pm2 reload all                # 重启 cluster mode下的所有应用
+$ pm2 gracefulReload all        # Graceful reload all apps in cluster mode
+$ pm2 delete all                # 关闭并删除所有应用
+$ pm2 delete 0                  # 删除指定应用 id 0
+$ pm2 scale api 10              # 把名字叫api的应用扩展到10个实例
+$ pm2 reset [app-name]          # 重置重启数量
+$ pm2 startup                   # 创建开机自启动命令
+$ pm2 save                      # 保存当前应用列表
+$ pm2 resurrect                 # 重新加载保存的应用列表
+$ pm2 update                    # Save processes, kill PM2 and restore processes
+$ pm2 generate                  # Generate a sample json configuration file
+$ pm2 deploy app.json prod setup    # Setup &quot;prod&quot; remote server
+$ pm2 deploy app.json prod          # Update &quot;prod&quot; remote server
+$ pm2 deploy app.json prod revert 2 # Revert &quot;prod&quot; remote server by 2
+$ pm2 module:generate [name]    # Generate sample module with name [name]
+$ pm2 install pm2-logrotate     # Install module (here a log rotation system)
+$ pm2 uninstall pm2-logrotate   # Uninstall module
+$ pm2 publish                   # Increment version, git push and npm publish
+
+</code></pre>
+
+<h2 id="mysql">Mysql</h2>
+<pre><code>mysql -uroot -p123456
+
+create database test DEFAULT CHARSET utf8 COLLATE utf8_general_ci;
+
+GRANT ALL PRIVILEGES ON test.* TO 'test'@'%' IDENTIFIED BY '123456' WITH GRANT OPTION;
+
+flush privileges;
+
+</code></pre>
+
+<hr />
+<h2 id="git">GIT命令</h2>
+<h3 id="_3">常用命令</h3>
+<pre><code>ssh-keygen #产生公私钥
+git status #查看状态
+git branch -a #查看分支列表
+git pull #拉取代码
+git reset --hard #回滚本地未提交的修改
+git reset --hard 665424f7dbf #回滚到指定版本
+git checkout -b fea_clock #创建新分支并切换
+git add -A / .   #添加全部修改
+git commit -m &quot;add&quot; #提交修改
+git push origin master #提交到master分支
+git checkout fea_clock #切换到fea_clock分支
+git merge fea_clock
+git checkout a.cpp  #回退修改的文件
+git cherry-pick  665424f7dbf # 合并某个提交
+git remote -v     #查看当前git路径
+
+</code></pre>
+
+<h3 id="quick-setup">Quick setup</h3>
+<p>…or create a new repository on the command line</p>
+<pre><code>echo &quot;# test&quot; &gt;&gt; README.md
+git init
+git add README.md
+git commit -m &quot;first commit&quot;
+git remote add origin git@github.com:discv5/test.git
+git push -u origin master
+
+</code></pre>
+
+<p>…or push an existing repository from the command line</p>
+<pre><code>git remote add origin git@github.com:discv5/test.git
+git push -u origin master
+</code></pre>
+
+<h3 id="_4">删除远程分支</h3>
+<pre><code>git rebase --abort # 终止rebase错误
+git push origin :fea_bug
+git remote prune origin
+git branch -D fea_bug
+</code></pre>
+
+<h3 id="_5">合并分支</h3>
+<pre><code>git branch -a
+git checkout fea_clock
+git add .
+git commit -m &quot;update&quot;
+
+git rebase develop 或者
+git rebase -i 665424f7dbf
+
+git checkout develop
+git merge fea_clock
+git push origin develop
+
+</code></pre>
+
+<h3 id="_6">全局配置</h3>
+<pre><code>git config --global user.name &quot;ht_927&quot; 
+git config --global user.email &quot;ht_927@126.com&quot;
+
+</code></pre>
+
+<h3 id="_7">快捷键命令</h3>
+<pre><code>git config --global alias.tr &quot;log --graph --decorate --pretty=format:'%h -%C(red)%d%Creset %s (%Cblue%cn%Creset %ci -- %cr)' --abbrev-commit&quot;
+
+</code></pre>
+
+<h3 id="git_1">Git自动补全设置</h3>
+<pre><code>下载git-completion.bash 并放到home 目录下： 
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash 
+将如下行放到.bash_profile 文件中 
+
+if [ -f ~/.git-completion.bash ]; then 
+. ~/.git-completion.bash 
+fi 
+将其立即生效： 
+source ~/.bash_profile
+此时就可以代码补全了，比如我要切换到某个branch，则只需要输入git branch 然后按「TAB」键即可选则需要的branch分支了。
+
+</code></pre>
+
+<h2 id="nginx">Nginx</h2>
+<h3 id="explorergmchain">浏览器 (explorer.gmcha.in)</h3>
+<p><strong>80 http</strong></p>
+<pre><code>  server {
+        listen        80;
+        server_name   explorer.gmcha.in;
+        rewrite ^(.*)$ https://${server_name}$1 permanent;
+        location /api/ {
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header Host $http_host;
+            proxy_set_header X-NginX-Proxy true;
+
+            proxy_pass http://127.0.0.1:3001;
+        }
+
+        location / {
+            root /home/ubuntu/work/gmchain-explorer/build;
+            try_files $uri $uri/ /index.html
+            index index.html;
+        }
+  }
+</code></pre>
+
+<!-- more -->
+
+<p><strong>443 https</strong></p>
+<pre><code>  server {
+        listen        443 ssl;
+        ssl on;
+        ssl_certificate  /opt/ssl/vault.gmcha.in/full_chain.pem;
+        ssl_certificate_key  /opt/ssl/vault.gmcha.in/private.key;
+        ssl_session_timeout  5m;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS;
+        ssl_prefer_server_ciphers   on;
+
+        location /api/ {
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header Host $http_host;
+            proxy_set_header X-NginX-Proxy true;
+
+            proxy_pass http://127.0.0.1:3001;
+        }
+
+        location / {
+            root /home/ubuntu/work/gmchain-explorer/build;
+            try_files $uri $uri/ /index.html
+            index index.html;
+        }
+  }
+</code></pre>
+
+<h3 id="web-vaultgmchain">Web钱包 (vault.gmcha.in)</h3>
+<p><strong>80 http</strong></p>
+<pre><code>  server {
+    listen        443 ssl;
+    server_name   vault.gmcha.in;
+    ssl on;
+    ssl_certificate  /opt/ssl/vault.gmcha.in/full_chain.pem;
+    ssl_certificate_key  /opt/ssl/vault.gmcha.in/private.key;
+    ssl_session_timeout  5m;
+    ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+    ssl_ciphers ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS;
+    ssl_prefer_server_ciphers   on;
+
+    location / {
+        root /data/wwwroot/vault;
+        try_files $uri $uri/ /index.html
+        index index.html;
+    }
+
+  }
+</code></pre>
+
+<p><strong>443 https</strong></p>
+<pre><code>  server {
+    listen        80;
+    server_name   vault.gmcha.in;
+    rewrite ^(.*)$ https://${server_name}$1 last;
+    location / {
+        root /data/wwwroot/vault;
+        try_files $uri $uri/ /index.html
+        index index.html;
+    }
+  }
+</code></pre>
+
+<h3 id="pxygmchain">代理服务 (pxy.gmcha.in)</h3>
+<p><strong>80 http</strong></p>
+<pre><code>  server {
+        listen 80;
+        server_name pxy.gmcha.in;
+        #rewrite ^(.*)$ https://${server_name}$1 permanent;
+        location / {
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header Host $http_host;
+            proxy_set_header X-NginX-Proxy true;
+
+            proxy_pass http://127.0.0.1:9950;
+        }
+    }
+</code></pre>
+
+<p><strong>443 https</strong></p>
+<pre><code>server {
+        listen        443 ssl;
+        server_name   pxy.gmcha.in;
+        ssl on;
+        ssl_certificate  /opt/ssl/vault.gmcha.in/full_chain.pem;
+        ssl_certificate_key  /opt/ssl/vault.gmcha.in/private.key;
+        ssl_session_timeout  5m;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS;
+        ssl_prefer_server_ciphers   on;
+
+        location / {
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header Host $http_host;
+            proxy_set_header X-NginX-Proxy true;
+
+            proxy_pass http://127.0.0.1:9950;
+        }
+    }
+
+</code></pre>
+
+<h3 id="wss-wssgmchain">WSS服务 (wss.gmcha.in)</h3>
+<p><strong>80 http</strong></p>
+<pre><code>    server {
+        listen 80;
+        server_name wss.gmcha.in;
+        #rewrite ^(.*)$ https://${server_name}$1 permanent;
+        location / {
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header Host $http_host;
+            proxy_set_header X-NginX-Proxy true;
+
+            proxy_pass http://127.0.0.1:3333;
+
+            # Socket.IO Support
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection &quot;upgrade&quot;;
+        }
+    }
+</code></pre>
+
+<p><strong>443 https</strong></p>
+<pre><code>    server {
+        listen        443 ssl;
+        server_name   wss.gmcha.in;
+        ssl on;
+        ssl_certificate  /opt/ssl/vault.gmcha.in/full_chain.pem;
+        ssl_certificate_key  /opt/ssl/vault.gmcha.in/private.key;
+        ssl_session_timeout  5m;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS;
+        ssl_prefer_server_ciphers   on;
+
+        location / {
+            proxy_set_header X-Real-IP $remote_addr;
+            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header X-Forwarded-Proto $scheme;
+            proxy_set_header Host $http_host;
+            proxy_set_header X-NginX-Proxy true;
+
+            proxy_pass http://127.0.0.1:3333;
+
+            # Socket.IO Support
+            proxy_http_version 1.1;
+            proxy_set_header Upgrade $http_upgrade;
+            proxy_set_header Connection &quot;upgrade&quot;;
+        }
+    }
+
+</code></pre>
+
+<h3 id="app-walletgmchain">钱包APP （wallet.gmcha.in）</h3>
+<p><strong>80 http</strong></p>
+<pre><code>  server {
+         listen        80;
+         server_name   wallet.gmcha.in;
+
+         location / {
+               #proxy_set_header X-Real-IP $remote_addr;
+               #proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+               #proxy_set_header X-Forwarded-Proto $scheme;
+               #proxy_set_header Host $http_host;
+               #proxy_set_header X-NginX-Proxy true;
+
+               proxy_pass http://127.0.0.1:8081;
+               proxy_redirect off;
+
+               # Socket.IO Support
+               proxy_http_version 1.1;
+               proxy_set_header Upgrade $http_upgrade;
+               proxy_set_header Connection &quot;upgrade&quot;;
+        }
+   }
+
+
+</code></pre>
+
+<p><strong>443 https</strong></p>
+<pre><code>server {
+        listen        443 ssl;
+        server_name   wallet.gmcha.in;
+        ssl on;
+        ssl_certificate  /opt/ssl/vault.gmcha.in/full_chain.pem;
+        ssl_certificate_key  /opt/ssl/vault.gmcha.in/private.key;
+        ssl_session_timeout  5m;
+        ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        ssl_ciphers ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:DHE-RSA-AES128-GCM-SHA256:DHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA384:ECDHE-RSA-AES128-SHA:ECDHE-ECDSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-RSA-AES256-SHA:DHE-RSA-AES128-SHA256:DHE-RSA-AES128-SHA:DHE-RSA-AES256-SHA256:DHE-RSA-AES256-SHA:ECDHE-ECDSA-DES-CBC3-SHA:ECDHE-RSA-DES-CBC3-SHA:EDH-RSA-DES-CBC3-SHA:AES128-GCM-SHA256:AES256-GCM-SHA384:AES128-SHA256:AES256-SHA256:AES128-SHA:AES256-SHA:DES-CBC3-SHA:!DSS;
+        ssl_prefer_server_ciphers   on;
+
+         location / {
+               #proxy_set_header X-Real-IP $remote_addr;
+               #proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+               #proxy_set_header X-Forwarded-Proto $scheme;
+               #proxy_set_header Host $http_host;
+               #proxy_set_header X-NginX-Proxy true;
+
+               proxy_pass http://127.0.0.1:8081;
+               proxy_redirect off;
+
+               # Socket.IO Support
+               proxy_http_version 1.1;
+               proxy_set_header Upgrade $http_upgrade;
+               proxy_set_header Connection &quot;upgrade&quot;;
+        }
+   }
+
+</code></pre>
+
+<h2 id="_8">更多参考文献</h2>
+<ul>
+<li>gogs搭建教程：https://www.jianshu.com/p/4e43bda3e1f2</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

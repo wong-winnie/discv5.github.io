@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>USDT教程 - 何海涛</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap-3.0.3.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+
+                <!-- Collapsed navigation -->
+                <div class="navbar-header">
+                    <!-- Expander button -->
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="../..">何海涛</a>
+                </div>
+
+                <!-- Expanded navigation -->
+                <div class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="../..">首页</a>
+                            </li>
+                            <li >
+                                <a href="../../about/">关于我的JOB</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">人工智能 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../人工智能/人工智能/">人工智能</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">区块链 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../DH密钥交换和ECDH原理/">DH密钥交换和ECDH原理</a>
+</li>
+                                    
+<li >
+    <a href="../ETH搭建私有链/">ETH搭建私有链</a>
+</li>
+                                    
+<li >
+    <a href="../Parity使用总结/">Parity使用总结</a>
+</li>
+                                    
+<li class="active">
+    <a href="./">USDT教程</a>
+</li>
+                                    
+<li >
+    <a href="../交易所/">开源交易所</a>
+</li>
+                                    
+<li >
+    <a href="../交易所钱包充币/">交易所充币.md</a>
+</li>
+                                    
+<li >
+    <a href="../交易所钱包归集/">交易所钱包归集</a>
+</li>
+                                    
+<li >
+    <a href="../以太坊教程/">以太坊教程</a>
+</li>
+                                    
+<li >
+    <a href="../区块链/">区块链</a>
+</li>
+                                    
+<li >
+    <a href="../搭建公有链/">搭建公有链</a>
+</li>
+                                    
+<li >
+    <a href="../智能合约/">智能合约</a>
+</li>
+                                    
+<li >
+    <a href="../比特币教程/">比特币教程</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">架构师 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../架构师/TIDB介绍/">TIDB介绍</a>
+</li>
+                                    
+<li >
+    <a href="../../架构师/zookeeper教程/">zookeeper教程</a>
+</li>
+                                    
+<li >
+    <a href="../../架构师/架构师/">架构师</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">程序人生 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../程序人生/2018年度总结/">2018年度总结</a>
+</li>
+                                    
+<li >
+    <a href="../../程序人生/你是怎么利用时间的/">你是怎么利用时间的</a>
+</li>
+                                    
+<li >
+    <a href="../../程序人生/程序人生/">程序人生</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">编程语言 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../编程语言/Golang语言实战/">Golang语言实战</a>
+</li>
+                                    
+<li >
+    <a href="../../编程语言/编程语言/">编程语言</a>
+</li>
+                                    
+<li >
+    <a href="../../编程语言/面试宝典/">面试宝典</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">运维笔记 <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li >
+    <a href="../../运维笔记/docker学习笔记/">docker学习笔记</a>
+</li>
+                                    
+<li >
+    <a href="../../运维笔记/linux操作手册1/">linux操作手册1</a>
+</li>
+                                    
+<li >
+    <a href="../../运维笔记/linux操作手册2/">linux操作手册2</a>
+</li>
+                                    
+<li >
+    <a href="../../运维笔记/软件辅助工具/">软件辅助工具</a>
+</li>
+                                    
+<li >
+    <a href="../../运维笔记/运维笔记/">运维笔记</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li >
+                                <a rel="next" href="../Parity使用总结/">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li >
+                                <a rel="prev" href="../交易所/">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#_1">交易</a></li>
+            <li><a href="#1">1、准备两个地址</a></li>
+            <li><a href="#2-uxto-usdt">2、分别找到发送地址 和热钱包地址的一笔UXTO 作为发送USDT交易的载体</a></li>
+            <li><a href="#3">3、创建负载</a></li>
+            <li><a href="#4usdt">4、创建USDT交易</a></li>
+            <li><a href="#5">5、在交易上绑定代币数据</a></li>
+            <li><a href="#6">6、在交易上添加接收地址</a></li>
+            <li><a href="#7">7、在交易上指定矿工费用</a></li>
+            <li><a href="#8">8、对交易签名</a></li>
+            <li><a href="#9">9、广播交易</a></li>
+        <li class="main "><a href="#_2">命令</a></li>
+            <li><a href="#omnicore-cli-getinfo">omnicore-cli getinfo</a></li>
+            <li><a href="#omnicore-cli-importaddress-1exibj8pkxmspb6dnamlfczytrsnsuuess">omnicore-cli importaddress "1EXiBj8pkxmsPb6dNAMLFcZYTRSNsUUesS"</a></li>
+        <li class="main "><a href="#_3">接口</a></li>
+            <li><a href="#_4">前言</a></li>
+            <li><a href="#omni_send">omn​​i_send</a></li>
+            <li><a href="#omni_sendall">omni_sendall</a></li>
+            <li><a href="#omni_sendrawtx">omn​​i_sendrawtx</a></li>
+            <li><a href="#omni_getinfo">omn​​i_getinfo</a></li>
+            <li><a href="#omni_getbalance">omni_getbalance</a></li>
+            <li><a href="#omni_getallbalancesforaddress">omni_getallbalancesforaddress</a></li>
+            <li><a href="#omni_gettransaction">omni_gettransaction</a></li>
+            <li><a href="#omni_listtransactions">omni_listtransactions</a></li>
+            <li><a href="#omni_listpendingtransactions">omni_listpendingtransactions</a></li>
+            <li><a href="#_5">变更历史</a></li>
+            <li><a href="#_6">附录</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<p>Omni Core是Bitcoin Core的一个分支，其Omni协议功能支持作为顶层的新功能层添加。因此，与API的交互以与Bitcoin Core相同的方式（JSON-RPC）完成，只需使用额外的RPC即可使用Omni协议功能。
+<!--more--></p>
+<h2 id="_1">交易</h2>
+<p>最近几天在对接USDT钱包，遇到一个问题就是根本没办法通过omni 钱包提供的API来实现钱包归集，因为API提供的接口都需要发送USDT的地址有一定的BTC数量才可以发送交易，所以没办只能找其他方案替代，请教了其他人后才知道只能通过创建BTC的原生交易才能达到这个效果，折腾了好几天，终于把这个流程给整理通顺了，估计还有很多人会遇到这个问题，所以记录下来为后面的人节省一些时间。</p>
+<h3 id="1">1、准备两个地址</h3>
+<p>首先两个地址, 发送USDT（地址里面要有USDT，这里通常可能是交易所用户的USDT钱包地址）地址和付手续费的地址（地址里面要有足够的BTC，这里通常可能是热钱包地址）</p>
+<p>本次案例中</p>
+<p>发送USDT地址为： mn7w1M4fwJzRr4zYy5dMSSfBg1ZC9e4xH4</p>
+<p>付手续费地址为： muPuXyRqLBRf8Xyj28d2As8ya4iaw8XWGe</p>
+<p>接收USDT地址为：muPuXyRqLBRf8Xyj28d2As8ya4iaw8XWGe</p>
+<h3 id="2-uxto-usdt">2、分别找到发送地址 和热钱包地址的一笔UXTO 作为发送USDT交易的载体</h3>
+<p>指令：listunspent 0 999999 '["mn7w1M4fwJzRr4zYy5dMSSfBg1ZC9e4xH4"]'</p>
+<pre><code>{
+
+&quot;txid&quot;: &quot;7ef4ca48422fbd055eb7375145cb59bdadaba13caf29b4279c506a7ba846a33e&quot;,
+
+&quot;vout&quot;: 0,
+
+&quot;address&quot;: &quot;mn7w1M4fwJzRr4zYy5dMSSfBg1ZC9e4xH4&quot;,
+
+&quot;scriptPubKey&quot;: &quot;76a914486e3cf761cc47642135140da02669c04dd2451088ac&quot;,
+
+&quot;amount&quot;: 0.00081189,
+
+&quot;confirmations&quot;: 31103,
+
+&quot;spendable&quot;: true,
+
+&quot;solvable&quot;: true
+
+}
+
+</code></pre>
+
+<p>指令：listunspent 0 999999 '["muPuXyRqLBRf8Xyj28d2As8ya4iaw8XWGe"]'</p>
+<p>得到UXTO:</p>
+<pre><code>{
+
+&quot;txid&quot;: &quot;0b381b15082156911ca8db2761910fe9545356778d70dd09be30fc0bece9ed9d&quot;,
+
+&quot;vout&quot;: 1,
+
+&quot;address&quot;: &quot;muPuXyRqLBRf8Xyj28d2As8ya4iaw8XWGe&quot;,
+
+&quot;account&quot;: &quot;sys&quot;,
+
+&quot;scriptPubKey&quot;: &quot;76a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac&quot;,
+
+&quot;amount&quot;: 0.00992750,
+
+&quot;confirmations&quot;: 4137,
+
+&quot;spendable&quot;: true,
+
+&quot;solvable&quot;: true
+
+}
+
+</code></pre>
+
+<h3 id="3">3、创建负载</h3>
+<blockquote>
+<p>指令：</p>
+</blockquote>
+<p>createrawtransaction '[{"txid":"7ef4ca48422fbd055eb7375145cb59bdadaba13caf29b4279c506a7ba846a33e","vout":0},{"txid":"0b381b15082156911ca8db2761910fe9545356778d70dd09be30fc0bece9ed9d","vout":1,"scriptPubKey":"76a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac","value": 0.00992750}]' '{}'</p>
+<blockquote>
+<p>得到：</p>
+</blockquote>
+<p>01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff0000000000</p>
+<h3 id="4usdt">4、创建USDT交易</h3>
+<p>指令(代币ID，发送代币数量)：omni_createpayload_simplesend 31 2.0</p>
+<p>得到：000000000000000100000000001e8480</p>
+<h3 id="5">5、在交易上绑定代币数据</h3>
+<blockquote>
+<p>指令：</p>
+</blockquote>
+<p>omni_createrawtx_opreturn 01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff0000000000 000000000000000100000000001e8480</p>
+<blockquote>
+<p>得到（事务hash）：</p>
+</blockquote>
+<p>01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff010000000000000000166a146f6d6e69000000000000000100000000001e848000000000</p>
+<h3 id="6">6、在交易上添加接收地址</h3>
+<blockquote>
+<p>指令：</p>
+</blockquote>
+<p>omni_createrawtx_reference 01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff010000000000000000166a146f6d6e69000000000000000100000000001e848000000000 muPuXyRqLBRf8Xyj28d2As8ya4iaw8XWGe</p>
+<blockquote>
+<p>得到（事务hash）：</p>
+</blockquote>
+<p>01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff020000000000000000166a146f6d6e69000000000000000100000000001e848022020000000000001976a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac00000000</p>
+<h3 id="7">7、在交易上指定矿工费用</h3>
+<blockquote>
+<p>指令：（事务HASH，交易信息，找零地址，手续费）</p>
+</blockquote>
+<p>omni_createrawtx_change 01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff020000000000000000166a146f6d6e69000000000000000100000000001e848022020000000000001976a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac00000000 '[{"txid":"7ef4ca48422fbd055eb7375145cb59bdadaba13caf29b4279c506a7ba846a33e","vout":1,"scriptPubKey":"76a914486e3cf761cc47642135140da02669c04dd2451088ac","value": 0.0002},{"txid":"0b381b15082156911ca8db2761910fe9545356778d70dd09be30fc0bece9ed9d","vout":1,"scriptPubKey":"76a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac","value": 0.0002}]' muPuXyRqLBRf8Xyj28d2As8ya4iaw8XWGe 0.0002</p>
+<blockquote>
+<p>得到（事务hash）：</p>
+</blockquote>
+<pre><code>01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff020000000000000000166a146f6d6e69000000000000000100000000001e848022020000000000001976a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac00000000
+</code></pre>
+
+<h3 id="8">8、对交易签名</h3>
+<blockquote>
+<p>指令：</p>
+</blockquote>
+<pre><code>signrawtransaction 01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e0000000000ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b0100000000ffffffff020000000000000000166a146f6d6e69000000000000000100000000001e848022020000000000001976a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac00000000
+</code></pre>
+
+<blockquote>
+<p>得到（区块信息）：</p>
+</blockquote>
+<pre><code>{
+
+&quot;hex&quot;: &quot;01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e000000006b483045022100d790995554bbda790f44db19a6e59e84ab5c2ab27577be1c406f09e76d6e7fe402204db6ef71c96a22fd91e230787a521c47e3acc0a9b66dae2b08151ef74c1a0e5e012103ad3414464aec8d4f0cdc3fd2540a255c0bc8f20d157f6aa39ce67564e92d3077ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b010000006a473044022073d01e964d0a94540adc5d9db778d2b768043ba071cf5f49af2c2b07a99f6db702202e9870ac127e0ba06226c69242016255e9230816d6eab96ca89ad968111a49a7012103e6f952da72a83b16443d70dbb2e30473b25d6c71a6fdc01fbfbf0638805b4218ffffffff020000000000000000166a146f6d6e69000000000000000100000000001e848022020000000000001976a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac00000000&quot;,
+
+&quot;complete&quot;: true
+
+}
+</code></pre>
+
+<h3 id="9">9、广播交易</h3>
+<blockquote>
+<p>指令：</p>
+</blockquote>
+<p>Sendrawtransaction 01000000023ea346a87b6a509c27b429af3ca1abadbd59cb455137b75e05bd2f4248caf47e000000006b483045022100d790995554bbda790f44db19a6e59e84ab5c2ab27577be1c406f09e76d6e7fe402204db6ef71c96a22fd91e230787a521c47e3acc0a9b66dae2b08151ef74c1a0e5e012103ad3414464aec8d4f0cdc3fd2540a255c0bc8f20d157f6aa39ce67564e92d3077ffffffff9dede9ec0bfc30be09dd708d77565354e90f916127dba81c91562108151b380b010000006a473044022073d01e964d0a94540adc5d9db778d2b768043ba071cf5f49af2c2b07a99f6db702202e9870ac127e0ba06226c69242016255e9230816d6eab96ca89ad968111a49a7012103e6f952da72a83b16443d70dbb2e30473b25d6c71a6fdc01fbfbf0638805b4218ffffffff020000000000000000166a146f6d6e69000000000000000100000000001e848022020000000000001976a914983c8b990aef5747bdef1f2bf3a49d29b19ae15788ac00000000</p>
+<blockquote>
+<p>得到（交易ID）：</p>
+</blockquote>
+<p>ab28fcd449d1f8e57ead070d798d80fe8f962168341b383adf5bf07fe80e652d</p>
+<p>注意：每次操作后可用指令：</p>
+<p>decoderawtransaction 事务ID 和 omni_decodetransaction 事务ID来查看当前构建的交易信息情况。</p>
+<blockquote>
+<p><strong>参考地址</strong></p>
+</blockquote>
+<p>https://www.zhihu.com/people/duan-pan-ykjym/activities</p>
+<!--more-->
+
+<ul>
+<li><a href="https://github.com/OmniLayer/omnicore/wiki/Use-the-raw-transaction-API-to-create-a-Simple-Send-transaction">使用原始事务API创建简单发送事务</a></li>
+</ul>
+<h2 id="_2">命令</h2>
+<h3 id="omnicore-cli-getinfo">omnicore-cli getinfo</h3>
+<pre><code>{
+  &quot;version&quot;: 130200,
+  &quot;protocolversion&quot;: 70015,
+  &quot;walletversion&quot;: 130000,
+  &quot;balance&quot;: 0.00000000,
+  &quot;blocks&quot;: 584885,
+  &quot;timeoffset&quot;: -1,
+  &quot;connections&quot;: 110,
+  &quot;proxy&quot;: &quot;&quot;,
+  &quot;difficulty&quot;: 9064159826491.41,
+  &quot;testnet&quot;: false,
+  &quot;keypoololdest&quot;: 1558404031,
+  &quot;keypoolsize&quot;: 100,
+  &quot;paytxfee&quot;: 0.00000000,
+  &quot;relayfee&quot;: 0.00001000,
+  &quot;errors&quot;: &quot;Warning: Unknown block versions being mined! It's possible unknown rules are in effect&quot;
+}
+
+</code></pre>
+
+<h3 id="omnicore-cli-importaddress-1exibj8pkxmspb6dnamlfczytrsnsuuess">omnicore-cli importaddress "1EXiBj8pkxmsPb6dNAMLFcZYTRSNsUUesS"</h3>
+<h2 id="_3">接口</h2>
+<h3 id="_4">前言</h3>
+<p>由于所有现有的比特币核心功能都是Omni Core固有的，因此默认情况下RPC端口保持8332与每个比特币核心一样。如果您希望与比特币核心一起运行Omni Core（例如，通过单独的数据中心），则可以使用该-rpcport<port>选项提名替代端口号。</p>
+<h3 id="omni_send">omn​​i_send</h3>
+<p>创建并广播一个简单的发送事务。</p>
+<p>参数：</p>
+<p>名称 | 类型 | 存在 | 描述
+---|---|---
+fromaddress | string | 需要 | 要发送的地址
+toaddress | string | 需要 | 接收者的地址
+propertyid|int|需要|要发送的令牌的标识符
+amount | string|需要|要发送的金额
+redeemaddress|string|可选的|一个可以花费交易粉尘的地址（默认发件人）
+referenceamount|string|可选的|发送给接收方的比特币金额（默认情况下最小）</p>
+<p>例如：</p>
+<p><code>$ omnicore-cli “ omn​​i_send ”  “ 3M9qvHKtgARhqcMtM5cRT9VaiDJ5PSfQGY ”  “ 37FaKponF7zqoMLUjEiko25pDiuVH5YLEa ” 1 “ 100.0 ”</code></p>
+<p>结果：
+hash          //（字符串）十六进制编码的事务散列</p>
+<h3 id="omni_sendall">omni_sendall</h3>
+<p>Transfers all available tokens in the given ecosystem to the recipient.</p>
+<p>Arguments:</p>
+<p>Name    Type    Presence    Description
+fromaddress string  required    the address to send from
+toaddress   string  required    the address of the receiver
+ecosystem   number  required    the ecosystem of the tokens to send (1 for main ecosystem, 2 for test ecosystem)
+redeemaddress   string  optional    an address that can spend the transaction dust (sender by default)
+referenceamount string  optional    a bitcoin amount that is sent to the receiver (minimal by default)
+Result:</p>
+<p>"hash"  // (string) the hex-encoded transaction hash
+Example:</p>
+<p>$ omnicore-cli "omni_sendall" "3M9qvHKtgARhqcMtM5cRT9VaiDJ5PSfQGY" "37FaKponF7zqoMLUjEiko25pDiuVH5YLEa" 2</p>
+<h3 id="omni_sendrawtx">omn​​i_sendrawtx</h3>
+<p>广播原始的Omni Layer交易。</p>
+<p>参数：</p>
+<p>名称  类型  存在  描述
+fromaddress 串   需要  要发送的地址
+rawtransaction  串   需要  十六进制编码的原始事务
+referenceaddress    串   可选的 一个参考地址（默认没有）
+redeemaddress   串   可选的 一个可以花费交易粉尘的地址（默认发件人）
+referenceamount 串   可选的 发送给接收方的比特币金额（默认情况下最小）
+结果：</p>
+<p>“ hash ”   //（字符串）十六进制编码的事务散列
+例：</p>
+<p>$ omnicore-cli “ omn​​i_sendrawtx ” \
+     “ 1MCHESTptvd2LnNp7wmr2sGTpRomteAkq8 ”  “ 000000000000000100000000017d7840 ” \
+     “ 1EqTta1Rt8ixAA32DuC29oukbsSWU62qAV ”
+数据检索
+用于数据检索的RPC可用于获取有关Omni生态系统状态的信息。</p>
+<h3 id="omni_getinfo">omn​​i_getinfo</h3>
+<p>Returns various state information of the client and protocol.</p>
+<p>Arguments:</p>
+<p>None</p>
+<p>Result:</p>
+<p>Result:
+{
+  "omnicoreversion_int" : xxxxxxx,      // (number) client version as integer
+  "omnicoreversion" : "x.x.x.x-xxx",    // (string) client version
+  "mastercoreversion" : "x.x.x.x-xxx",  // (string) client version (DEPRECIATED)
+  "bitcoincoreversion" : "x.x.x",       // (string) Bitcoin Core version
+  "commitinfo" : "xxxxxxx",             // (string) build commit identifier
+  "block" : nnnnnn,                     // (number) index of the last processed block
+  "blocktime" : nnnnnnnnnn,             // (number) timestamp of the last processed block
+  "blocktransactions" : nnnn,           // (number) Omni transactions found in the last processed block
+  "totaltransactions" : nnnnnnnn,       // (number) Omni transactions processed in total
+  "alerts" : [                          // (array of JSON objects) active protocol alert (if any)
+    {
+      "alerttype" : n                       // (number) alert type as integer
+      "alerttype" : "xxx"                   // (string) alert type (can be "alertexpiringbyblock", "alertexpiringbyblocktime", "alertexpiringbyclientversion" or "error")
+      "alertexpiry" : "nnnnnnnnnn"          // (string) expiration criteria (can refer to block height, timestamp or client verion)
+      "alertmessage" : "xxx"                // (string) information about the alert
+    },
+    ...
+  ]
+}
+Example:</p>
+<p>$ omnicore-cli "omni_getinfo"</p>
+<h3 id="omni_getbalance">omni_getbalance</h3>
+<p>Returns the token balance for a given address and property.</p>
+<p>Arguments:</p>
+<p>Name    Type    Presence    Description
+address string  required    the address
+propertyid  number  required    the property identifier
+Result:</p>
+<p>{
+  "balance" : "n.nnnnnnnn",  // (string) the available balance of the address
+  "reserved" : "n.nnnnnnnn", // (string) the amount reserved by sell offers and accepts
+  "frozen" : "n.nnnnnnnn"    // (string) the amount frozen by the issuer (applies to managed properties only)
+}
+Example:</p>
+<p>$ omnicore-cli "omni_getbalance", "1EXoDusjGwvnjZUyKkxZ4UHEf77z6A5S4P" 1
+omni_getallbalancesforid
+Returns a list of token balances for a given currency or property identifier.</p>
+<p>Arguments:</p>
+<p>Name    Type    Presence    Description
+propertyid  number  required    the property identifier
+Result:</p>
+<p>[                          // (array of JSON objects)
+  {
+    "address" : "address",     // (string) the address
+    "balance" : "n.nnnnnnnn",  // (string) the available balance of the address
+    "reserved" : "n.nnnnnnnn"  // (string) the amount reserved by sell offers and accepts
+  },
+  ...
+]
+Example:</p>
+<p>$ omnicore-cli "omni_getallbalancesforid" 1</p>
+<h3 id="omni_getallbalancesforaddress">omni_getallbalancesforaddress</h3>
+<p>Returns a list of all token balances for a given address.</p>
+<p>Arguments:</p>
+<p>Name    Type    Presence    Description
+address string  required    the address
+Result:</p>
+<p>[                          // (array of JSON objects)
+  {
+    "propertyid" : n,          // (number) the property identifier
+    "balance" : "n.nnnnnnnn",  // (string) the available balance of the address
+    "reserved" : "n.nnnnnnnn"  // (string) the amount reserved by sell offers and accepts
+  },
+  ...
+]
+Example:</p>
+<p>$ omnicore-cli "omni_getallbalancesforaddress" "1EXoDusjGwvnjZUyKkxZ4UHEf77z6A5S4P"</p>
+<h3 id="omni_gettransaction">omni_gettransaction</h3>
+<p>Get detailed information about an Omni transaction.</p>
+<p>Arguments:</p>
+<p>Name    Type    Presence    Description
+txid    string  required    the hash of the transaction to lookup
+Result:</p>
+<p>{
+  "txid" : "hash",                 // (string) the hex-encoded hash of the transaction
+  "sendingaddress" : "address",    // (string) the Bitcoin address of the sender
+  "referenceaddress" : "address",  // (string) a Bitcoin address used as reference (if any)
+  "ismine" : true|false,           // (boolean) whether the transaction involes an address in the wallet
+  "confirmations" : nnnnnnnnnn,    // (number) the number of transaction confirmations
+  "fee" : "n.nnnnnnnn",            // (string) the transaction fee in bitcoins
+  "blocktime" : nnnnnnnnnn,        // (number) the timestamp of the block that contains the transaction
+  "valid" : true|false,            // (boolean) whether the transaction is valid
+  "positioninblock" : n,           // (number) the position (index) of the transaction within the block
+  "version" : n,                   // (number) the transaction version
+  "type_int" : n,                  // (number) the transaction type as number
+  "type" : "type",                 // (string) the transaction type as string
+  [...]                            // (mixed) other transaction type specific properties
+}
+Example:</p>
+<p>$ omnicore-cli "omni_gettransaction" "1075db55d416d3ca199f55b6084e2115b9345e16c5cf302fc80e9d5fbf5d48d"</p>
+<h3 id="omni_listtransactions">omni_listtransactions</h3>
+<p>List wallet transactions, optionally filtered by an address and block boundaries.</p>
+<p>Arguments:</p>
+<p>Name    Type    Presence    Description
+txid    string  optional    address filter (default: "*")
+count   number  optional    show at most n transactions (default: 10)
+skip    number  optional    skip the first n transactions (default: 0)
+startblock  number  optional    first block to begin the search (default: 0)
+endblock    number  optional    last block to include in the search (default: 999999)
+Result:</p>
+<p>[                                // (array of JSON objects)
+  {
+    "txid" : "hash",                 // (string) the hex-encoded hash of the transaction
+    "sendingaddress" : "address",    // (string) the Bitcoin address of the sender
+    "referenceaddress" : "address",  // (string) a Bitcoin address used as reference (if any)
+    "ismine" : true|false,           // (boolean) whether the transaction involves an address in the wallet
+    "confirmations" : nnnnnnnnnn,    // (number) the number of transaction confirmations
+    "fee" : "n.nnnnnnnn",            // (string) the transaction fee in bitcoins
+    "blocktime" : nnnnnnnnnn,        // (number) the timestamp of the block that contains the transaction
+    "valid" : true|false,            // (boolean) whether the transaction is valid
+    "positioninblock" : n,           // (number) the position (index) of the transaction within the block
+    "version" : n,                   // (number) the transaction version
+    "type_int" : n,                  // (number) the transaction type as number
+    "type" : "type",                 // (string) the transaction type as string
+    [...]                            // (mixed) other transaction type specific properties
+  },
+  ...
+]
+Example:</p>
+<p>$ omnicore-cli "omni_listtransactions"
+omni_listblocktransactions
+Lists all Omni transactions in a block.</p>
+<p>Arguments:</p>
+<p>Name    Type    Presence    Description
+index   number  required    the block height or block index
+Result:</p>
+<p>[      // (array of string)
+  "hash",  // (string) the hash of the transaction
+  ...
+]
+Example:</p>
+<p>$ omnicore-cli "omni_listblocktransactions" 279007</p>
+<h3 id="omni_listpendingtransactions">omni_listpendingtransactions</h3>
+<p>Returns a list of unconfirmed Omni transactions, pending in the memory pool.</p>
+<p>Note: the validity of pending transactions is uncertain, and the state of the memory pool may change at any moment. It is recommended to check transactions after confirmation, and pending transactions should be considered as invalid.</p>
+<p>Arguments:</p>
+<p>Name    Type    Presence    Description
+address string  optional    filter results by address (default: "" for no filter)
+Result:</p>
+<p>[                                // (array of JSON objects)
+  {
+    "txid" : "hash",                 // (string) the hex-encoded hash of the transaction
+    "sendingaddress" : "address",    // (string) the Bitcoin address of the sender
+    "referenceaddress" : "address",  // (string) a Bitcoin address used as reference (if any)
+    "ismine" : true|false,           // (boolean) whether the transaction involes an address in the wallet
+    "fee" : "n.nnnnnnnn",            // (string) the transaction fee in bitcoins
+    "version" : n,                   // (number) the transaction version
+    "type_int" : n,                  // (number) the transaction type as number
+    "type" : "type",                 // (string) the transaction type as string
+    [...]                            // (mixed) other transaction type specific properties
+  },
+  ...
+]
+Example:</p>
+<p>$ omnicore-cli "omni_listpendingtransactions"</p>
+<h3 id="_5">变更历史</h3>
+<p>以下调用在Omni Core 0.0.10中被替换，并且使用旧命令的查询被转发。</p>
+<p>send_MP 通过 omni_send
+sendtoowners_MP 通过 omni_sendsto
+sendrawtx_MP 通过 omni_sendrawtx
+getinfo_MP 通过 omni_getinfo
+getbalance_MP 通过 omni_getbalance
+getallbalancesforid_MP 通过 omni_getallbalancesforid
+getallbalancesforaddress_MP 通过 omni_getallbalancesforaddress
+gettransaction_MP 通过 omni_gettransaction
+listtransactions_MP 通过 omni_listtransactions
+listblocktransactions_MP 通过 omni_listblocktransactions
+getactivedexsells_MP 通过 omni_getactivedexsells
+listproperties_MP 通过 omni_listproperties
+getproperty_MP 通过 omni_getproperty
+getactivecrowdsales_MP 通过 omni_getactivecrowdsales
+getcrowdsale_MP 通过 omni_getcrowdsale
+getgrants_MP 通过 omni_getgrants
+getsto_MP通过omni_getsto或omni_gettransaction</p>
+<h3 id="_6">附录</h3>
+<ul>
+<li>Omnicore API 中文版：https://www.codetd.com/article/1692438</li>
+<li>Omnicore API 官方：https://github.com/OmniLayer/omnicore/blob/master/src/omnicore/doc/rpc-api.md</li>
+<li>WHC RPC业务解析：https://www.jianshu.com/p/3139b141832b</li>
+</ul></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="Keyboard Shortcuts Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Keyboard Shortcuts</h4>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

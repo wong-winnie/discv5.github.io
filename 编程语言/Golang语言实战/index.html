@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>docker学习笔记 - 何海涛</title>
+        <title>Golang语言实战 - 何海涛</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -148,45 +148,45 @@
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown">
+                            <li class="dropdown active">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">编程语言 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li >
-    <a href="../../编程语言/Golang语言实战/">Golang语言实战</a>
+<li class="active">
+    <a href="./">Golang语言实战</a>
 </li>
                                     
 <li >
-    <a href="../../编程语言/编程语言/">编程语言</a>
+    <a href="../编程语言/">编程语言</a>
 </li>
                                     
 <li >
-    <a href="../../编程语言/面试宝典/">面试宝典</a>
+    <a href="../面试宝典/">面试宝典</a>
 </li>
                                 </ul>
                             </li>
-                            <li class="dropdown active">
+                            <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">运维笔记 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li class="active">
-    <a href="./">docker学习笔记</a>
+<li >
+    <a href="../../运维笔记/docker学习笔记/">docker学习笔记</a>
 </li>
                                     
 <li >
-    <a href="../linux操作手册1/">linux操作手册1</a>
+    <a href="../../运维笔记/linux操作手册1/">linux操作手册1</a>
 </li>
                                     
 <li >
-    <a href="../linux操作手册2/">linux操作手册2</a>
+    <a href="../../运维笔记/linux操作手册2/">linux操作手册2</a>
 </li>
                                     
 <li >
-    <a href="../软件辅助工具/">软件辅助工具</a>
+    <a href="../../运维笔记/软件辅助工具/">软件辅助工具</a>
 </li>
                                     
 <li >
-    <a href="../运维笔记/">运维笔记</a>
+    <a href="../../运维笔记/运维笔记/">运维笔记</a>
 </li>
                                 </ul>
                             </li>
@@ -199,12 +199,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../../编程语言/面试宝典/">
+                                <a rel="next" href="../../程序人生/程序人生/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../linux操作手册1/">
+                                <a rel="prev" href="../编程语言/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -216,48 +216,320 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#1">1.安装软件</a></li>
-        <li class="main "><a href="#2">2.生产环境</a></li>
+        <li class="main active"><a href="#_1">学习导航</a></li>
+            <li><a href="#float64-string">float64 转 string</a></li>
+        <li class="main "><a href="#golang">Golang 时间和日期笔记</a></li>
+            <li><a href="#stringintint64">string、int、int64互相转换</a></li>
+            <li><a href="#golang-float64in64">Golang float64，in64相互转换精度控制</a></li>
+            <li><a href="#golang_1">Golang 时间操作</a></li>
+            <li><a href="#golang_2">Golang 时间互相转换</a></li>
+            <li><a href="#golang_3">Golang 时间格式化</a></li>
+            <li><a href="#_2">浮点数操作</a></li>
+        <li class="main "><a href="#golang-bigint">Golang 高效拷贝BigInt</a></li>
+            <li><a href="#1bytes">1.拷贝Bytes</a></li>
+            <li><a href="#2">2.反射赋值</a></li>
+            <li><a href="#3-0">3. +0</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="1">1.安装软件</h2>
-<blockquote>
-<p>docker安装mysql</p>
-</blockquote>
-<pre><code>docker pull mysql
-docker run -p 3306:3306 --name mysql -v ~/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:
-docker  exec -i -t 3bb555abd8ab /bin/bash
+<h2 id="_1">学习导航</h2>
+<h3 id="float64-string">float64 转 string</h3>
+<pre><code class="go">a:=strconv.FormatFloat(10.100,'f',-1,32)
+输出:10.1
+a := strconv.FormatFloat(10.101, 'f', -1, 64)
+输出:10.101
+a := strconv.FormatFloat(10.010, 'f', -1, 64)
+输出：10.01
+a:=strconv.FormatFloat(10.1,'f',2,64)
+输出:10.10
 </code></pre>
 
-<blockquote>
-<p>docker安装redis</p>
-</blockquote>
-<pre><code>docker pull redis
-docker run -d --name redis -p 6379:6379 redis
-docker exec -i -t redis /bin/bash
+<h2 id="golang">Golang 时间和日期笔记</h2>
+<h3 id="stringintint64">string、int、int64互相转换</h3>
+<pre><code class="sh">import &quot;strconv&quot;  //先导入strconv包
+
+// string到int
+int, err := strconv.Atoi(string)
+
+// string到int64
+int64, err := strconv.ParseInt(string, 10, 64)
+
+// int到string
+string := strconv.Itoa(int)
+
+// int64到string
+string := strconv.FormatInt(int64,10)
 </code></pre>
 
-<blockquote>
-<p>docker安装nginx</p>
-</blockquote>
-<pre><code>docker pull nginx
+<h3 id="golang-float64in64">Golang float64，in64相互转换精度控制</h3>
+<ul>
+<li><a href="https://www.yuque.com/docs/share/a433b988-94bc-4f4a-8338-d5d761fac603">Golang 浮点数操作</a></li>
+</ul>
+<pre><code>//将float64转成精确的int64
+func Wrap(num float64, retain int) int64 {
+    return int64(num * math.Pow10(retain))
+}
+
+//将int64恢复成正常的float64
+func Unwrap(num int64, retain int) float64 {
+    return float64(num) / math.Pow10(retain)
+}
+//精准float64
+func WrapToFloat64(num float64, retain int) float64 {
+    return num * math.Pow10(retain)
+}
+//精准int64
+func UnwrapToInt64(num int64, retain int) int64 {
+    return int64(Unwrap(num, retain))
+}
+
 </code></pre>
 
-<blockquote>
-<p>docker安装YAPI</p>
-</blockquote>
-<pre><code>
+<h3 id="golang_1">Golang 时间操作</h3>
+<ul>
+<li><a href="https://blog.csdn.net/kevin_weijc/article/details/79153690">Golang time 时间戳、日期字符串相互转化</a></li>
+</ul>
+<pre><code>package main
+import &quot;time&quot;
+import &quot;fmt&quot;
+//import &quot;strconv&quot;
+
+func main() {
+fmt.Println(&quot;time ===============:&quot;)
+const base_format = &quot;2006-01-02 15:04:05&quot;
+//获取当前时间
+nt := time.Now()
+fmt.Printf(&quot;now datetime:%v\n&quot;, nt)
+
+//延时年月日
+adnt := nt.AddDate(1,2,3)
+fmt.Printf(&quot;now adddate:%v\n&quot;, adnt)
+
+//延时秒
+ant := nt.Add(3600*1e9) //延时1小时=60*60 秒
+fmt.Printf(&quot;now add:%v\n&quot;, ant)
+
+//转换为时间格式字符串
+str_time := nt.Format(base_format)
+fmt.Printf(&quot;now time string:%v\n&quot;, str_time)
+
+//时间字符串转换为日期格式
+parse_str_time, _ := time.Parse(base_format, str_time)
+fmt.Printf(&quot;string to datetime :%v\n&quot;, parse_str_time)
+
+//时间戳 秒
+timestamp := time.Now().Unix()
+println(&quot;timestamp:&quot;, timestamp)
+//时间戳 毫秒
+msec := time.Now().UnixNano() / 1e6
+println(&quot;timestamp msec:&quot;, msec)
+
+float_ms := msec % timestamp
+v := fmt.Sprintf(&quot;%.3f\n&quot;, float64(float_ms)/1000.0)
+println(&quot;float msec:&quot;, v)
+
+//时间戳转日期格式
+date_time := time.Unix(timestamp, 0)
+fmt.Printf(&quot;timestamp to datetime:%v\n&quot;, date_time)
+
+//时间字符串转时间戳
+t, _ := time.Parse(base_format, &quot;2018-01-18 01:01:01&quot;)
+datetime_str_to_timestamp := t.Unix()
+println(&quot;datetime_str_to_timestamp:&quot;, datetime_str_to_timestamp)
+}
+
 </code></pre>
 
-<blockquote>
-<p>docker安装gogs</p>
-</blockquote>
-<pre><code>
+<h3 id="golang_2">Golang 时间互相转换</h3>
+<ul>
+<li><a href="https://blog.csdn.net/qwdafedv/article/details/80453511">Golang string、int、int64 float 互相转换</a></li>
+</ul>
+<pre><code>#string到int  
+int,err := strconv.Atoi(string)  
+
+#string到int64  
+int64, err := strconv.ParseInt(string, 10, 64)  
+//第二个参数为基数（2~36），
+//第三个参数位大小表示期望转换的结果类型，其值可以为0, 8, 16, 32和64，
+//分别对应 int, int8, int16, int32和int64
+
+#int到string  
+string := strconv.Itoa(int)
+//等价于
+string := strconv.FormatInt(int64(int),10)
+
+#int64到string  
+string := strconv.FormatInt(int64,10)  
+//第二个参数为基数，可选2~36
+//对于无符号整形，可以使用FormatUint(i uint64, base int)
+
+#float到string
+string := strconv.FormatFloat(float32,'E',-1,32)
+string := strconv.FormatFloat(float64,'E',-1,64)
+// 'b' (-ddddp±ddd，二进制指数)
+// 'e' (-d.dddde±dd，十进制指数)
+// 'E' (-d.ddddE±dd，十进制指数)
+// 'f' (-ddd.dddd，没有指数)
+// 'g' ('e':大指数，'f':其它情况)
+// 'G' ('E':大指数，'f':其它情况)
+
+#string到float64
+float,err := strconv.ParseFloat(string,64)
+
+#string到float32
+float,err := strconv.ParseFloat(string,32)
+
+#int到int64
+int64_ := int64(1234)
+
 </code></pre>
 
-<h2 id="2">2.生产环境</h2></div>
+<h3 id="golang_3">Golang 时间格式化</h3>
+<pre><code>package main
+import(
+    &quot;fmt&quot;
+    &quot;time&quot;
+)
+
+func  main(){
+    t := time.Now()
+    y,m,d := t.Date()
+    today := time.Now().Format(&quot;2006-01-02&quot;)
+    datetime := time.Now().Format(&quot;2006-01-02 15:04:05&quot;)//后面的参数是固定的 否则将无法正常输出
+
+    fmt.Println(&quot;time is : &quot;,t )
+    fmt.Println(&quot;y m d is : &quot;,y,m,d )
+    fmt.Println(&quot;now is :&quot;,today)
+    fmt.Println(&quot;now is :&quot;,datetime)
+
+}
+</code></pre>
+
+<h3 id="_2">浮点数操作</h3>
+<pre><code>package main
+import &quot;time&quot;
+import &quot;fmt&quot;
+
+//import &quot;strconv&quot;
+
+func main() {
+fmt.Println(&quot;time ===============:&quot;)
+const base_format = &quot;2006-01-02 15:04:05&quot;
+//获取当前时间
+nt := time.Now()
+fmt.Printf(&quot;now datetime:%v\n&quot;, nt)
+
+
+//延时年月日
+adnt := nt.AddDate(1,2,3)
+fmt.Printf(&quot;now adddate:%v\n&quot;, adnt)
+
+
+//延时秒
+ant := nt.Add(3600*1e9) //延时1小时=60*60 秒
+fmt.Printf(&quot;now add:%v\n&quot;, ant)
+
+
+//转换为时间格式字符串
+str_time := nt.Format(base_format)
+fmt.Printf(&quot;now time string:%v\n&quot;, str_time)
+
+
+//时间字符串转换为日期格式
+parse_str_time, _ := time.Parse(base_format, str_time)
+fmt.Printf(&quot;string to datetime :%v\n&quot;, parse_str_time)
+
+
+//时间戳 秒
+timestamp := time.Now().Unix()
+println(&quot;timestamp:&quot;, timestamp)
+//时间戳 毫秒
+msec := time.Now().UnixNano() / 1e6
+println(&quot;timestamp msec:&quot;, msec)
+
+
+float_ms := msec % timestamp
+v := fmt.Sprintf(&quot;%.3f\n&quot;, float64(float_ms)/1000.0)
+println(&quot;float msec:&quot;, v)
+
+
+//时间戳转日期格式
+date_time := time.Unix(timestamp, 0)
+fmt.Printf(&quot;timestamp to datetime:%v\n&quot;, date_time)
+
+
+//时间字符串转时间戳
+t, _ := time.Parse(base_format, &quot;2018-01-18 01:01:01&quot;)
+datetime_str_to_timestamp := t.Unix()
+println(&quot;datetime_str_to_timestamp:&quot;, datetime_str_to_timestamp)
+}
+
+</code></pre>
+
+<h2 id="golang-bigint">Golang 高效拷贝BigInt</h2>
+<h3 id="1bytes">1.拷贝Bytes</h3>
+<p>序列化成[]bytes，然后拷贝</p>
+<pre><code>func BenchmarkBigIntCopyBytes(b *testing.B) {
+    b.ReportAllocs()
+
+    old, _ := new(big.Int).SetString(&quot;100000000222222222222222222220000000000000000000&quot;, 10)
+    new := new(big.Int)
+    for i := 0; i &lt; b.N; i++ {
+        new.SetBytes(old.Bytes())
+    }
+}
+</code></pre>
+
+<h3 id="2">2.反射赋值</h3>
+<p>通过反射赋值</p>
+<pre><code>func BenchmarkBigIntCopier(b *testing.B) {
+    b.ReportAllocs()
+
+    old, _ := new(big.Int).SetString(&quot;100000000222222222222222222220000000000000000000&quot;, 10)
+    new := new(big.Int)
+    for i := 0; i &lt; b.N; i++ {
+        // &quot;github.com/jinzhu/copier&quot;
+        copier.Copy(new, old)
+    }
+
+}
+</code></pre>
+
+<h3 id="3-0">3. +0</h3>
+<p>new = old = old + 0</p>
+<pre><code>func TestCopyByAdd(t *testing.T) {
+    old, _ := new(big.Int).SetString(&quot;100000000222222222222222222220000000000000000000&quot;, 10)
+
+    new := new(big.Int)
+    // new = old = old + 0
+    new.Add(old, new)
+    if old.Cmp(new) != 0 {
+        t.FailNow()
+    }
+
+    new.Add(new, big.NewInt(1))
+    t.Logf(&quot;old:%v,new:%v&quot;, old, new)
+    if old.Cmp(new) &gt;= 0 {
+        t.FailNow()
+    }
+}
+</code></pre>
+
+<p>Benchmark测试</p>
+<pre><code>func BenchmarkBigIntCopyByAdd(b *testing.B) {
+    b.ReportAllocs()
+
+    old, _ := new(big.Int).SetString(&quot;100000000222222222222222222220000000000000000000&quot;, 10)
+    new := new(big.Int)
+    for i := 0; i &lt; b.N; i++ {
+        // new = old = old + 0
+        new.Add(old, new)
+    }
+}
+</code></pre>
+
+<p>https://www.jianshu.com/p/b301056803a3</p></div>
         </div>
 
         <footer class="col-md-12">

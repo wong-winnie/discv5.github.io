@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>docker学习笔记 - 何海涛</title>
+        <title>软件辅助工具 - 何海涛</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome.min.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -169,8 +169,8 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">运维笔记 <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     
-<li class="active">
-    <a href="./">docker学习笔记</a>
+<li >
+    <a href="../docker学习笔记/">docker学习笔记</a>
 </li>
                                     
 <li >
@@ -181,8 +181,8 @@
     <a href="../linux操作手册2/">linux操作手册2</a>
 </li>
                                     
-<li >
-    <a href="../软件辅助工具/">软件辅助工具</a>
+<li class="active">
+    <a href="./">软件辅助工具</a>
 </li>
                                     
 <li >
@@ -199,12 +199,12 @@
                             </a>
                         </li>
                             <li >
-                                <a rel="next" href="../../编程语言/面试宝典/">
+                                <a rel="next" href="../linux操作手册2/">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
                             <li >
-                                <a rel="prev" href="../linux操作手册1/">
+                                <a rel="prev" href="../运维笔记/">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
                             </li>
@@ -216,48 +216,110 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#1">1.安装软件</a></li>
-        <li class="main "><a href="#2">2.生产环境</a></li>
+        <li class="main active"><a href="#_1">软件破解</a></li>
+            <li><a href="#jetbrains">jetbrains 系列</a></li>
+            <li><a href="#beyond-compare4">Beyond Compare4</a></li>
+            <li><a href="#pdf-viewer25">pdf viewer2.5</a></li>
+            <li><a href="#centos7-shadowsocks">centos7 部署shadowsocks服务端</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h2 id="1">1.安装软件</h2>
+<h2 id="_1">软件破解</h2>
+<!--more-->
+
+<h3 id="jetbrains">jetbrains 系列</h3>
+<p><strong>Goland 2019.1</strong></p>
+<p>请加"0.0.0.0 account.jetbrains.com" 及"0.0.0.0 www.jetbrains.com"到hosts中屏蔽联网.</p>
+<pre><code class="bash">
+# 复制注册码
+
+56ZS5PQ1RF-eyJsaWNlbnNlSWQiOiI1NlpTNVBRMVJGIiwibGljZW5zZWVOYW1lIjoi5q2j54mI5o6I5p2DIC4iLCJhc3NpZ25lZU5hbWUiOiIiLCJhc3NpZ25lZUVtYWlsIjoiIiwibGljZW5zZVJlc3RyaWN0aW9uIjoiRm9yIGVkdWNhdGlvbmFsIHVzZSBvbmx5IiwiY2hlY2tDb25jdXJyZW50VXNlIjpmYWxzZSwicHJvZHVjdHMiOlt7ImNvZGUiOiJJSSIsInBhaWRVcFRvIjoiMjAyMC0wMy0xMCJ9LHsiY29kZSI6IkFDIiwicGFpZFVwVG8iOiIyMDIwLTAzLTEwIn0seyJjb2RlIjoiRFBOIiwicGFpZFVwVG8iOiIyMDIwLTAzLTEwIn0seyJjb2RlIjoiUFMiLCJwYWlkVXBUbyI6IjIwMjAtMDMtMTAifSx7ImNvZGUiOiJHTyIsInBhaWRVcFRvIjoiMjAyMC0wMy0xMCJ9LHsiY29kZSI6IkRNIiwicGFpZFVwVG8iOiIyMDIwLTAzLTEwIn0seyJjb2RlIjoiQ0wiLCJwYWlkVXBUbyI6IjIwMjAtMDMtMTAifSx7ImNvZGUiOiJSUzAiLCJwYWlkVXBUbyI6IjIwMjAtMDMtMTAifSx7ImNvZGUiOiJSQyIsInBhaWRVcFRvIjoiMjAyMC0wMy0xMCJ9LHsiY29kZSI6IlJEIiwicGFpZFVwVG8iOiIyMDIwLTAzLTEwIn0seyJjb2RlIjoiUEMiLCJwYWlkVXBUbyI6IjIwMjAtMDMtMTAifSx7ImNvZGUiOiJSTSIsInBhaWRVcFRvIjoiMjAyMC0wMy0xMCJ9LHsiY29kZSI6IldTIiwicGFpZFVwVG8iOiIyMDIwLTAzLTEwIn0seyJjb2RlIjoiREIiLCJwYWlkVXBUbyI6IjIwMjAtMDMtMTAifSx7ImNvZGUiOiJEQyIsInBhaWRVcFRvIjoiMjAyMC0wMy0xMCJ9LHsiY29kZSI6IlJTVSIsInBhaWRVcFRvIjoiMjAyMC0wMy0xMCJ9XSwiaGFzaCI6IjEyMjkxNDk4LzAiLCJncmFjZVBlcmlvZERheXMiOjAsImF1dG9Qcm9sb25nYXRlZCI6ZmFsc2UsImlzQXV0b1Byb2xvbmdhdGVkIjpmYWxzZX0=-SYSsDcgL1WJmHnsiGaHUWbaZLPIe2oI3QiIneDtaIbh/SZOqu63G7RGudSjf3ssPb1zxroMti/bK9II1ugHz/nTjw31Uah7D0HqeaCO7Zc0q9BeHysiWmBZ+8bABs5vr25GgIa5pO7CJhL7RitXQbWpAajrMBAeZ2En3wCgNwT6D6hNmiMlhXsWgwkw2OKnyHZ2dl8yEL+oV5SW14t7bdjYGKQrYjSd4+2zc4FnaX88yLnGNO9B3U6G+BuM37pxS5MjHrkHqMTK8W3I66mIj6IB6dYXD5nvKKO1OZREBAr6LV0BqRYSbuJKFhZ8nd6YDG20GvW6leimv0rHVBFmA0w==-MIIElTCCAn2gAwIBAgIBCTANBgkqhkiG9w0BAQsFADAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBMB4XDTE4MTEwMTEyMjk0NloXDTIwMTEwMjEyMjk0NlowaDELMAkGA1UEBhMCQ1oxDjAMBgNVBAgMBU51c2xlMQ8wDQYDVQQHDAZQcmFndWUxGTAXBgNVBAoMEEpldEJyYWlucyBzLnIuby4xHTAbBgNVBAMMFHByb2QzeS1mcm9tLTIwMTgxMTAxMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxcQkq+zdxlR2mmRYBPzGbUNdMN6OaXiXzxIWtMEkrJMO/5oUfQJbLLuMSMK0QHFmaI37WShyxZcfRCidwXjot4zmNBKnlyHodDij/78TmVqFl8nOeD5+07B8VEaIu7c3E1N+e1doC6wht4I4+IEmtsPAdoaj5WCQVQbrI8KeT8M9VcBIWX7fD0fhexfg3ZRt0xqwMcXGNp3DdJHiO0rCdU+Itv7EmtnSVq9jBG1usMSFvMowR25mju2JcPFp1+I4ZI+FqgR8gyG8oiNDyNEoAbsR3lOpI7grUYSvkB/xVy/VoklPCK2h0f0GJxFjnye8NT1PAywoyl7RmiAVRE/EKwIDAQABo4GZMIGWMAkGA1UdEwQCMAAwHQYDVR0OBBYEFGEpG9oZGcfLMGNBkY7SgHiMGgTcMEgGA1UdIwRBMD+AFKOetkhnQhI2Qb1t4Lm0oFKLl/GzoRykGjAYMRYwFAYDVQQDDA1KZXRQcm9maWxlIENBggkA0myxg7KDeeEwEwYDVR0lBAwwCgYIKwYBBQUHAwEwCwYDVR0PBAQDAgWgMA0GCSqGSIb3DQEBCwUAA4ICAQAF8uc+YJOHHwOFcPzmbjcxNDuGoOUIP+2h1R75Lecswb7ru2LWWSUMtXVKQzChLNPn/72W0k+oI056tgiwuG7M49LXp4zQVlQnFmWU1wwGvVhq5R63Rpjx1zjGUhcXgayu7+9zMUW596Lbomsg8qVve6euqsrFicYkIIuUu4zYPndJwfe0YkS5nY72SHnNdbPhEnN8wcB2Kz+OIG0lih3yz5EqFhld03bGp222ZQCIghCTVL6QBNadGsiN/lWLl4JdR3lJkZzlpFdiHijoVRdWeSWqM4y0t23c92HXKrgppoSV18XMxrWVdoSM3nuMHwxGhFyde05OdDtLpCv+jlWf5REAHHA201pAU6bJSZINyHDUTB+Beo28rRXSwSh3OUIvYwKNVeoBY+KwOJ7WnuTCUq1meE6GkKc4D/cXmgpOyW/1SmBz3XjVIi/zprZ0zf3qH5mkphtg6ksjKgKjmx1cXfZAAX6wcDBNaCL+Ortep1Dh8xDUbqbBVNBL4jbiL3i3xsfNiyJgaZ5sX7i8tmStEpLbPwvHcByuf59qJhV/bZOl8KqJBETCDJcY6O2aqhTUy+9x93ThKs1GKrRPePrWPluud7ttlgtRveit/pcBrnQcXOl1rHq7ByB8CFAxNotRUYL9IF5n3wJOgkPojMy6jetQA5Ogc8Sm7RG6vg1yow==
+
+</code></pre>
+
+<p>参考网站：http://idea.lanyus.com/</p>
+<hr />
+<h3 id="beyond-compare4">Beyond Compare4</h3>
+<pre><code>H1bJTd2SauPv5Garuaq0Ig43uqq5NJOEw94wxdZTpU-pFB9GmyPk677gJ
+vC1Ro6sbAvKR4pVwtxdCfuoZDb6hJ5bVQKqlfihJfSYZt-xVrVU27+0Ja
+hFbqTmYskatMTgPyjvv99CF2Te8ec+Ys2SPxyZAF0YwOCNOWmsyqN5y9t
+q2Kw2pjoiDs5gIH-uw5U49JzOB6otS7kThBJE-H9A76u4uUvR8DKb+VcB
+rWu5qSJGEnbsXNfJdq5L2D8QgRdV-sXHp2A-7j1X2n4WIISvU1V9koIyS
+NisHFBTcWJS0sC5BTFwrtfLEE9lEwz2bxHQpWJiu12ZeKpi+7oUSqebX+
+</code></pre>
+
+<h3 id="pdf-viewer25">pdf viewer2.5</h3>
+<pre><code>User Name    : Team EAT
+Organization : EATiSO
+Email address: teameat@no_email.com
+Key code     : PXP40-8HFT3-QTWZ1-QK2DN-MEUOP-VXG20
+</code></pre>
+
+<hr />
+<h3 id="centos7-shadowsocks">centos7 部署shadowsocks服务端</h3>
 <blockquote>
-<p>docker安装mysql</p>
+<p>centos7 的坑</p>
 </blockquote>
-<pre><code>docker pull mysql
-docker run -p 3306:3306 --name mysql -v ~/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -d mysql:
-docker  exec -i -t 3bb555abd8ab /bin/bash
+<pre><code>默认可能会有firewall 或者iptables启动 需要配置或者关闭，为了省事，我选择关闭
+#查看所有的可用服务
+systemctl list-unit-files |grep service |grep enable
+#关闭服务
+systemctl stop ipatables
+#开机不启动
+systemctl disable iptables
 </code></pre>
 
 <blockquote>
-<p>docker安装redis</p>
+<p>安装</p>
 </blockquote>
-<pre><code>docker pull redis
-docker run -d --name redis -p 6379:6379 redis
-docker exec -i -t redis /bin/bash
+<pre><code>需要Python和pip 这个安装就不多说了
+安装shadowsocks
+pip install shadowsocks
+这会给python的bin下面装上 ssserver(ss的服务端） sslocal(ss的代理）
+在你的目录下创建
+shadowsocks 下面再创建标准目录 bin, conf, log
+把sslocal、ssserver 拷贝到 shadowsocks/bin 下面
+然后在shadowsocks/conf下面创建ss.conf 或者ss.conf 本质是个json文件 .conf是个人习惯
+编辑这个文件
+
+{
+&quot;server&quot;:&quot;你的IP&quot;,
+&quot;server_port&quot;:8888,
+&quot;local_port&quot;:1080,
+&quot;password&quot;:&quot;1234567890&quot;,
+&quot;timeout&quot;:600,
+&quot;method&quot;:&quot;aes-256-cfb&quot;,
+&quot;workers&quot;:16
+}
+
+然后尝试启动
+/home/nick/shadowsocks/bin/ssserver -c /home/nick/shadowsocks/conf/ss.conf
+
+没问题的话，加上后台启动就可以用了。
 </code></pre>
 
 <blockquote>
-<p>docker安装nginx</p>
+<p>运行</p>
 </blockquote>
-<pre><code>docker pull nginx
+<pre><code>一般情况下，这种程序我一般都会选择使用supervisor守护进程启动
+所以
+pip install supervisor 安装supervisor
+具体部署和ss基本一样
+
+配置
+[program:ssserver]
+command=/home/nick/shadowsocks/bin/ssserver -c /home/nick/shadowsocks/conf/ss.conf
+diretory=/home/nick/shadowsocks
+user=nick
+
+/home/nick/superctl update 加载配置文件
+
+这样就完成了。
+
 </code></pre>
 
-<blockquote>
-<p>docker安装YAPI</p>
-</blockquote>
-<pre><code>
-</code></pre>
-
-<blockquote>
-<p>docker安装gogs</p>
-</blockquote>
-<pre><code>
-</code></pre>
-
-<h2 id="2">2.生产环境</h2></div>
+<p>我是一个有原则的人，我的原则就三个字：看心情！</p></div>
         </div>
 
         <footer class="col-md-12">
