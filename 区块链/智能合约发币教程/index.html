@@ -36,7 +36,7 @@
     
     
       
-        <title>智能合约</title>
+        <title>智能合约发币教程 - 何海涛</title>
       
     
     
@@ -127,7 +127,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#mol" tabindex="1" class="md-skip">
+      <a href="#_1" tabindex="1" class="md-skip">
         跳转至
       </a>
     
@@ -152,7 +152,7 @@
               何海涛
             </span>
             <span class="md-header-nav__topic">
-              智能合约
+              智能合约发币教程
             </span>
           
         </div>
@@ -527,8 +527,36 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#mol" title="MOL" class="md-nav__link">
-    MOL
+  <a href="#_1" title="准备工作如下" class="md-nav__link">
+    准备工作如下
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" title="编写合约代码" class="md-nav__link">
+    编写合约代码
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" title="执行合约部署" class="md-nav__link">
+    执行合约部署
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="支付合约费用" class="md-nav__link">
+    支付合约费用
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" title="查看合约进度" class="md-nav__link">
+    查看合约进度
   </a>
   
 </li>
@@ -552,164 +580,54 @@
                   <a href="https://github.com/discv5/blockchain-docs/edit/master/docs/区块链/智能合约发币教程.md" title="编辑此页" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>智能合约</h1>
+                  <h1>智能合约发币教程</h1>
                 
-                <h2 id="mol">MOL<a class="headerlink" href="#mol" title="Permanent link">&para;</a></h2>
-<p>代币合约地址：0x32b7a3018e4b832dea848786348164667ec030f3</p>
-<div class="codehilite"><pre><span></span>pragma solidity ^0.4.16;
-
-interface tokenRecipient { function receiveApproval(address _from, uint256 _value, address _token, bytes _extraData) public; }
-
-contract Bosschain {
-    // Public variables of the token
-    string public name;
-    string public symbol;
-    uint8 public decimals = 18;
-    // 18 decimals is the strongly suggested default, avoid changing it
-    uint256 public totalSupply;
-
-    // This creates an array with all balances
-    mapping (address =&gt; uint256) public balanceOf;
-    mapping (address =&gt; mapping (address =&gt; uint256)) public allowance;
-
-    // This generates a public event on the blockchain that will notify clients
-    event Transfer(address indexed from, address indexed to, uint256 value);
-
-    // This notifies clients about the amount burnt
-    event Burn(address indexed from, uint256 value);
-
-    /**
-     * Constrctor function
-     *
-     * Initializes contract with initial supply tokens to the creator of the contract
-     */
-    function Bosschain(
-        uint256 initialSupply,
-        string tokenName,
-        string tokenSymbol
-    ) public {
-        totalSupply = initialSupply * 10 ** uint256(decimals);  // Update total supply with the decimal amount
-        balanceOf[msg.sender] = totalSupply;                // Give the creator all initial tokens
-        name = tokenName;                                   // Set the name for display purposes
-        symbol = tokenSymbol;                               // Set the symbol for display purposes
-    }
-
-    /**
-     * Internal transfer, only can be called by this contract
-     */
-    function _transfer(address _from, address _to, uint _value) internal {
-        // Prevent transfer to 0x0 address. Use burn() instead
-        require(_to != 0x0);
-        // Check if the sender has enough
-        require(balanceOf[_from] &gt;= _value);
-        // Check for overflows
-        require(balanceOf[_to] + _value &gt; balanceOf[_to]);
-        // Save this for an assertion in the future
-        uint previousBalances = balanceOf[_from] + balanceOf[_to];
-        // Subtract from the sender
-        balanceOf[_from] -= _value;
-        // Add the same to the recipient
-        balanceOf[_to] += _value;
-        Transfer(_from, _to, _value);
-        // Asserts are used to use static analysis to find bugs in your code. They should never fail
-        assert(balanceOf[_from] + balanceOf[_to] == previousBalances);
-    }
-
-    /**
-     * Transfer tokens
-     *
-     * Send `_value` tokens to `_to` from your account
-     *
-     * @param _to The address of the recipient
-     * @param _value the amount to send
-     */
-    function transfer(address _to, uint256 _value) public {
-        _transfer(msg.sender, _to, _value);
-    }
-
-    /**
-     * Transfer tokens from other address
-     *
-     * Send `_value` tokens to `_to` in behalf of `_from`
-     *
-     * @param _from The address of the sender
-     * @param _to The address of the recipient
-     * @param _value the amount to send
-     */
-    function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
-        require(_value &lt;= allowance[_from][msg.sender]);     // Check allowance
-        allowance[_from][msg.sender] -= _value;
-        _transfer(_from, _to, _value);
-        return true;
-    }
-
-    /**
-     * Set allowance for other address
-     *
-     * Allows `_spender` to spend no more than `_value` tokens in your behalf
-     *
-     * @param _spender The address authorized to spend
-     * @param _value the max amount they can spend
-     */
-    function approve(address _spender, uint256 _value) public
-        returns (bool success) {
-        allowance[msg.sender][_spender] = _value;
-        return true;
-    }
-
-    /**
-     * Set allowance for other address and notify
-     *
-     * Allows `_spender` to spend no more than `_value` tokens in your behalf, and then ping the contract about it
-     *
-     * @param _spender The address authorized to spend
-     * @param _value the max amount they can spend
-     * @param _extraData some extra information to send to the approved contract
-     */
-    function approveAndCall(address _spender, uint256 _value, bytes _extraData)
-        public
-        returns (bool success) {
-        tokenRecipient spender = tokenRecipient(_spender);
-        if (approve(_spender, _value)) {
-            spender.receiveApproval(msg.sender, _value, this, _extraData);
-            return true;
-        }
-    }
-
-    /**
-     * Destroy tokens
-     *
-     * Remove `_value` tokens from the system irreversibly
-     *
-     * @param _value the amount of money to burn
-     */
-    function burn(uint256 _value) public returns (bool success) {
-        require(balanceOf[msg.sender] &gt;= _value);   // Check if the sender has enough
-        balanceOf[msg.sender] -= _value;            // Subtract from the sender
-        totalSupply -= _value;                      // Updates totalSupply
-        Burn(msg.sender, _value);
-        return true;
-    }
-
-    /**
-     * Destroy tokens from other account
-     *
-     * Remove `_value` tokens from the system irreversibly on behalf of `_from`.
-     *
-     * @param _from the address of the sender
-     * @param _value the amount of money to burn
-     */
-    function burnFrom(address _from, uint256 _value) public returns (bool success) {
-        require(balanceOf[_from] &gt;= _value);                // Check if the targeted balance is enough
-        require(_value &lt;= allowance[_from][msg.sender]);    // Check allowance
-        balanceOf[_from] -= _value;                         // Subtract from the targeted balance
-        allowance[_from][msg.sender] -= _value;             // Subtract from the sender&#39;s allowance
-        totalSupply -= _value;                              // Update totalSupply
-        Burn(_from, _value);
-        return true;
-    }
-} 
-</pre></div>
+                <h3 id="_1">准备工作如下<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>下载谷歌浏览器并安装MetaMask插件</li>
+<li>准备以太坊账户，并存入少量eth金额<ul>
+<li>方法1：<a href="https://www.myetherwallet.com">通过网页钱包创建</a> </li>
+<li>方法2：<a href="https://token.im/">下载Imtoken App</a></li>
+</ul>
+</li>
+<li>准备好安全可靠的合约代码, 避免漏洞</li>
+<li>选择部署方式，本篇教程选择 c<ol>
+<li>geth 编译代码部署合约</li>
+<li>用ethereum wallet钱包部署合约</li>
+<li>MetaMask 和 Remix Solidity IDE 部署合约</li>
+</ol>
+</li>
+</ol>
+<h3 id="_2">编写合约代码<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<p>合约代码尽量选择最新且无安全漏洞的  <a href="../token_erc20_2/">合约代码 </a>，并请安全团队认证</p>
+<blockquote>
+<p><strong>totalSupply</strong>:  代表的是代币发行总量    totalSupply():该方法可以返回代币的总数量</p>
+<p><strong>name</strong>:  发行代币的名称                       dicimals:  发行代币以后，代币交易的最小单位</p>
+<p><strong>balanceOf</strong>(): 该方法返回的是输入钱包地址后，该钱包的代币余额</p>
+<p><strong>tansferFrom()</strong> : 从一个地址向另一个地址发送余额</p>
+<p><strong>approve()</strong>: 允许_spender从你的账户转出_value余额</p>
+<p><strong>allowance()</strong>: 允许_spender从你的账户转出_value的余额，调用多次会覆盖可用量。某些DEX功能需要此功能</p>
+<p><strong>event Transfer()</strong>:  token转移完成后出发</p>
+<p><strong>event Approval()</strong>:  approve(address _spender, uint256 _value)调用后触发</p>
+</blockquote>
+<h3 id="_3">执行合约部署<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>打开 Remix Solidity IDE 访问地址：  <a href="https://remix.ethereum.org/">https://remix.ethereum.org/</a> </p>
+<ul>
+<li>复制代码</li>
+</ul>
+<p><img alt="流程图" src="../../images/1.png" /></p>
+<ul>
+<li>编译合约</li>
+</ul>
+<p><img alt="流程图" src="../../images/2.png" /></p>
+<ul>
+<li>执行部署</li>
+</ul>
+<p><img alt="流程图" src="../../images/3.png" /></p>
+<h3 id="_4">支付合约费用<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<p>打开【Metamark】谷歌插件，并确认合约到账地址和交易费用。</p>
+<h3 id="_5">查看合约进度<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<p>可以通过使用 <a href="https://etherscan.io">etherscan.io</a> 浏览器查看合约执行过程。</p>
                 
                   
                 
